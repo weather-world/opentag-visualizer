@@ -1,0 +1,3323 @@
+{
+  "model_version": "opentag_math_v1",
+  "formula": "P(blue_win) = σ(W · F(team_a, team_b, meta, situation))",
+  "layers": {
+    "L1_player_decomposition": {
+      "dimensions": 8,
+      "skills": [
+        "laning",
+        "teamfight",
+        "vision",
+        "versatility",
+        "consistency",
+        "efficiency",
+        "pressure",
+        "survivability"
+      ],
+      "method": "Weighted z-score within role baselines"
+    },
+    "L2_team_composition": {
+      "method": "Role-weighted sum + synergy + weak_link_penalty + carry_amplification",
+      "synergy_factors": [
+        "skill_coverage",
+        "carry_support_balance",
+        "lane_independence",
+        "vision_synergy",
+        "frontback_balance"
+      ],
+      "role_weights": {
+        "TOP": 0.18,
+        "JUNGLE": 0.2,
+        "MID": 0.22,
+        "ADC": 0.22,
+        "SUPPORT": 0.18
+      }
+    },
+    "L3_meta_context": {
+      "profiles": [
+        "tank_meta",
+        "lane_dominant",
+        "scaling",
+        "balanced",
+        "early_aggro"
+      ],
+      "detected_meta": "early_aggro",
+      "confidence": 0.6
+    },
+    "L4_situational": {
+      "modifiers": {
+        "blue_side_advantage": 0.06,
+        "bo5_consistency_bonus": 0.05,
+        "bo1_volatility_bonus": 0.08,
+        "momentum_streak": 0.03,
+        "fatigue_penalty": -0.02
+      }
+    },
+    "L5_matchup_differential": {
+      "method": "Blue total - Red total across all layers"
+    },
+    "L6_win_probability": {
+      "method": "Logistic regression on differential features",
+      "weights": {
+        "total_delta": 0.7276390729734503,
+        "role_advantage_count": 0.7877997851914567,
+        "synergy_delta_mean": 0.18028088106217877,
+        "carry_amp_delta": 0.10565367813055374,
+        "weak_link_delta": 0.2396185428442066,
+        "bias": 0.20560962263520674
+      },
+      "accuracy": 0.8235294117647058
+    }
+  },
+  "training_result": {
+    "accuracy": 0.8529411764705882,
+    "log_loss": 0.2871187186316347,
+    "weights": {
+      "total_delta": 0.7276390729734503,
+      "role_advantage_count": 0.7877997851914567,
+      "synergy_delta_mean": 0.18028088106217877,
+      "carry_amp_delta": 0.10565367813055374,
+      "weak_link_delta": 0.2396185428442066,
+      "bias": 0.20560962263520674
+    },
+    "n_games": 34
+  },
+  "role_baselines": {
+    "TOP": {
+      "Kills": {
+        "mean": 2.574,
+        "std": 2.167,
+        "min": 0,
+        "max": 9,
+        "n": 68,
+        "p25": 1,
+        "p75": 4
+      },
+      "Deaths": {
+        "mean": 3.044,
+        "std": 1.84,
+        "min": 0,
+        "max": 9,
+        "n": 68,
+        "p25": 2,
+        "p75": 4
+      },
+      "Assists": {
+        "mean": 5.941,
+        "std": 3.797,
+        "min": 0,
+        "max": 16,
+        "n": 68,
+        "p25": 3,
+        "p75": 9
+      },
+      "KDA": {
+        "mean": 3.679,
+        "std": 3.761,
+        "min": 0.3,
+        "max": 17,
+        "n": 62,
+        "p25": 1,
+        "p75": 5
+      },
+      "CS": {
+        "mean": 281.103,
+        "std": 46.263,
+        "min": 184,
+        "max": 448,
+        "n": 68,
+        "p25": 252,
+        "p75": 315
+      },
+      "CSM": {
+        "mean": 8.624,
+        "std": 0.787,
+        "min": 6.7,
+        "max": 10.6,
+        "n": 68,
+        "p25": 8.1,
+        "p75": 9.1
+      },
+      "Golds": {
+        "mean": 12785.088,
+        "std": 2613.136,
+        "min": 7753,
+        "max": 20815,
+        "n": 68,
+        "p25": 11121,
+        "p75": 14331
+      },
+      "GPM": {
+        "mean": 390.824,
+        "std": 49.538,
+        "min": 287,
+        "max": 519,
+        "n": 68,
+        "p25": 350,
+        "p75": 434
+      },
+      "GOLD%": {
+        "mean": 19.654,
+        "std": 1.812,
+        "min": 15.6,
+        "max": 25.7,
+        "n": 68,
+        "p25": 18.6,
+        "p75": 20.7
+      },
+      "Vision Score": {
+        "mean": 46.5,
+        "std": 12.438,
+        "min": 23,
+        "max": 75,
+        "n": 68,
+        "p25": 38,
+        "p75": 54
+      },
+      "Wards placed": {
+        "mean": 15.25,
+        "std": 4.009,
+        "min": 8,
+        "max": 25,
+        "n": 68,
+        "p25": 12,
+        "p75": 17
+      },
+      "Wards destroyed": {
+        "mean": 5.794,
+        "std": 3.366,
+        "min": 0,
+        "max": 16,
+        "n": 68,
+        "p25": 3,
+        "p75": 8
+      },
+      "Control Wards Purchased": {
+        "mean": 5.647,
+        "std": 2.502,
+        "min": 0,
+        "max": 14,
+        "n": 68,
+        "p25": 4,
+        "p75": 7
+      },
+      "VSPM": {
+        "mean": 1.415,
+        "std": 0.27,
+        "min": 0.74,
+        "max": 2.01,
+        "n": 68,
+        "p25": 1.22,
+        "p75": 1.61
+      },
+      "WPM": {
+        "mean": 0.468,
+        "std": 0.109,
+        "min": 0.26,
+        "max": 0.71,
+        "n": 68,
+        "p25": 0.39,
+        "p75": 0.55
+      },
+      "Total damage to Champion": {
+        "mean": 22818.265,
+        "std": 8163.785,
+        "min": 6480,
+        "max": 50032,
+        "n": 68,
+        "p25": 17301,
+        "p75": 27715
+      },
+      "Physical Damage": {
+        "mean": 12047.809,
+        "std": 8447.819,
+        "min": 412,
+        "max": 31641,
+        "n": 68,
+        "p25": 4381,
+        "p75": 18977
+      },
+      "Magic Damage": {
+        "mean": 9679.838,
+        "std": 9448.363,
+        "min": 166,
+        "max": 37688,
+        "n": 68,
+        "p25": 2023,
+        "p75": 16839
+      },
+      "True Damage": {
+        "mean": 1090.618,
+        "std": 2234.549,
+        "min": 0,
+        "max": 14165,
+        "n": 68,
+        "p25": 0,
+        "p75": 908
+      },
+      "DPM": {
+        "mean": 695.294,
+        "std": 212.123,
+        "min": 206,
+        "max": 1191,
+        "n": 68,
+        "p25": 549,
+        "p75": 849
+      },
+      "DMG%": {
+        "mean": 24.075,
+        "std": 6.482,
+        "min": 11.6,
+        "max": 45.5,
+        "n": 68,
+        "p25": 20.1,
+        "p75": 28.2
+      },
+      "KP%": {
+        "mean": 52.954,
+        "std": 15.923,
+        "min": 12.5,
+        "max": 92.9,
+        "n": 68,
+        "p25": 42.9,
+        "p75": 64
+      },
+      "Double kills": {
+        "mean": 0.147,
+        "std": 0.466,
+        "min": 0,
+        "max": 3,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Triple kills": {
+        "mean": 0.044,
+        "std": 0.207,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Quadra kills": {
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Penta kills": {
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "GD@15": {
+        "mean": 0.0,
+        "std": 571.289,
+        "min": -1442,
+        "max": 1442,
+        "n": 68,
+        "p25": -295,
+        "p75": 307
+      },
+      "CSD@15": {
+        "mean": 0.0,
+        "std": 15.149,
+        "min": -34,
+        "max": 34,
+        "n": 68,
+        "p25": -9,
+        "p75": 9
+      },
+      "XPD@15": {
+        "mean": 0.0,
+        "std": 636.484,
+        "min": -1314,
+        "max": 1314,
+        "n": 68,
+        "p25": -500,
+        "p75": 524
+      },
+      "LVLD@15": {
+        "mean": 0.0,
+        "std": 0.573,
+        "min": -1,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Damage dealt to turrets": {
+        "mean": 7224.191,
+        "std": 5453.562,
+        "min": 0,
+        "max": 24131,
+        "n": 68,
+        "p25": 2749,
+        "p75": 10113
+      },
+      "Total heal": {
+        "mean": 8609.309,
+        "std": 6709.1,
+        "min": 1746,
+        "max": 41530,
+        "n": 68,
+        "p25": 4258,
+        "p75": 9777
+      },
+      "Damage self mitigated": {
+        "mean": 43070.897,
+        "std": 25037.588,
+        "min": 9105,
+        "max": 118250,
+        "n": 68,
+        "p25": 27559,
+        "p75": 52109
+      },
+      "Time ccing others": {
+        "mean": 23.338,
+        "std": 12.38,
+        "min": 3,
+        "max": 65,
+        "n": 68,
+        "p25": 13,
+        "p75": 32
+      },
+      "Total damage taken": {
+        "mean": 31354.985,
+        "std": 11362.193,
+        "min": 12789,
+        "max": 67723,
+        "n": 68,
+        "p25": 23804,
+        "p75": 38600
+      },
+      "Total Time Spent Dead": {
+        "mean": 116.162,
+        "std": 73.963,
+        "min": 0,
+        "max": 353,
+        "n": 68,
+        "p25": 55,
+        "p75": 164
+      },
+      "Solo kills": {
+        "mean": 1.2,
+        "std": 0.414,
+        "min": 1,
+        "max": 2,
+        "n": 15,
+        "p25": 1,
+        "p75": 1
+      }
+    },
+    "JUNGLE": {
+      "Kills": {
+        "mean": 3.412,
+        "std": 2.287,
+        "min": 0,
+        "max": 9,
+        "n": 68,
+        "p25": 2,
+        "p75": 5
+      },
+      "Deaths": {
+        "mean": 3.971,
+        "std": 2.185,
+        "min": 0,
+        "max": 8,
+        "n": 68,
+        "p25": 2,
+        "p75": 6
+      },
+      "Assists": {
+        "mean": 8.382,
+        "std": 4.687,
+        "min": 1,
+        "max": 25,
+        "n": 68,
+        "p25": 5,
+        "p75": 11
+      },
+      "KDA": {
+        "mean": 4.456,
+        "std": 4.854,
+        "min": 0.4,
+        "max": 22,
+        "n": 64,
+        "p25": 1.2,
+        "p75": 6.3
+      },
+      "CS": {
+        "mean": 224.647,
+        "std": 40.207,
+        "min": 129,
+        "max": 336,
+        "n": 68,
+        "p25": 194,
+        "p75": 249
+      },
+      "CSM": {
+        "mean": 6.89,
+        "std": 0.859,
+        "min": 4.8,
+        "max": 8.7,
+        "n": 68,
+        "p25": 6.3,
+        "p75": 7.5
+      },
+      "Golds": {
+        "mean": 12736.015,
+        "std": 2292.761,
+        "min": 7436,
+        "max": 19649,
+        "n": 68,
+        "p25": 11310,
+        "p75": 14166
+      },
+      "GPM": {
+        "mean": 391.338,
+        "std": 53.322,
+        "min": 300,
+        "max": 513,
+        "n": 68,
+        "p25": 348,
+        "p75": 437
+      },
+      "GOLD%": {
+        "mean": 19.629,
+        "std": 1.438,
+        "min": 16.2,
+        "max": 23.8,
+        "n": 68,
+        "p25": 18.7,
+        "p75": 20.5
+      },
+      "Vision Score": {
+        "mean": 62.221,
+        "std": 19.987,
+        "min": 27,
+        "max": 137,
+        "n": 68,
+        "p25": 52,
+        "p75": 75
+      },
+      "Wards placed": {
+        "mean": 12.162,
+        "std": 3.647,
+        "min": 6,
+        "max": 26,
+        "n": 68,
+        "p25": 10,
+        "p75": 14
+      },
+      "Wards destroyed": {
+        "mean": 13.618,
+        "std": 6.425,
+        "min": 5,
+        "max": 33,
+        "n": 68,
+        "p25": 9,
+        "p75": 19
+      },
+      "Control Wards Purchased": {
+        "mean": 10.441,
+        "std": 3.316,
+        "min": 5,
+        "max": 23,
+        "n": 68,
+        "p25": 9,
+        "p75": 12
+      },
+      "VSPM": {
+        "mean": 1.887,
+        "std": 0.45,
+        "min": 0.87,
+        "max": 2.76,
+        "n": 68,
+        "p25": 1.6,
+        "p75": 2.25
+      },
+      "WPM": {
+        "mean": 0.369,
+        "std": 0.075,
+        "min": 0.19,
+        "max": 0.52,
+        "n": 68,
+        "p25": 0.32,
+        "p75": 0.43
+      },
+      "Total damage to Champion": {
+        "mean": 14743.868,
+        "std": 5480.064,
+        "min": 3261,
+        "max": 33842,
+        "n": 68,
+        "p25": 11270,
+        "p75": 17677
+      },
+      "Physical Damage": {
+        "mean": 12368.809,
+        "std": 5256.04,
+        "min": 2240,
+        "max": 31570,
+        "n": 68,
+        "p25": 9476,
+        "p75": 15448
+      },
+      "Magic Damage": {
+        "mean": 1239.706,
+        "std": 1861.808,
+        "min": 0,
+        "max": 11567,
+        "n": 68,
+        "p25": 233,
+        "p75": 1348
+      },
+      "True Damage": {
+        "mean": 1135.353,
+        "std": 1046.439,
+        "min": 74,
+        "max": 5536,
+        "n": 68,
+        "p25": 277,
+        "p75": 1744
+      },
+      "DPM": {
+        "mean": 453.956,
+        "std": 163.49,
+        "min": 130,
+        "max": 905,
+        "n": 68,
+        "p25": 346,
+        "p75": 535
+      },
+      "DMG%": {
+        "mean": 15.625,
+        "std": 4.272,
+        "min": 6,
+        "max": 25.1,
+        "n": 68,
+        "p25": 12.5,
+        "p75": 18.4
+      },
+      "KP%": {
+        "mean": 74.166,
+        "std": 15.348,
+        "min": 42.9,
+        "max": 100,
+        "n": 68,
+        "p25": 65,
+        "p75": 83.3
+      },
+      "Solo kills": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1,
+        "max": 1,
+        "n": 4,
+        "p25": 1,
+        "p75": 1
+      },
+      "Double kills": {
+        "mean": 0.353,
+        "std": 0.617,
+        "min": 0,
+        "max": 2,
+        "n": 68,
+        "p25": 0,
+        "p75": 1
+      },
+      "Triple kills": {
+        "mean": 0.044,
+        "std": 0.207,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Quadra kills": {
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Penta kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "GD@15": {
+        "mean": 0.0,
+        "std": 834.102,
+        "min": -1992,
+        "max": 1992,
+        "n": 68,
+        "p25": -442,
+        "p75": 513
+      },
+      "CSD@15": {
+        "mean": 0.0,
+        "std": 16.297,
+        "min": -30,
+        "max": 30,
+        "n": 68,
+        "p25": -11,
+        "p75": 12
+      },
+      "XPD@15": {
+        "mean": 0.0,
+        "std": 939.993,
+        "min": -1874,
+        "max": 1874,
+        "n": 68,
+        "p25": -577,
+        "p75": 694
+      },
+      "LVLD@15": {
+        "mean": 0.0,
+        "std": 0.977,
+        "min": -2,
+        "max": 2,
+        "n": 68,
+        "p25": -1,
+        "p75": 1
+      },
+      "Damage dealt to turrets": {
+        "mean": 1955.926,
+        "std": 2108.894,
+        "min": 0,
+        "max": 9366,
+        "n": 68,
+        "p25": 0,
+        "p75": 3153
+      },
+      "Total heal": {
+        "mean": 15833.382,
+        "std": 7019.289,
+        "min": 2966,
+        "max": 36402,
+        "n": 68,
+        "p25": 11129,
+        "p75": 18817
+      },
+      "Damage self mitigated": {
+        "mean": 33219.706,
+        "std": 13455.122,
+        "min": 9612,
+        "max": 72495,
+        "n": 68,
+        "p25": 22015,
+        "p75": 41766
+      },
+      "Time ccing others": {
+        "mean": 31.544,
+        "std": 37.218,
+        "min": 5,
+        "max": 208,
+        "n": 68,
+        "p25": 17,
+        "p75": 30
+      },
+      "Total damage taken": {
+        "mean": 33375.029,
+        "std": 8516.117,
+        "min": 16706,
+        "max": 53488,
+        "n": 68,
+        "p25": 27308,
+        "p75": 39807
+      },
+      "Total Time Spent Dead": {
+        "mean": 132.25,
+        "std": 78.17,
+        "min": 0,
+        "max": 384,
+        "n": 68,
+        "p25": 67,
+        "p75": 194
+      }
+    },
+    "MID": {
+      "Kills": {
+        "mean": 3.779,
+        "std": 2.636,
+        "min": 0,
+        "max": 14,
+        "n": 68,
+        "p25": 2,
+        "p75": 5
+      },
+      "Deaths": {
+        "mean": 2.691,
+        "std": 1.747,
+        "min": 0,
+        "max": 7,
+        "n": 68,
+        "p25": 1,
+        "p75": 4
+      },
+      "Assists": {
+        "mean": 6.956,
+        "std": 3.9,
+        "min": 0,
+        "max": 16,
+        "n": 68,
+        "p25": 4,
+        "p75": 10
+      },
+      "KDA": {
+        "mean": 4.945,
+        "std": 5.019,
+        "min": 0.2,
+        "max": 24,
+        "n": 60,
+        "p25": 1.9,
+        "p75": 6
+      },
+      "CS": {
+        "mean": 313.941,
+        "std": 39.665,
+        "min": 228,
+        "max": 441,
+        "n": 68,
+        "p25": 286,
+        "p75": 340
+      },
+      "CSM": {
+        "mean": 9.678,
+        "std": 0.774,
+        "min": 7.8,
+        "max": 11.4,
+        "n": 68,
+        "p25": 9.2,
+        "p75": 10.2
+      },
+      "Golds": {
+        "mean": 13836.426,
+        "std": 2286.32,
+        "min": 8659,
+        "max": 19947,
+        "n": 68,
+        "p25": 12571,
+        "p75": 15197
+      },
+      "GPM": {
+        "mean": 425.206,
+        "std": 49.824,
+        "min": 322,
+        "max": 581,
+        "n": 68,
+        "p25": 392,
+        "p75": 460
+      },
+      "GOLD%": {
+        "mean": 21.376,
+        "std": 1.537,
+        "min": 18.3,
+        "max": 26.1,
+        "n": 68,
+        "p25": 20.4,
+        "p75": 22.3
+      },
+      "Vision Score": {
+        "mean": 48.544,
+        "std": 14.889,
+        "min": 22,
+        "max": 94,
+        "n": 68,
+        "p25": 38,
+        "p75": 56
+      },
+      "Wards placed": {
+        "mean": 17.235,
+        "std": 4.552,
+        "min": 9,
+        "max": 32,
+        "n": 68,
+        "p25": 14,
+        "p75": 20
+      },
+      "Wards destroyed": {
+        "mean": 8.265,
+        "std": 3.736,
+        "min": 1,
+        "max": 19,
+        "n": 68,
+        "p25": 5,
+        "p75": 11
+      },
+      "Control Wards Purchased": {
+        "mean": 5.838,
+        "std": 2.641,
+        "min": 0,
+        "max": 13,
+        "n": 68,
+        "p25": 4,
+        "p75": 7
+      },
+      "VSPM": {
+        "mean": 1.478,
+        "std": 0.368,
+        "min": 0.77,
+        "max": 2.39,
+        "n": 68,
+        "p25": 1.21,
+        "p75": 1.77
+      },
+      "WPM": {
+        "mean": 0.53,
+        "std": 0.114,
+        "min": 0.18,
+        "max": 0.81,
+        "n": 68,
+        "p25": 0.47,
+        "p75": 0.58
+      },
+      "Total damage to Champion": {
+        "mean": 21697.235,
+        "std": 7013.997,
+        "min": 8522,
+        "max": 48314,
+        "n": 68,
+        "p25": 16631,
+        "p75": 26704
+      },
+      "Physical Damage": {
+        "mean": 1295.941,
+        "std": 2495.068,
+        "min": 278,
+        "max": 15718,
+        "n": 68,
+        "p25": 624,
+        "p75": 1072
+      },
+      "Magic Damage": {
+        "mean": 19954.544,
+        "std": 7195.651,
+        "min": 2485,
+        "max": 44859,
+        "n": 68,
+        "p25": 15352,
+        "p75": 25224
+      },
+      "True Damage": {
+        "mean": 446.75,
+        "std": 1253.661,
+        "min": 0,
+        "max": 7574,
+        "n": 68,
+        "p25": 0,
+        "p75": 134
+      },
+      "DPM": {
+        "mean": 659.897,
+        "std": 172.312,
+        "min": 309,
+        "max": 1107,
+        "n": 68,
+        "p25": 534,
+        "p75": 764
+      },
+      "DMG%": {
+        "mean": 22.903,
+        "std": 4.566,
+        "min": 15.3,
+        "max": 33.3,
+        "n": 68,
+        "p25": 19.4,
+        "p75": 25.4
+      },
+      "KP%": {
+        "mean": 66.309,
+        "std": 16.677,
+        "min": 20,
+        "max": 100,
+        "n": 68,
+        "p25": 55.6,
+        "p75": 77.8
+      },
+      "Double kills": {
+        "mean": 0.441,
+        "std": 0.678,
+        "min": 0,
+        "max": 2,
+        "n": 68,
+        "p25": 0,
+        "p75": 1
+      },
+      "Triple kills": {
+        "mean": 0.074,
+        "std": 0.315,
+        "min": 0,
+        "max": 2,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Quadra kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Penta kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "GD@15": {
+        "mean": 0.0,
+        "std": 745.593,
+        "min": -2216,
+        "max": 2216,
+        "n": 68,
+        "p25": -453,
+        "p75": 507
+      },
+      "CSD@15": {
+        "mean": 0.0,
+        "std": 10.034,
+        "min": -24,
+        "max": 24,
+        "n": 68,
+        "p25": -7,
+        "p75": 8
+      },
+      "XPD@15": {
+        "mean": 0.0,
+        "std": 581.75,
+        "min": -1549,
+        "max": 1549,
+        "n": 68,
+        "p25": -375,
+        "p75": 409
+      },
+      "LVLD@15": {
+        "mean": 0.0,
+        "std": 0.489,
+        "min": -1,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Damage dealt to turrets": {
+        "mean": 7319.765,
+        "std": 4184.398,
+        "min": 0,
+        "max": 19341,
+        "n": 68,
+        "p25": 4361,
+        "p75": 10338
+      },
+      "Total heal": {
+        "mean": 3988.471,
+        "std": 3306.776,
+        "min": 444,
+        "max": 17322,
+        "n": 68,
+        "p25": 1657,
+        "p75": 5564
+      },
+      "Damage self mitigated": {
+        "mean": 15091.235,
+        "std": 6635.411,
+        "min": 5353,
+        "max": 39015,
+        "n": 68,
+        "p25": 10516,
+        "p75": 18716
+      },
+      "Time ccing others": {
+        "mean": 22.559,
+        "std": 12.252,
+        "min": 3,
+        "max": 53,
+        "n": 68,
+        "p25": 13,
+        "p75": 28
+      },
+      "Total damage taken": {
+        "mean": 19199.897,
+        "std": 7004.235,
+        "min": 8752,
+        "max": 44094,
+        "n": 68,
+        "p25": 14278,
+        "p75": 23076
+      },
+      "Total Time Spent Dead": {
+        "mean": 95.882,
+        "std": 70.218,
+        "min": 0,
+        "max": 361,
+        "n": 68,
+        "p25": 45,
+        "p75": 143
+      },
+      "Solo kills": {
+        "mean": 1.222,
+        "std": 0.441,
+        "min": 1,
+        "max": 2,
+        "n": 9,
+        "p25": 1,
+        "p75": 1
+      }
+    },
+    "ADC": {
+      "Kills": {
+        "mean": 5.588,
+        "std": 3.774,
+        "min": 0,
+        "max": 16,
+        "n": 68,
+        "p25": 3,
+        "p75": 8
+      },
+      "Deaths": {
+        "mean": 3.132,
+        "std": 2.245,
+        "min": 0,
+        "max": 9,
+        "n": 68,
+        "p25": 1,
+        "p75": 5
+      },
+      "Assists": {
+        "mean": 5.735,
+        "std": 3.397,
+        "min": 0,
+        "max": 16,
+        "n": 68,
+        "p25": 3,
+        "p75": 8
+      },
+      "KDA": {
+        "mean": 5.321,
+        "std": 5.503,
+        "min": 0.3,
+        "max": 26,
+        "n": 61,
+        "p25": 1.6,
+        "p75": 7.5
+      },
+      "CS": {
+        "mean": 328.926,
+        "std": 65.117,
+        "min": 216,
+        "max": 530,
+        "n": 68,
+        "p25": 280,
+        "p75": 366
+      },
+      "CSM": {
+        "mean": 10.046,
+        "std": 0.982,
+        "min": 8.2,
+        "max": 12.4,
+        "n": 68,
+        "p25": 9.4,
+        "p75": 10.8
+      },
+      "Golds": {
+        "mean": 16876.044,
+        "std": 3936.265,
+        "min": 9614,
+        "max": 29644,
+        "n": 68,
+        "p25": 14117,
+        "p75": 18886
+      },
+      "GPM": {
+        "mean": 514.691,
+        "std": 76.866,
+        "min": 376,
+        "max": 659,
+        "n": 68,
+        "p25": 460,
+        "p75": 572
+      },
+      "GOLD%": {
+        "mean": 25.776,
+        "std": 2.074,
+        "min": 21.5,
+        "max": 31.1,
+        "n": 68,
+        "p25": 24.3,
+        "p75": 27.2
+      },
+      "Vision Score": {
+        "mean": 41.691,
+        "std": 11.729,
+        "min": 13,
+        "max": 67,
+        "n": 68,
+        "p25": 33,
+        "p75": 50
+      },
+      "Wards placed": {
+        "mean": 14.647,
+        "std": 3.446,
+        "min": 7,
+        "max": 22,
+        "n": 68,
+        "p25": 12,
+        "p75": 17
+      },
+      "Wards destroyed": {
+        "mean": 10.603,
+        "std": 4.303,
+        "min": 0,
+        "max": 22,
+        "n": 68,
+        "p25": 7,
+        "p75": 13
+      },
+      "Control Wards Purchased": {
+        "mean": 5.0,
+        "std": 2.431,
+        "min": 0,
+        "max": 11,
+        "n": 68,
+        "p25": 3,
+        "p75": 7
+      },
+      "VSPM": {
+        "mean": 1.27,
+        "std": 0.288,
+        "min": 0.54,
+        "max": 1.91,
+        "n": 68,
+        "p25": 1.07,
+        "p75": 1.52
+      },
+      "WPM": {
+        "mean": 0.447,
+        "std": 0.084,
+        "min": 0.27,
+        "max": 0.64,
+        "n": 68,
+        "p25": 0.39,
+        "p75": 0.52
+      },
+      "Total damage to Champion": {
+        "mean": 27517.118,
+        "std": 10797.433,
+        "min": 10433,
+        "max": 59835,
+        "n": 68,
+        "p25": 21084,
+        "p75": 32752
+      },
+      "Physical Damage": {
+        "mean": 19636.25,
+        "std": 8751.387,
+        "min": 6274,
+        "max": 51537,
+        "n": 68,
+        "p25": 13407,
+        "p75": 24629
+      },
+      "Magic Damage": {
+        "mean": 6599.779,
+        "std": 4412.873,
+        "min": 0,
+        "max": 17440,
+        "n": 68,
+        "p25": 3224,
+        "p75": 9311
+      },
+      "True Damage": {
+        "mean": 1281.088,
+        "std": 2011.462,
+        "min": 0,
+        "max": 9615,
+        "n": 68,
+        "p25": 202,
+        "p75": 1417
+      },
+      "DPM": {
+        "mean": 828.676,
+        "std": 246.199,
+        "min": 333,
+        "max": 1487,
+        "n": 68,
+        "p25": 642,
+        "p75": 971
+      },
+      "DMG%": {
+        "mean": 28.424,
+        "std": 5.156,
+        "min": 18.1,
+        "max": 41.5,
+        "n": 68,
+        "p25": 24.9,
+        "p75": 31.8
+      },
+      "KP%": {
+        "mean": 68.146,
+        "std": 13.722,
+        "min": 28.6,
+        "max": 88.9,
+        "n": 68,
+        "p25": 60,
+        "p75": 80
+      },
+      "Double kills": {
+        "mean": 0.853,
+        "std": 0.996,
+        "min": 0,
+        "max": 4,
+        "n": 68,
+        "p25": 0,
+        "p75": 1
+      },
+      "Triple kills": {
+        "mean": 0.206,
+        "std": 0.442,
+        "min": 0,
+        "max": 2,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Quadra kills": {
+        "mean": 0.029,
+        "std": 0.17,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Penta kills": {
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "GD@15": {
+        "mean": 0.0,
+        "std": 1113.118,
+        "min": -2569,
+        "max": 2569,
+        "n": 68,
+        "p25": -479,
+        "p75": 498
+      },
+      "CSD@15": {
+        "mean": 0.0,
+        "std": 15.501,
+        "min": -34,
+        "max": 34,
+        "n": 68,
+        "p25": -13,
+        "p75": 13
+      },
+      "XPD@15": {
+        "mean": 0.0,
+        "std": 649.109,
+        "min": -1324,
+        "max": 1324,
+        "n": 68,
+        "p25": -414,
+        "p75": 471
+      },
+      "LVLD@15": {
+        "mean": 0.0,
+        "std": 0.846,
+        "min": -2,
+        "max": 2,
+        "n": 68,
+        "p25": -1,
+        "p75": 1
+      },
+      "Damage dealt to turrets": {
+        "mean": 7535.559,
+        "std": 5176.348,
+        "min": 0,
+        "max": 19674,
+        "n": 68,
+        "p25": 3731,
+        "p75": 11494
+      },
+      "Total heal": {
+        "mean": 6395.426,
+        "std": 3900.744,
+        "min": 1455,
+        "max": 29105,
+        "n": 68,
+        "p25": 4210,
+        "p75": 8220
+      },
+      "Damage self mitigated": {
+        "mean": 13874.926,
+        "std": 6293.457,
+        "min": 3631,
+        "max": 39850,
+        "n": 68,
+        "p25": 10152,
+        "p75": 16123
+      },
+      "Time ccing others": {
+        "mean": 9.765,
+        "std": 10.77,
+        "min": 0,
+        "max": 43,
+        "n": 68,
+        "p25": 2,
+        "p75": 13
+      },
+      "Total damage taken": {
+        "mean": 20330.985,
+        "std": 6541.733,
+        "min": 5407,
+        "max": 47296,
+        "n": 68,
+        "p25": 16242,
+        "p75": 23337
+      },
+      "Total Time Spent Dead": {
+        "mean": 91.824,
+        "std": 70.207,
+        "min": 0,
+        "max": 266,
+        "n": 68,
+        "p25": 45,
+        "p75": 148
+      },
+      "Solo kills": {
+        "mean": 1.4,
+        "std": 0.548,
+        "min": 1,
+        "max": 2,
+        "n": 5,
+        "p25": 1,
+        "p75": 2
+      }
+    },
+    "SUPPORT": {
+      "Kills": {
+        "mean": 0.853,
+        "std": 1.096,
+        "min": 0,
+        "max": 5,
+        "n": 68,
+        "p25": 0,
+        "p75": 1
+      },
+      "Deaths": {
+        "mean": 3.397,
+        "std": 1.94,
+        "min": 0,
+        "max": 8,
+        "n": 68,
+        "p25": 2,
+        "p75": 5
+      },
+      "Assists": {
+        "mean": 12.015,
+        "std": 6.551,
+        "min": 2,
+        "max": 27,
+        "n": 68,
+        "p25": 5,
+        "p75": 17
+      },
+      "KDA": {
+        "mean": 6.491,
+        "std": 6.886,
+        "min": 0.4,
+        "max": 29,
+        "n": 66,
+        "p25": 1.4,
+        "p75": 9
+      },
+      "CS": {
+        "mean": 33.515,
+        "std": 9.467,
+        "min": 14,
+        "max": 63,
+        "n": 68,
+        "p25": 28,
+        "p75": 38
+      },
+      "CSM": {
+        "mean": 1.026,
+        "std": 0.237,
+        "min": 0.5,
+        "max": 1.7,
+        "n": 68,
+        "p25": 0.9,
+        "p75": 1.2
+      },
+      "Golds": {
+        "mean": 8789.559,
+        "std": 1561.237,
+        "min": 5646,
+        "max": 13168,
+        "n": 68,
+        "p25": 7837,
+        "p75": 9728
+      },
+      "GPM": {
+        "mean": 269.382,
+        "std": 28.465,
+        "min": 216,
+        "max": 331,
+        "n": 68,
+        "p25": 247,
+        "p75": 292
+      },
+      "GOLD%": {
+        "mean": 13.553,
+        "std": 0.837,
+        "min": 12.1,
+        "max": 16,
+        "n": 68,
+        "p25": 13,
+        "p75": 14
+      },
+      "Vision Score": {
+        "mean": 133.338,
+        "std": 34.314,
+        "min": 70,
+        "max": 209,
+        "n": 68,
+        "p25": 110,
+        "p75": 161
+      },
+      "Wards placed": {
+        "mean": 62.353,
+        "std": 15.378,
+        "min": 28,
+        "max": 103,
+        "n": 68,
+        "p25": 52,
+        "p75": 72
+      },
+      "Wards destroyed": {
+        "mean": 15.162,
+        "std": 6.77,
+        "min": 1,
+        "max": 38,
+        "n": 68,
+        "p25": 10,
+        "p75": 20
+      },
+      "Control Wards Purchased": {
+        "mean": 13.103,
+        "std": 4.045,
+        "min": 4,
+        "max": 23,
+        "n": 68,
+        "p25": 10,
+        "p75": 16
+      },
+      "VSPM": {
+        "mean": 4.047,
+        "std": 0.665,
+        "min": 2.25,
+        "max": 5.41,
+        "n": 68,
+        "p25": 3.59,
+        "p75": 4.54
+      },
+      "WPM": {
+        "mean": 1.892,
+        "std": 0.281,
+        "min": 1.12,
+        "max": 2.48,
+        "n": 68,
+        "p25": 1.7,
+        "p75": 2.08
+      },
+      "Total damage to Champion": {
+        "mean": 8501.176,
+        "std": 3485.188,
+        "min": 2285,
+        "max": 18665,
+        "n": 68,
+        "p25": 6214,
+        "p75": 10312
+      },
+      "Physical Damage": {
+        "mean": 1572.118,
+        "std": 2095.164,
+        "min": 230,
+        "max": 13875,
+        "n": 68,
+        "p25": 753,
+        "p75": 1573
+      },
+      "Magic Damage": {
+        "mean": 6603.338,
+        "std": 3314.613,
+        "min": 179,
+        "max": 17404,
+        "n": 68,
+        "p25": 4452,
+        "p75": 8619
+      },
+      "True Damage": {
+        "mean": 325.721,
+        "std": 408.481,
+        "min": 0,
+        "max": 2354,
+        "n": 68,
+        "p25": 0,
+        "p75": 490
+      },
+      "DPM": {
+        "mean": 260.441,
+        "std": 100.171,
+        "min": 63,
+        "max": 603,
+        "n": 68,
+        "p25": 206,
+        "p75": 322
+      },
+      "DMG%": {
+        "mean": 8.971,
+        "std": 3.038,
+        "min": 3.3,
+        "max": 17.1,
+        "n": 68,
+        "p25": 6.8,
+        "p75": 10.2
+      },
+      "KP%": {
+        "mean": 78.088,
+        "std": 15.413,
+        "min": 33.3,
+        "max": 100,
+        "n": 68,
+        "p25": 71.4,
+        "p75": 91.3
+      },
+      "Double kills": {
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Triple kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Quadra kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Penta kills": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0,
+        "max": 0,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "GD@15": {
+        "mean": 0.0,
+        "std": 410.848,
+        "min": -984,
+        "max": 984,
+        "n": 68,
+        "p25": -259,
+        "p75": 275
+      },
+      "CSD@15": {
+        "mean": 0.0,
+        "std": 6.561,
+        "min": -21,
+        "max": 21,
+        "n": 68,
+        "p25": -4,
+        "p75": 4
+      },
+      "XPD@15": {
+        "mean": 0.0,
+        "std": 488.6,
+        "min": -1013,
+        "max": 1013,
+        "n": 68,
+        "p25": -296,
+        "p75": 321
+      },
+      "LVLD@15": {
+        "mean": 0.0,
+        "std": 0.623,
+        "min": -1,
+        "max": 1,
+        "n": 68,
+        "p25": 0,
+        "p75": 0
+      },
+      "Damage dealt to turrets": {
+        "mean": 806.338,
+        "std": 986.494,
+        "min": 0,
+        "max": 4684,
+        "n": 68,
+        "p25": 0,
+        "p75": 1276
+      },
+      "Total heal": {
+        "mean": 7033.691,
+        "std": 5189.193,
+        "min": 476,
+        "max": 26471,
+        "n": 68,
+        "p25": 3545,
+        "p75": 9611
+      },
+      "Damage self mitigated": {
+        "mean": 14818.279,
+        "std": 8715.046,
+        "min": 2952,
+        "max": 38991,
+        "n": 68,
+        "p25": 8248,
+        "p75": 20907
+      },
+      "Time ccing others": {
+        "mean": 37.353,
+        "std": 17.754,
+        "min": 12,
+        "max": 146,
+        "n": 68,
+        "p25": 27,
+        "p75": 44
+      },
+      "Total damage taken": {
+        "mean": 17690.735,
+        "std": 5660.747,
+        "min": 6455,
+        "max": 32011,
+        "n": 68,
+        "p25": 12972,
+        "p75": 21085
+      },
+      "Total Time Spent Dead": {
+        "mean": 88.265,
+        "std": 53.175,
+        "min": 0,
+        "max": 215,
+        "n": 68,
+        "p25": 42,
+        "p75": 133
+      },
+      "Solo kills": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1,
+        "max": 1,
+        "n": 1,
+        "p25": 1,
+        "p75": 1
+      }
+    }
+  },
+  "role_importance": [
+    {
+      "role": "TOP",
+      "avg_impact": 0.9936
+    },
+    {
+      "role": "MID",
+      "avg_impact": 0.7142
+    },
+    {
+      "role": "ADC",
+      "avg_impact": 0.6911
+    },
+    {
+      "role": "JUNGLE",
+      "avg_impact": 0.6826
+    },
+    {
+      "role": "SUPPORT",
+      "avg_impact": 0.3971
+    }
+  ],
+  "dimension_importance": [
+    {
+      "dimension": "pressure",
+      "win_avg": 0.3765,
+      "lose_avg": -0.3994,
+      "gap": 0.7759,
+      "effect_size": 1.0646
+    },
+    {
+      "dimension": "survivability",
+      "win_avg": 2.4021,
+      "lose_avg": 0.2589,
+      "gap": 2.1432,
+      "effect_size": 0.5594
+    },
+    {
+      "dimension": "teamfight",
+      "win_avg": 0.1394,
+      "lose_avg": -0.145,
+      "gap": 0.2844,
+      "effect_size": 0.4512
+    },
+    {
+      "dimension": "vision",
+      "win_avg": 0.1567,
+      "lose_avg": -0.1662,
+      "gap": 0.3228,
+      "effect_size": 0.3894
+    },
+    {
+      "dimension": "laning",
+      "win_avg": 0.1194,
+      "lose_avg": -0.1266,
+      "gap": 0.246,
+      "effect_size": 0.2901
+    },
+    {
+      "dimension": "efficiency",
+      "win_avg": 0.0405,
+      "lose_avg": -0.1115,
+      "gap": 0.1519,
+      "effect_size": 0.1242
+    },
+    {
+      "dimension": "consistency",
+      "win_avg": 0.3791,
+      "lose_avg": 0.3856,
+      "gap": -0.0065,
+      "effect_size": -0.043
+    },
+    {
+      "dimension": "versatility",
+      "win_avg": 0.86,
+      "lose_avg": 0.865,
+      "gap": -0.005,
+      "effect_size": -0.0405
+    }
+  ],
+  "validation": {
+    "accuracy": 0.8235294117647058,
+    "correct": 28,
+    "total": 34,
+    "predictions": [
+      {
+        "game_id": "74457",
+        "blue_team": "BNK FearX",
+        "red_team": "T1",
+        "pred_blue_win": 0.973,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 3.578,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.59,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": 0.264,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 1.274,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": 0.292,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": -0.127,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "74452",
+        "blue_team": "Dplus KIA",
+        "red_team": "Gen.G",
+        "pred_blue_win": 0.002,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -6.051,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.26,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": -1.636,
+            "key_dim": "survivability"
+          },
+          "MID": {
+            "delta": -1.362,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": -0.215,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": -1.005,
+            "key_dim": "vision"
+          }
+        }
+      },
+      {
+        "game_id": "74182",
+        "blue_team": "Dplus KIA",
+        "red_team": "DRX",
+        "pred_blue_win": 0.717,
+        "actual_blue_win": false,
+        "correct": false,
+        "logit": 0.93,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.293,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": -0.888,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.547,
+            "key_dim": "efficiency"
+          },
+          "ADC": {
+            "delta": -0.347,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.16,
+            "key_dim": "vision"
+          }
+        }
+      },
+      {
+        "game_id": "74177",
+        "blue_team": "DN SOOPers",
+        "red_team": "BNK FearX",
+        "pred_blue_win": 0.993,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 5.016,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.485,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.44,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.565,
+            "key_dim": "teamfight"
+          },
+          "ADC": {
+            "delta": 0.494,
+            "key_dim": "teamfight"
+          },
+          "SUPPORT": {
+            "delta": 0.006,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "74165",
+        "blue_team": "NS RedForce",
+        "red_team": "DRX",
+        "pred_blue_win": 0.138,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -1.829,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.255,
+            "key_dim": "vision"
+          },
+          "JUNGLE": {
+            "delta": -1.287,
+            "key_dim": "survivability"
+          },
+          "MID": {
+            "delta": 0.327,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -1.37,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": 0.044,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "74128",
+        "blue_team": "DN SOOPers",
+        "red_team": "NS RedForce",
+        "pred_blue_win": 0.003,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -5.878,
+        "role_matchups": {
+          "TOP": {
+            "delta": -2.499,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": -0.56,
+            "key_dim": "pressure"
+          },
+          "MID": {
+            "delta": -0.93,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -0.856,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": -2.088,
+            "key_dim": "survivability"
+          }
+        }
+      },
+      {
+        "game_id": "74125",
+        "blue_team": "Dplus KIA",
+        "red_team": "DRX",
+        "pred_blue_win": 0.995,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 5.276,
+        "role_matchups": {
+          "TOP": {
+            "delta": 3.289,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": 1.599,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 1.718,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": 1.7,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": -0.091,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73934",
+        "blue_team": "DN SOOPers",
+        "red_team": "KT Rolster",
+        "pred_blue_win": 0.701,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 0.85,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.165,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.135,
+            "key_dim": "vision"
+          },
+          "MID": {
+            "delta": -0.859,
+            "key_dim": "efficiency"
+          },
+          "ADC": {
+            "delta": -0.221,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": 0.166,
+            "key_dim": "vision"
+          }
+        }
+      },
+      {
+        "game_id": "73929",
+        "blue_team": "BRO",
+        "red_team": "DRX",
+        "pred_blue_win": 0.008,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -4.784,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.568,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": -1.756,
+            "key_dim": "survivability"
+          },
+          "MID": {
+            "delta": -2.232,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": -1.968,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": -0.07,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73695",
+        "blue_team": "Gen.G",
+        "red_team": "T1",
+        "pred_blue_win": 0.926,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 2.534,
+        "role_matchups": {
+          "TOP": {
+            "delta": 4.118,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": -0.45,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.323,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": 1.057,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.637,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73690",
+        "blue_team": "Dplus KIA",
+        "red_team": "T1",
+        "pred_blue_win": 0.057,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -2.809,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.502,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": 0.163,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.601,
+            "key_dim": "pressure"
+          },
+          "ADC": {
+            "delta": -0.195,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": -0.03,
+            "key_dim": "pressure"
+          }
+        }
+      },
+      {
+        "game_id": "73685",
+        "blue_team": "KT Rolster",
+        "red_team": "NS RedForce",
+        "pred_blue_win": 0.175,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -1.554,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.644,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": -0.652,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 0.692,
+            "key_dim": "efficiency"
+          },
+          "ADC": {
+            "delta": -1.966,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": -0.691,
+            "key_dim": "pressure"
+          }
+        }
+      },
+      {
+        "game_id": "73680",
+        "blue_team": "BNK FearX",
+        "red_team": "DN SOOPers",
+        "pred_blue_win": 0.951,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 2.975,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.427,
+            "key_dim": "vision"
+          },
+          "JUNGLE": {
+            "delta": 0.265,
+            "key_dim": "pressure"
+          },
+          "MID": {
+            "delta": 0.332,
+            "key_dim": "pressure"
+          },
+          "ADC": {
+            "delta": -0.35,
+            "key_dim": "vision"
+          },
+          "SUPPORT": {
+            "delta": 0.032,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73675",
+        "blue_team": "DRX",
+        "red_team": "BRO",
+        "pred_blue_win": 0.971,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 3.516,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.428,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.868,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.422,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": -0.042,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.618,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73414",
+        "blue_team": "BRO",
+        "red_team": "KT Rolster",
+        "pred_blue_win": 0.75,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 1.096,
+        "role_matchups": {
+          "TOP": {
+            "delta": 1.089,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.051,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.014,
+            "key_dim": "pressure"
+          },
+          "ADC": {
+            "delta": -0.275,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": 0.186,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73411",
+        "blue_team": "BNK FearX",
+        "red_team": "T1",
+        "pred_blue_win": 0.268,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -1.007,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.195,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.075,
+            "key_dim": "vision"
+          },
+          "MID": {
+            "delta": -0.131,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -0.999,
+            "key_dim": "pressure"
+          },
+          "SUPPORT": {
+            "delta": -0.006,
+            "key_dim": "vision"
+          }
+        }
+      },
+      {
+        "game_id": "73408",
+        "blue_team": "Dplus KIA",
+        "red_team": "Gen.G",
+        "pred_blue_win": 0.04,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -3.182,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.416,
+            "key_dim": "pressure"
+          },
+          "JUNGLE": {
+            "delta": -0.994,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 0.409,
+            "key_dim": "efficiency"
+          },
+          "ADC": {
+            "delta": -0.273,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": -2.502,
+            "key_dim": "survivability"
+          }
+        }
+      },
+      {
+        "game_id": "73405",
+        "blue_team": "DN SOOPers",
+        "red_team": "T1",
+        "pred_blue_win": 0.304,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -0.83,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.562,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": -1.077,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 0.678,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -0.284,
+            "key_dim": "pressure"
+          },
+          "SUPPORT": {
+            "delta": -0.303,
+            "key_dim": "pressure"
+          }
+        }
+      },
+      {
+        "game_id": "73402",
+        "blue_team": "DRX",
+        "red_team": "NS RedForce",
+        "pred_blue_win": 0.679,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 0.751,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.71,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": -0.84,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -1.13,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": 0.563,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.012,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73399",
+        "blue_team": "T1",
+        "red_team": "KT Rolster",
+        "pred_blue_win": 0.997,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 5.914,
+        "role_matchups": {
+          "TOP": {
+            "delta": 1.256,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.623,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.864,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": 0.215,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": 0.336,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73396",
+        "blue_team": "Gen.G",
+        "red_team": "BNK FearX",
+        "pred_blue_win": 0.35,
+        "actual_blue_win": true,
+        "correct": false,
+        "logit": -0.621,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.374,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.337,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.21,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": -0.178,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": -0.031,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73393",
+        "blue_team": "T1",
+        "red_team": "BRO",
+        "pred_blue_win": 0.995,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 5.269,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.92,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": 0.672,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 0.65,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": 0.418,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.436,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73390",
+        "blue_team": "DN SOOPers",
+        "red_team": "DRX",
+        "pred_blue_win": 0.003,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -5.805,
+        "role_matchups": {
+          "TOP": {
+            "delta": -2.237,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": -0.341,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.853,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": -2.029,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": -0.274,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73387",
+        "blue_team": "Dplus KIA",
+        "red_team": "NS RedForce",
+        "pred_blue_win": 0.805,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 1.419,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.337,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.114,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": -0.107,
+            "key_dim": "efficiency"
+          },
+          "ADC": {
+            "delta": 0.481,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": 0.49,
+            "key_dim": "survivability"
+          }
+        }
+      },
+      {
+        "game_id": "73139",
+        "blue_team": "T1",
+        "red_team": "DRX",
+        "pred_blue_win": 0.968,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 3.414,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.069,
+            "key_dim": "vision"
+          },
+          "JUNGLE": {
+            "delta": -0.266,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": 0.475,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": 0.793,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": 0.327,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73136",
+        "blue_team": "T1",
+        "red_team": "NS RedForce",
+        "pred_blue_win": 0.513,
+        "actual_blue_win": false,
+        "correct": false,
+        "logit": 0.053,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.21,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": 1.661,
+            "key_dim": "efficiency"
+          },
+          "MID": {
+            "delta": -0.27,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -0.45,
+            "key_dim": "vision"
+          },
+          "SUPPORT": {
+            "delta": -0.128,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73133",
+        "blue_team": "KT Rolster",
+        "red_team": "Gen.G",
+        "pred_blue_win": 0.004,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -5.458,
+        "role_matchups": {
+          "TOP": {
+            "delta": -4.087,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": -0.517,
+            "key_dim": "pressure"
+          },
+          "MID": {
+            "delta": -0.195,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": -0.856,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": -0.591,
+            "key_dim": "vision"
+          }
+        }
+      },
+      {
+        "game_id": "73130",
+        "blue_team": "BNK FearX",
+        "red_team": "BRO",
+        "pred_blue_win": 0.285,
+        "actual_blue_win": true,
+        "correct": false,
+        "logit": -0.917,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.627,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": -0.719,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.318,
+            "key_dim": "teamfight"
+          },
+          "ADC": {
+            "delta": -0.031,
+            "key_dim": "pressure"
+          },
+          "SUPPORT": {
+            "delta": 0.19,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73127",
+        "blue_team": "T1",
+        "red_team": "T1",
+        "pred_blue_win": 0.32,
+        "actual_blue_win": true,
+        "correct": false,
+        "logit": -0.752,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.373,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": -0.3,
+            "key_dim": "pressure"
+          },
+          "MID": {
+            "delta": 0.782,
+            "key_dim": "laning"
+          },
+          "ADC": {
+            "delta": -0.747,
+            "key_dim": "survivability"
+          },
+          "SUPPORT": {
+            "delta": -0.342,
+            "key_dim": "survivability"
+          }
+        }
+      },
+      {
+        "game_id": "73124",
+        "blue_team": "Dplus KIA",
+        "red_team": "DN SOOPers",
+        "pred_blue_win": 0.99,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 4.637,
+        "role_matchups": {
+          "TOP": {
+            "delta": -0.285,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 1.649,
+            "key_dim": "survivability"
+          },
+          "MID": {
+            "delta": 1.594,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": 1.086,
+            "key_dim": "laning"
+          },
+          "SUPPORT": {
+            "delta": 0.255,
+            "key_dim": "pressure"
+          }
+        }
+      },
+      {
+        "game_id": "73121",
+        "blue_team": "NS RedForce",
+        "red_team": "BNK FearX",
+        "pred_blue_win": 0.745,
+        "actual_blue_win": false,
+        "correct": false,
+        "logit": 1.072,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.483,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": 0.087,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": -0.355,
+            "key_dim": "vision"
+          },
+          "ADC": {
+            "delta": -1.014,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.203,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73118",
+        "blue_team": "DRX",
+        "red_team": "Gen.G",
+        "pred_blue_win": 0.307,
+        "actual_blue_win": false,
+        "correct": true,
+        "logit": -0.812,
+        "role_matchups": {
+          "TOP": {
+            "delta": 0.267,
+            "key_dim": "efficiency"
+          },
+          "JUNGLE": {
+            "delta": -0.36,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 0.855,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": -1.114,
+            "key_dim": "vision"
+          },
+          "SUPPORT": {
+            "delta": -0.417,
+            "key_dim": "efficiency"
+          }
+        }
+      },
+      {
+        "game_id": "73115",
+        "blue_team": "Dplus KIA",
+        "red_team": "BRO",
+        "pred_blue_win": 0.998,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 6.14,
+        "role_matchups": {
+          "TOP": {
+            "delta": 1.275,
+            "key_dim": "laning"
+          },
+          "JUNGLE": {
+            "delta": 1.184,
+            "key_dim": "laning"
+          },
+          "MID": {
+            "delta": 1.148,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": 0.542,
+            "key_dim": "efficiency"
+          },
+          "SUPPORT": {
+            "delta": 0.463,
+            "key_dim": "laning"
+          }
+        }
+      },
+      {
+        "game_id": "73112",
+        "blue_team": "DN SOOPers",
+        "red_team": "KT Rolster",
+        "pred_blue_win": 0.986,
+        "actual_blue_win": true,
+        "correct": true,
+        "logit": 4.224,
+        "role_matchups": {
+          "TOP": {
+            "delta": 3.486,
+            "key_dim": "survivability"
+          },
+          "JUNGLE": {
+            "delta": 0.379,
+            "key_dim": "pressure"
+          },
+          "MID": {
+            "delta": 1.06,
+            "key_dim": "survivability"
+          },
+          "ADC": {
+            "delta": 0.077,
+            "key_dim": "vision"
+          },
+          "SUPPORT": {
+            "delta": -0.245,
+            "key_dim": "efficiency"
+          }
+        }
+      }
+    ]
+  },
+  "player_profiles_anonymous": {
+    "83b12c2216ef": {
+      "role": "TOP",
+      "games": 7,
+      "consistency": 0.323,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.224
+    },
+    "4dbff4bb8895": {
+      "role": "JUNGLE",
+      "games": 7,
+      "consistency": 0.523,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.265
+    },
+    "79da2a775b75": {
+      "role": "MID",
+      "games": 7,
+      "consistency": 0.164,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.265
+    },
+    "182b0a73672b": {
+      "role": "ADC",
+      "games": 7,
+      "consistency": 0.315,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.184
+    },
+    "9da632e02ae1": {
+      "role": "SUPPORT",
+      "games": 7,
+      "consistency": 0.37,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.265
+    },
+    "e66798dae072": {
+      "role": "TOP",
+      "games": 6,
+      "consistency": 0.419,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "1bba52c3bd63": {
+      "role": "JUNGLE",
+      "games": 6,
+      "consistency": 0.563,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "a9073fde3cbe": {
+      "role": "MID",
+      "games": 6,
+      "consistency": 0.707,
+      "champion_pool_size": 2,
+      "champion_hhi": 0.5
+    },
+    "9820bfd30f22": {
+      "role": "ADC",
+      "games": 6,
+      "consistency": 0.408,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.167
+    },
+    "c375f5f7e214": {
+      "role": "SUPPORT",
+      "games": 6,
+      "consistency": 0.495,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "d0c20ed59ee4": {
+      "role": "TOP",
+      "games": 8,
+      "consistency": 0.387,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.219
+    },
+    "1d467f785a0b": {
+      "role": "JUNGLE",
+      "games": 8,
+      "consistency": 0.433,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.469
+    },
+    "fe04ca019dbc": {
+      "role": "MID",
+      "games": 8,
+      "consistency": 0.397,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.344
+    },
+    "ffb45102177a": {
+      "role": "ADC",
+      "games": 8,
+      "consistency": 0.091,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.25
+    },
+    "732863fa5c61": {
+      "role": "SUPPORT",
+      "games": 8,
+      "consistency": 0.148,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.219
+    },
+    "a4828757cdd1": {
+      "role": "TOP",
+      "games": 6,
+      "consistency": 0.661,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "5ab895c8cc30": {
+      "role": "JUNGLE",
+      "games": 6,
+      "consistency": 0.308,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "65b2bb5d8420": {
+      "role": "MID",
+      "games": 6,
+      "consistency": 0.383,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "b2eb0fa2b016": {
+      "role": "ADC",
+      "games": 6,
+      "consistency": 0.372,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "649f085c70b1": {
+      "role": "SUPPORT",
+      "games": 6,
+      "consistency": 0.277,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "dca900394ddd": {
+      "role": "TOP",
+      "games": 9,
+      "consistency": 0.587,
+      "champion_pool_size": 7,
+      "champion_hhi": 0.16
+    },
+    "1dd770d819d9": {
+      "role": "JUNGLE",
+      "games": 9,
+      "consistency": 0.117,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.481
+    },
+    "46a90d22acd8": {
+      "role": "MID",
+      "games": 9,
+      "consistency": 0.454,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.383
+    },
+    "998f7d406574": {
+      "role": "ADC",
+      "games": 9,
+      "consistency": 0.112,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.432
+    },
+    "a2fe7400ba93": {
+      "role": "SUPPORT",
+      "games": 9,
+      "consistency": 0.251,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.235
+    },
+    "0ff0a49d5fe3": {
+      "role": "TOP",
+      "games": 8,
+      "consistency": 0.52,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.25
+    },
+    "206ae5da084f": {
+      "role": "JUNGLE",
+      "games": 8,
+      "consistency": 0.408,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.188
+    },
+    "ef74ece70154": {
+      "role": "MID",
+      "games": 8,
+      "consistency": 0.367,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.219
+    },
+    "861ed40f73b4": {
+      "role": "ADC",
+      "games": 8,
+      "consistency": 0.491,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.312
+    },
+    "ea72c7959429": {
+      "role": "SUPPORT",
+      "games": 6,
+      "consistency": 0.271,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "f70becbc7ed2": {
+      "role": "TOP",
+      "games": 7,
+      "consistency": 0.461,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.184
+    },
+    "a380544c4b4f": {
+      "role": "JUNGLE",
+      "games": 7,
+      "consistency": 0.177,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.306
+    },
+    "8a1db462be75": {
+      "role": "MID",
+      "games": 7,
+      "consistency": 0.418,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.347
+    },
+    "1e712d6e2873": {
+      "role": "ADC",
+      "games": 7,
+      "consistency": 0.347,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.265
+    },
+    "72db4b55f1e8": {
+      "role": "SUPPORT",
+      "games": 7,
+      "consistency": 0.346,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.265
+    },
+    "c969c0603166": {
+      "role": "TOP",
+      "games": 6,
+      "consistency": 0.55,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.389
+    },
+    "0c0f58a08ada": {
+      "role": "JUNGLE",
+      "games": 6,
+      "consistency": 0.544,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.333
+    },
+    "acdca2630bc3": {
+      "role": "MID",
+      "games": 6,
+      "consistency": 0.556,
+      "champion_pool_size": 2,
+      "champion_hhi": 0.556
+    },
+    "7686b834266d": {
+      "role": "ADC",
+      "games": 6,
+      "consistency": 0.136,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "df1bc4984a05": {
+      "role": "SUPPORT",
+      "games": 3,
+      "consistency": 0.359,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.333
+    },
+    "0c9e7b062660": {
+      "role": "TOP",
+      "games": 6,
+      "consistency": 0.401,
+      "champion_pool_size": 5,
+      "champion_hhi": 0.222
+    },
+    "163f10c08fc7": {
+      "role": "JUNGLE",
+      "games": 6,
+      "consistency": 0.401,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.333
+    },
+    "0544f8dbb5c2": {
+      "role": "MID",
+      "games": 6,
+      "consistency": 0.589,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.333
+    },
+    "c4336ca98d45": {
+      "role": "ADC",
+      "games": 6,
+      "consistency": 0.51,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.278
+    },
+    "dca759c6920d": {
+      "role": "SUPPORT",
+      "games": 6,
+      "consistency": 0.507,
+      "champion_pool_size": 6,
+      "champion_hhi": 0.167
+    },
+    "0ff0ef099ecb": {
+      "role": "TOP",
+      "games": 5,
+      "consistency": 0.145,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.28
+    },
+    "f14a87d7f36e": {
+      "role": "JUNGLE",
+      "games": 5,
+      "consistency": 0.485,
+      "champion_pool_size": 4,
+      "champion_hhi": 0.28
+    },
+    "9a7ef2371064": {
+      "role": "MID",
+      "games": 5,
+      "consistency": 0.329,
+      "champion_pool_size": 2,
+      "champion_hhi": 0.68
+    },
+    "436bedb688e4": {
+      "role": "ADC",
+      "games": 5,
+      "consistency": 0.365,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.36
+    },
+    "1643635c12ca": {
+      "role": "SUPPORT",
+      "games": 5,
+      "consistency": 0.522,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.44
+    },
+    "d26ad87e6c72": {
+      "role": "SUPPORT",
+      "games": 3,
+      "consistency": 0.156,
+      "champion_pool_size": 3,
+      "champion_hhi": 0.333
+    },
+    "52d46ffedcf8": {
+      "role": "SUPPORT",
+      "games": 2,
+      "consistency": 0.553,
+      "champion_pool_size": 2,
+      "champion_hhi": 0.5
+    }
+  },
+  "name_reference": {
+    "83b12c2216ef": "Clear",
+    "4dbff4bb8895": "Raptor",
+    "79da2a775b75": "Vicla",
+    "182b0a73672b": "Diable",
+    "9da632e02ae1": "Kellin",
+    "e66798dae072": "Doran",
+    "1bba52c3bd63": "Oner",
+    "a9073fde3cbe": "Faker",
+    "9820bfd30f22": "Peyz",
+    "c375f5f7e214": "Keria",
+    "d0c20ed59ee4": "Siwoo",
+    "1d467f785a0b": "Lucid",
+    "fe04ca019dbc": "ShowMaker",
+    "ffb45102177a": "Smash",
+    "732863fa5c61": "Career",
+    "a4828757cdd1": "Kiin",
+    "5ab895c8cc30": "Canyon",
+    "65b2bb5d8420": "Chovy",
+    "b2eb0fa2b016": "Ruler",
+    "649f085c70b1": "Duro",
+    "dca900394ddd": "Rich",
+    "1dd770d819d9": "Willer",
+    "46a90d22acd8": "Ucal",
+    "998f7d406574": "Jiwoo",
+    "a2fe7400ba93": "Andil",
+    "0ff0a49d5fe3": "DuDu",
+    "206ae5da084f": "Pyosik",
+    "ef74ece70154": "Clozer",
+    "861ed40f73b4": "deokdam",
+    "ea72c7959429": "Peter",
+    "f70becbc7ed2": "kingen",
+    "a380544c4b4f": "Sponge",
+    "8a1db462be75": "Scout",
+    "1e712d6e2873": "Taeyoon",
+    "72db4b55f1e8": "Lehends",
+    "c969c0603166": "PerfecT",
+    "0c0f58a08ada": "Cuzz",
+    "acdca2630bc3": "Bdd",
+    "7686b834266d": "Aiming",
+    "df1bc4984a05": "Ghost",
+    "0c9e7b062660": "Casting",
+    "163f10c08fc7": "GIDEON",
+    "0544f8dbb5c2": "Roamer",
+    "c4336ca98d45": "Teddy",
+    "dca759c6920d": "Namgung",
+    "0ff0ef099ecb": "Zeus",
+    "f14a87d7f36e": "Kanavi",
+    "9a7ef2371064": "Zeka",
+    "436bedb688e4": "Gumayusi",
+    "1643635c12ca": "Delight",
+    "d26ad87e6c72": "Pollu",
+    "52d46ffedcf8": "Life"
+  }
+}
