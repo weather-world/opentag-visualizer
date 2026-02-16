@@ -1,0 +1,1507 @@
+[
+  {
+    "type": "single_correlation",
+    "feature": "team_total_tower",
+    "correlation": 0.836,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_total_tower increases with winning (STRONG, r=0.836)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_max_deficit",
+    "correlation": 0.822,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_max_deficit increases with winning (STRONG, r=0.822)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_max_lead",
+    "correlation": 0.798,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_max_lead increases with winning (STRONG, r=0.798)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_total_deaths",
+    "correlation": -0.751,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "negative",
+    "interpretation": "team_total_deaths decreases with winning (STRONG, r=-0.751)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_total_kills",
+    "correlation": 0.74,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_total_kills increases with winning (STRONG, r=0.740)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "SUPPORT_KDA",
+    "correlation": 0.607,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "SUPPORT_KDA increases with winning (STRONG, r=0.607)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "JUNGLE_KDA",
+    "correlation": 0.567,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "JUNGLE_KDA increases with winning (STRONG, r=0.567)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_gd20",
+    "correlation": 0.549,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_gd20 increases with winning (STRONG, r=0.549)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_total_dpm",
+    "correlation": 0.522,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "team_total_dpm increases with winning (STRONG, r=0.522)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "SUPPORT_CSD@15",
+    "correlation": -0.483,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "negative",
+    "interpretation": "SUPPORT_CSD@15 decreases with winning (STRONG, r=-0.483)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "ADC_DPM",
+    "correlation": 0.475,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "ADC_DPM increases with winning (STRONG, r=0.475)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "ADC_KDA",
+    "correlation": 0.472,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "ADC_KDA increases with winning (STRONG, r=0.472)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "TOP_KDA",
+    "correlation": 0.465,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "TOP_KDA increases with winning (STRONG, r=0.465)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "MID_KDA",
+    "correlation": 0.432,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "MID_KDA increases with winning (STRONG, r=0.432)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "ADC_GD@15",
+    "correlation": 0.408,
+    "n": 68,
+    "strength": "STRONG",
+    "direction": "positive",
+    "interpretation": "ADC_GD@15 increases with winning (STRONG, r=0.408)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "JUNGLE_DPM",
+    "correlation": 0.366,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "JUNGLE_DPM increases with winning (MODERATE, r=0.366)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "ADC_CSD@15",
+    "correlation": 0.335,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "ADC_CSD@15 increases with winning (MODERATE, r=0.335)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_magic_pct",
+    "correlation": -0.319,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "negative",
+    "interpretation": "team_magic_pct decreases with winning (MODERATE, r=-0.319)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_gd15",
+    "correlation": 0.317,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "team_gd15 increases with winning (MODERATE, r=0.317)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "team_avg_gd15",
+    "correlation": 0.317,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "team_avg_gd15 increases with winning (MODERATE, r=0.317)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "SUPPORT_gold_pct",
+    "correlation": -0.292,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "negative",
+    "interpretation": "SUPPORT_gold_pct decreases with winning (MODERATE, r=-0.292)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "MID_DPM",
+    "correlation": 0.279,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "MID_DPM increases with winning (MODERATE, r=0.279)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "SUPPORT_DPM",
+    "correlation": 0.274,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "SUPPORT_DPM increases with winning (MODERATE, r=0.274)"
+  },
+  {
+    "type": "single_correlation",
+    "feature": "TOP_DPM",
+    "correlation": 0.255,
+    "n": 68,
+    "strength": "MODERATE",
+    "direction": "positive",
+    "interpretation": "TOP_DPM increases with winning (MODERATE, r=0.255)"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_CSD@15",
+    "threshold_high": 13.0,
+    "threshold_low": -13.0,
+    "top_wr": 0.722,
+    "bottom_wr": 0.278,
+    "gap": 0.444,
+    "n_top": 18,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When ADC_CSD@15 >= 13.0: 72% WR vs <= -13.0: 28% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_DMG%",
+    "threshold_high": 31.8,
+    "threshold_low": 24.9,
+    "top_wr": 0.611,
+    "bottom_wr": 0.316,
+    "gap": 0.295,
+    "n_top": 18,
+    "n_bottom": 19,
+    "direction": "high",
+    "interpretation": "When ADC_DMG% >= 31.8: 61% WR vs <= 24.9: 32% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_DPM",
+    "threshold_high": 971.0,
+    "threshold_low": 642.0,
+    "top_wr": 0.765,
+    "bottom_wr": 0.056,
+    "gap": 0.709,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When ADC_DPM >= 971.0: 76% WR vs <= 642.0: 6% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_GD@15",
+    "threshold_high": 498.0,
+    "threshold_low": -479.0,
+    "top_wr": 0.824,
+    "bottom_wr": 0.222,
+    "gap": 0.601,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When ADC_GD@15 >= 498.0: 82% WR vs <= -479.0: 22% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_KDA",
+    "threshold_high": 7.5,
+    "threshold_low": 1.0,
+    "top_wr": 0.941,
+    "bottom_wr": 0.389,
+    "gap": 0.552,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When ADC_KDA >= 7.5: 94% WR vs <= 1.0: 39% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "ADC_gold_pct",
+    "threshold_high": 27.2,
+    "threshold_low": 24.3,
+    "top_wr": 0.647,
+    "bottom_wr": 0.278,
+    "gap": 0.369,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When ADC_gold_pct >= 27.2: 65% WR vs <= 24.3: 28% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "JUNGLE_DPM",
+    "threshold_high": 535.0,
+    "threshold_low": 346.0,
+    "top_wr": 0.706,
+    "bottom_wr": 0.222,
+    "gap": 0.484,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When JUNGLE_DPM >= 535.0: 71% WR vs <= 346.0: 22% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "JUNGLE_KDA",
+    "threshold_high": 5.7,
+    "threshold_low": 1.0,
+    "top_wr": 1.0,
+    "bottom_wr": 0.211,
+    "gap": 0.789,
+    "n_top": 17,
+    "n_bottom": 19,
+    "direction": "high",
+    "interpretation": "When JUNGLE_KDA >= 5.7: 100% WR vs <= 1.0: 21% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "MID_DPM",
+    "threshold_high": 764.0,
+    "threshold_low": 534.0,
+    "top_wr": 0.706,
+    "bottom_wr": 0.278,
+    "gap": 0.428,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When MID_DPM >= 764.0: 71% WR vs <= 534.0: 28% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "MID_GD@15",
+    "threshold_high": 507.0,
+    "threshold_low": -453.0,
+    "top_wr": 0.706,
+    "bottom_wr": 0.333,
+    "gap": 0.373,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When MID_GD@15 >= 507.0: 71% WR vs <= -453.0: 33% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "MID_KDA",
+    "threshold_high": 5.5,
+    "threshold_low": 1.0,
+    "top_wr": 0.941,
+    "bottom_wr": 0.421,
+    "gap": 0.52,
+    "n_top": 17,
+    "n_bottom": 19,
+    "direction": "high",
+    "interpretation": "When MID_KDA >= 5.5: 94% WR vs <= 1.0: 42% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "SUPPORT_CSD@15",
+    "threshold_high": 4.0,
+    "threshold_low": -4.0,
+    "top_wr": 0.222,
+    "bottom_wr": 0.833,
+    "gap": -0.611,
+    "n_top": 18,
+    "n_bottom": 18,
+    "direction": "low",
+    "interpretation": "When SUPPORT_CSD@15 >= 4.0: 22% WR vs <= -4.0: 83% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "SUPPORT_DPM",
+    "threshold_high": 322.0,
+    "threshold_low": 206.0,
+    "top_wr": 0.706,
+    "bottom_wr": 0.278,
+    "gap": 0.428,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When SUPPORT_DPM >= 322.0: 71% WR vs <= 206.0: 28% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "SUPPORT_GD@15",
+    "threshold_high": 275.0,
+    "threshold_low": -259.0,
+    "top_wr": 0.647,
+    "bottom_wr": 0.333,
+    "gap": 0.314,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When SUPPORT_GD@15 >= 275.0: 65% WR vs <= -259.0: 33% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "SUPPORT_KDA",
+    "threshold_high": 9.0,
+    "threshold_low": 1.3,
+    "top_wr": 0.944,
+    "bottom_wr": 0.111,
+    "gap": 0.833,
+    "n_top": 18,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When SUPPORT_KDA >= 9.0: 94% WR vs <= 1.3: 11% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "SUPPORT_gold_pct",
+    "threshold_high": 14.0,
+    "threshold_low": 13.0,
+    "top_wr": 0.333,
+    "bottom_wr": 0.591,
+    "gap": -0.258,
+    "n_top": 18,
+    "n_bottom": 22,
+    "direction": "low",
+    "interpretation": "When SUPPORT_gold_pct >= 14.0: 33% WR vs <= 13.0: 59% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "TOP_DPM",
+    "threshold_high": 849.0,
+    "threshold_low": 549.0,
+    "top_wr": 0.706,
+    "bottom_wr": 0.421,
+    "gap": 0.285,
+    "n_top": 17,
+    "n_bottom": 19,
+    "direction": "high",
+    "interpretation": "When TOP_DPM >= 849.0: 71% WR vs <= 549.0: 42% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "TOP_KDA",
+    "threshold_high": 4.7,
+    "threshold_low": 0.8,
+    "top_wr": 0.941,
+    "bottom_wr": 0.316,
+    "gap": 0.625,
+    "n_top": 17,
+    "n_bottom": 19,
+    "direction": "high",
+    "interpretation": "When TOP_KDA >= 4.7: 94% WR vs <= 0.8: 32% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_avg_gd15",
+    "threshold_high": 388.4,
+    "threshold_low": -345.6,
+    "top_wr": 0.706,
+    "bottom_wr": 0.333,
+    "gap": 0.373,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_avg_gd15 >= 388.4: 71% WR vs <= -345.6: 33% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_gd15",
+    "threshold_high": 1942,
+    "threshold_low": -1728,
+    "top_wr": 0.706,
+    "bottom_wr": 0.333,
+    "gap": 0.373,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_gd15 >= 1942.0: 71% WR vs <= -1728.0: 33% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_gd20",
+    "threshold_high": 3039,
+    "threshold_low": -2814,
+    "top_wr": 0.882,
+    "bottom_wr": 0.111,
+    "gap": 0.771,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_gd20 >= 3039.0: 88% WR vs <= -2814.0: 11% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_magic_pct",
+    "threshold_high": 51.2,
+    "threshold_low": 39.6,
+    "top_wr": 0.235,
+    "bottom_wr": 0.667,
+    "gap": -0.431,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "low",
+    "interpretation": "When team_magic_pct >= 51.2: 24% WR vs <= 39.6: 67% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_max_deficit",
+    "threshold_high": -306,
+    "threshold_low": -10928,
+    "top_wr": 1.0,
+    "bottom_wr": 0.0,
+    "gap": 1.0,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_max_deficit >= -306.0: 100% WR vs <= -10928.0: 0% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_max_lead",
+    "threshold_high": 11262,
+    "threshold_low": 494,
+    "top_wr": 1.0,
+    "bottom_wr": 0.0,
+    "gap": 1.0,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_max_lead >= 11262.0: 100% WR vs <= 494.0: 0% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_phys_pct",
+    "threshold_high": 56.5,
+    "threshold_low": 42.5,
+    "top_wr": 0.647,
+    "bottom_wr": 0.389,
+    "gap": 0.258,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_phys_pct >= 56.5: 65% WR vs <= 42.5: 39% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_total_deaths",
+    "threshold_high": 22.0,
+    "threshold_low": 8.0,
+    "top_wr": 0.05,
+    "bottom_wr": 1.0,
+    "gap": -0.95,
+    "n_top": 20,
+    "n_bottom": 18,
+    "direction": "low",
+    "interpretation": "When team_total_deaths >= 22.0: 5% WR vs <= 8.0: 100% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_total_dpm",
+    "threshold_high": 3328.0,
+    "threshold_low": 2451.0,
+    "top_wr": 0.882,
+    "bottom_wr": 0.111,
+    "gap": 0.771,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_total_dpm >= 3328.0: 88% WR vs <= 2451.0: 11% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_total_kills",
+    "threshold_high": 22.0,
+    "threshold_low": 8.0,
+    "top_wr": 0.95,
+    "bottom_wr": 0.0,
+    "gap": 0.95,
+    "n_top": 20,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_total_kills >= 22.0: 95% WR vs <= 8.0: 0% WR"
+  },
+  {
+    "type": "conditional_wr",
+    "feature": "team_total_tower",
+    "threshold_high": 35475.0,
+    "threshold_low": 13664.0,
+    "top_wr": 0.941,
+    "bottom_wr": 0.0,
+    "gap": 0.941,
+    "n_top": 17,
+    "n_bottom": 18,
+    "direction": "high",
+    "interpretation": "When team_total_tower >= 35475.0: 94% WR vs <= 13664.0: 0% WR"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Ornn",
+    "winrate": 0.333,
+    "games": 3,
+    "deviation": -0.181,
+    "interpretation": "Ornn in TOP: 33% WR (3g), -18% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Ambessa",
+    "winrate": 0.667,
+    "games": 9,
+    "deviation": 0.152,
+    "interpretation": "Ambessa in TOP: 67% WR (9g), +15% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Gwen",
+    "winrate": 1.0,
+    "games": 4,
+    "deviation": 0.485,
+    "interpretation": "Gwen in TOP: 100% WR (4g), +49% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Rek",
+    "winrate": 0.2,
+    "games": 5,
+    "deviation": -0.315,
+    "interpretation": "Rek in TOP: 20% WR (5g), -31% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "K",
+    "winrate": 0.286,
+    "games": 7,
+    "deviation": -0.229,
+    "interpretation": "K in TOP: 29% WR (7g), -23% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Sion",
+    "winrate": 0.25,
+    "games": 4,
+    "deviation": -0.265,
+    "interpretation": "Sion in TOP: 25% WR (4g), -26% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "TOP",
+    "champion": "Gnar",
+    "winrate": 0.8,
+    "games": 5,
+    "deviation": 0.285,
+    "interpretation": "Gnar in TOP: 80% WR (5g), +29% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "JUNGLE",
+    "champion": "Pantheon",
+    "winrate": 0.667,
+    "games": 12,
+    "deviation": 0.152,
+    "interpretation": "Pantheon in JUNGLE: 67% WR (12g), +15% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "JUNGLE",
+    "champion": "Ambessa",
+    "winrate": 0.667,
+    "games": 3,
+    "deviation": 0.152,
+    "interpretation": "Ambessa in JUNGLE: 67% WR (3g), +15% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "JUNGLE",
+    "champion": "Malphite",
+    "winrate": 0.0,
+    "games": 3,
+    "deviation": -0.515,
+    "interpretation": "Malphite in JUNGLE: 0% WR (3g), -51% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "JUNGLE",
+    "champion": "Wukong",
+    "winrate": 0.333,
+    "games": 3,
+    "deviation": -0.181,
+    "interpretation": "Wukong in JUNGLE: 33% WR (3g), -18% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "MID",
+    "champion": "Taliyah",
+    "winrate": 0.2,
+    "games": 15,
+    "deviation": -0.315,
+    "interpretation": "Taliyah in MID: 20% WR (15g), -31% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "MID",
+    "champion": "Ryze",
+    "winrate": 0.75,
+    "games": 12,
+    "deviation": 0.235,
+    "interpretation": "Ryze in MID: 75% WR (12g), +24% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "MID",
+    "champion": "Ahri",
+    "winrate": 1.0,
+    "games": 3,
+    "deviation": 0.485,
+    "interpretation": "Ahri in MID: 100% WR (3g), +49% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "ADC",
+    "champion": "Ezreal",
+    "winrate": 0.3,
+    "games": 10,
+    "deviation": -0.215,
+    "interpretation": "Ezreal in ADC: 30% WR (10g), -21% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "ADC",
+    "champion": "Varus",
+    "winrate": 0.667,
+    "games": 6,
+    "deviation": 0.152,
+    "interpretation": "Varus in ADC: 67% WR (6g), +15% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "SUPPORT",
+    "champion": "Rakan",
+    "winrate": 0.778,
+    "games": 9,
+    "deviation": 0.263,
+    "interpretation": "Rakan in SUPPORT: 78% WR (9g), +26% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "SUPPORT",
+    "champion": "Braum",
+    "winrate": 0.25,
+    "games": 4,
+    "deviation": -0.265,
+    "interpretation": "Braum in SUPPORT: 25% WR (4g), -26% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "SUPPORT",
+    "champion": "Alistar",
+    "winrate": 0.125,
+    "games": 8,
+    "deviation": -0.39,
+    "interpretation": "Alistar in SUPPORT: 12% WR (8g), -39% vs avg"
+  },
+  {
+    "type": "champion_wr_deviation",
+    "role": "SUPPORT",
+    "champion": "Karma",
+    "winrate": 0.333,
+    "games": 3,
+    "deviation": -0.181,
+    "interpretation": "Karma in SUPPORT: 33% WR (3g), -18% vs avg"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "TOP_KDA_high",
+      "team_total_tower_high"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.0,
+    "gap": 1.0,
+    "n_both": 24,
+    "n_neither": 24,
+    "interpretation": "When [TOP_KDA_high] AND [team_total_tower_high]: 100% WR vs neither: 0% WR (gap +100%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "TOP_KDA_low",
+      "team_total_tower_low"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 1.0,
+    "gap": -1.0,
+    "n_both": 24,
+    "n_neither": 24,
+    "interpretation": "When [TOP_KDA_low] AND [team_total_tower_low]: 0% WR vs neither: 100% WR (gap -100%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "team_total_deaths_low"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.0,
+    "gap": 1.0,
+    "n_both": 25,
+    "n_neither": 25,
+    "interpretation": "When [team_total_tower_high] AND [team_total_deaths_low]: 100% WR vs neither: 0% WR (gap +100%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "team_total_deaths_high"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 1.0,
+    "gap": -1.0,
+    "n_both": 25,
+    "n_neither": 25,
+    "interpretation": "When [team_total_tower_low] AND [team_total_deaths_high]: 0% WR vs neither: 100% WR (gap -100%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "JUNGLE_KDA_high",
+      "team_total_tower_high"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.038,
+    "gap": 0.962,
+    "n_both": 27,
+    "n_neither": 26,
+    "interpretation": "When [JUNGLE_KDA_high] AND [team_total_tower_high]: 100% WR vs neither: 4% WR (gap +96%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "JUNGLE_KDA_low",
+      "team_total_tower_low"
+    ],
+    "both_wr": 0.038,
+    "neither_wr": 1.0,
+    "gap": -0.962,
+    "n_both": 26,
+    "n_neither": 27,
+    "interpretation": "When [JUNGLE_KDA_low] AND [team_total_tower_low]: 4% WR vs neither: 100% WR (gap -96%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_deaths_high",
+      "team_total_kills_low"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 0.958,
+    "gap": -0.958,
+    "n_both": 21,
+    "n_neither": 24,
+    "interpretation": "When [team_total_deaths_high] AND [team_total_kills_low]: 0% WR vs neither: 96% WR (gap -96%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_deaths_low",
+      "team_total_kills_high"
+    ],
+    "both_wr": 0.958,
+    "neither_wr": 0.0,
+    "gap": 0.958,
+    "n_both": 24,
+    "n_neither": 21,
+    "interpretation": "When [team_total_deaths_low] AND [team_total_kills_high]: 96% WR vs neither: 0% WR (gap +96%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "TOP_gold_pct_high",
+      "team_total_tower_low"
+    ],
+    "both_wr": 0.059,
+    "neither_wr": 1.0,
+    "gap": -0.941,
+    "n_both": 17,
+    "n_neither": 15,
+    "interpretation": "When [TOP_gold_pct_high] AND [team_total_tower_low]: 6% WR vs neither: 100% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "TOP_gold_pct_low",
+      "team_total_tower_high"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.059,
+    "gap": 0.941,
+    "n_both": 15,
+    "n_neither": 17,
+    "interpretation": "When [TOP_gold_pct_low] AND [team_total_tower_high]: 100% WR vs neither: 6% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_dpm_high",
+      "team_total_deaths_low"
+    ],
+    "both_wr": 0.941,
+    "neither_wr": 0.0,
+    "gap": 0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_dpm_high] AND [team_total_deaths_low]: 94% WR vs neither: 0% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_dpm_low",
+      "team_total_deaths_high"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 0.941,
+    "gap": -0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_dpm_low] AND [team_total_deaths_high]: 0% WR vs neither: 94% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "team_total_tank_low"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.059,
+    "gap": 0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_high] AND [team_total_tank_low]: 100% WR vs neither: 6% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "is_blue_high"
+    ],
+    "both_wr": 0.941,
+    "neither_wr": 0.0,
+    "gap": 0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_high] AND [is_blue_high]: 94% WR vs neither: 0% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "blue_side"
+    ],
+    "both_wr": 0.941,
+    "neither_wr": 0.0,
+    "gap": 0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_high] AND [blue_side]: 94% WR vs neither: 0% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "team_total_tank_high"
+    ],
+    "both_wr": 0.059,
+    "neither_wr": 1.0,
+    "gap": -0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_low] AND [team_total_tank_high]: 6% WR vs neither: 100% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "is_blue_low"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 0.941,
+    "gap": -0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_low] AND [is_blue_low]: 0% WR vs neither: 94% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "red_side"
+    ],
+    "both_wr": 0.0,
+    "neither_wr": 0.941,
+    "gap": -0.941,
+    "n_both": 17,
+    "n_neither": 17,
+    "interpretation": "When [team_total_tower_low] AND [red_side]: 0% WR vs neither: 94% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_cc_high",
+      "team_total_tower_low"
+    ],
+    "both_wr": 0.062,
+    "neither_wr": 1.0,
+    "gap": -0.938,
+    "n_both": 16,
+    "n_neither": 15,
+    "interpretation": "When [team_total_cc_high] AND [team_total_tower_low]: 6% WR vs neither: 100% WR (gap -94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_cc_low",
+      "team_total_tower_high"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.062,
+    "gap": 0.938,
+    "n_both": 15,
+    "n_neither": 16,
+    "interpretation": "When [team_total_cc_low] AND [team_total_tower_high]: 100% WR vs neither: 6% WR (gap +94%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "team_total_kills_high"
+    ],
+    "both_wr": 0.966,
+    "neither_wr": 0.038,
+    "gap": 0.927,
+    "n_both": 29,
+    "n_neither": 26,
+    "interpretation": "When [team_total_tower_high] AND [team_total_kills_high]: 97% WR vs neither: 4% WR (gap +93%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "team_total_kills_low"
+    ],
+    "both_wr": 0.038,
+    "neither_wr": 0.966,
+    "gap": -0.927,
+    "n_both": 26,
+    "n_neither": 29,
+    "interpretation": "When [team_total_tower_low] AND [team_total_kills_low]: 4% WR vs neither: 97% WR (gap -93%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "SUPPORT_KDA_high"
+    ],
+    "both_wr": 0.963,
+    "neither_wr": 0.037,
+    "gap": 0.926,
+    "n_both": 27,
+    "n_neither": 27,
+    "interpretation": "When [team_total_tower_high] AND [SUPPORT_KDA_high]: 96% WR vs neither: 4% WR (gap +93%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "SUPPORT_KDA_low"
+    ],
+    "both_wr": 0.037,
+    "neither_wr": 0.963,
+    "gap": -0.926,
+    "n_both": 27,
+    "n_neither": 27,
+    "interpretation": "When [team_total_tower_low] AND [SUPPORT_KDA_low]: 4% WR vs neither: 96% WR (gap -93%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "MID_KDA_high",
+      "team_total_tower_high"
+    ],
+    "both_wr": 0.958,
+    "neither_wr": 0.042,
+    "gap": 0.917,
+    "n_both": 24,
+    "n_neither": 24,
+    "interpretation": "When [MID_KDA_high] AND [team_total_tower_high]: 96% WR vs neither: 4% WR (gap +92%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "MID_KDA_low",
+      "team_total_tower_low"
+    ],
+    "both_wr": 0.042,
+    "neither_wr": 0.958,
+    "gap": -0.917,
+    "n_both": 24,
+    "n_neither": 24,
+    "interpretation": "When [MID_KDA_low] AND [team_total_tower_low]: 4% WR vs neither: 96% WR (gap -92%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "team_avg_gd15_low"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.083,
+    "gap": 0.917,
+    "n_both": 12,
+    "n_neither": 12,
+    "interpretation": "When [team_total_tower_high] AND [team_avg_gd15_low]: 100% WR vs neither: 8% WR (gap +92%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_high",
+      "team_gd15_low"
+    ],
+    "both_wr": 1.0,
+    "neither_wr": 0.083,
+    "gap": 0.917,
+    "n_both": 12,
+    "n_neither": 12,
+    "interpretation": "When [team_total_tower_high] AND [team_gd15_low]: 100% WR vs neither: 8% WR (gap +92%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "team_avg_gd15_high"
+    ],
+    "both_wr": 0.083,
+    "neither_wr": 1.0,
+    "gap": -0.917,
+    "n_both": 12,
+    "n_neither": 12,
+    "interpretation": "When [team_total_tower_low] AND [team_avg_gd15_high]: 8% WR vs neither: 100% WR (gap -92%)"
+  },
+  {
+    "type": "combination",
+    "conditions": [
+      "team_total_tower_low",
+      "team_gd15_high"
+    ],
+    "both_wr": 0.083,
+    "neither_wr": 1.0,
+    "gap": -0.917,
+    "n_both": 12,
+    "n_neither": 12,
+    "interpretation": "When [team_total_tower_low] AND [team_gd15_high]: 8% WR vs neither: 100% WR (gap -92%)"
+  },
+  {
+    "type": "win_condition",
+    "team": "BNK FearX",
+    "feature": "team_max_lead",
+    "win_avg": 8391,
+    "loss_avg": 873.3,
+    "effect_size": 1.79,
+    "interpretation": "BNK FearX wins when team_max_lead is high (W=8391.0 vs L=873.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "BNK FearX",
+    "feature": "team_total_tower",
+    "win_avg": 31863.0,
+    "loss_avg": 18430.3,
+    "effect_size": 1.54,
+    "interpretation": "BNK FearX wins when team_total_tower is high (W=31863.0 vs L=18430.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "BNK FearX",
+    "feature": "TOP_CSD@15",
+    "win_avg": 6.0,
+    "loss_avg": -6.7,
+    "effect_size": 1.48,
+    "interpretation": "BNK FearX wins when TOP_CSD@15 is high (W=6.0 vs L=-6.7)"
+  },
+  {
+    "type": "win_condition",
+    "team": "BNK FearX",
+    "feature": "team_max_deficit",
+    "win_avg": -1921.2,
+    "loss_avg": -11933.3,
+    "effect_size": 1.46,
+    "interpretation": "BNK FearX wins when team_max_deficit is high (W=-1921.2 vs L=-11933.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "BNK FearX",
+    "feature": "JUNGLE_KDA",
+    "win_avg": 5.5,
+    "loss_avg": 1.6,
+    "effect_size": 1.44,
+    "interpretation": "BNK FearX wins when JUNGLE_KDA is high (W=5.5 vs L=1.6)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DN SOOPers",
+    "feature": "team_total_tower",
+    "win_avg": 31778.3,
+    "loss_avg": 12883.8,
+    "effect_size": 1.76,
+    "interpretation": "DN SOOPers wins when team_total_tower is high (W=31778.3 vs L=12883.8)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DN SOOPers",
+    "feature": "JUNGLE_KDA",
+    "win_avg": 13.2,
+    "loss_avg": 1.0,
+    "effect_size": 1.67,
+    "interpretation": "DN SOOPers wins when JUNGLE_KDA is high (W=13.2 vs L=1.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DN SOOPers",
+    "feature": "team_total_kills",
+    "win_avg": 23.3,
+    "loss_avg": 7.4,
+    "effect_size": 1.61,
+    "interpretation": "DN SOOPers wins when team_total_kills is high (W=23.3 vs L=7.4)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DN SOOPers",
+    "feature": "team_max_deficit",
+    "win_avg": -3221.7,
+    "loss_avg": -12336.8,
+    "effect_size": 1.53,
+    "interpretation": "DN SOOPers wins when team_max_deficit is high (W=-3221.7 vs L=-12336.8)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DN SOOPers",
+    "feature": "ADC_KDA",
+    "win_avg": 10.6,
+    "loss_avg": 1.2,
+    "effect_size": 1.49,
+    "interpretation": "DN SOOPers wins when ADC_KDA is high (W=10.6 vs L=1.2)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "DRX",
+    "feature": "team_total_ctrl",
+    "team_value": 27.6,
+    "league_avg": 40.0,
+    "z_score": -1.33,
+    "interpretation": "DRX: team_total_ctrl = 27.6 (league avg 40.0, z=-1.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DRX",
+    "feature": "team_max_lead",
+    "win_avg": 12847,
+    "loss_avg": 428,
+    "effect_size": 1.83,
+    "interpretation": "DRX wins when team_max_lead is high (W=12847.0 vs L=428.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DRX",
+    "feature": "team_total_tower",
+    "win_avg": 34723.0,
+    "loss_avg": 12264.0,
+    "effect_size": 1.8,
+    "interpretation": "DRX wins when team_total_tower is high (W=34723.0 vs L=12264.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DRX",
+    "feature": "team_total_kills",
+    "win_avg": 23.7,
+    "loss_avg": 10.3,
+    "effect_size": 1.73,
+    "interpretation": "DRX wins when team_total_kills is high (W=23.7 vs L=10.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DRX",
+    "feature": "team_max_deficit",
+    "win_avg": -1167,
+    "loss_avg": -11898.3,
+    "effect_size": 1.65,
+    "interpretation": "DRX wins when team_max_deficit is high (W=-1167.0 vs L=-11898.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "DRX",
+    "feature": "team_total_deaths",
+    "win_avg": 8.5,
+    "loss_avg": 25.7,
+    "effect_size": -1.6,
+    "interpretation": "DRX wins when team_total_deaths is low (W=8.5 vs L=25.7)"
+  },
+  {
+    "type": "win_condition",
+    "team": "Dplus KIA",
+    "feature": "team_max_deficit",
+    "win_avg": -1262.2,
+    "loss_avg": -13662,
+    "effect_size": 1.78,
+    "interpretation": "Dplus KIA wins when team_max_deficit is high (W=-1262.2 vs L=-13662.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "Dplus KIA",
+    "feature": "team_total_deaths",
+    "win_avg": 6.5,
+    "loss_avg": 23.0,
+    "effect_size": -1.78,
+    "interpretation": "Dplus KIA wins when team_total_deaths is low (W=6.5 vs L=23.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "Dplus KIA",
+    "feature": "team_total_tower",
+    "win_avg": 33798.0,
+    "loss_avg": 12210.0,
+    "effect_size": 1.71,
+    "interpretation": "Dplus KIA wins when team_total_tower is high (W=33798.0 vs L=12210.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "Dplus KIA",
+    "feature": "team_max_lead",
+    "win_avg": 13469,
+    "loss_avg": 596.8,
+    "effect_size": 1.68,
+    "interpretation": "Dplus KIA wins when team_max_lead is high (W=13469.0 vs L=596.8)"
+  },
+  {
+    "type": "win_condition",
+    "team": "Dplus KIA",
+    "feature": "SUPPORT_CSD@15",
+    "win_avg": -4.5,
+    "loss_avg": 2.5,
+    "effect_size": -1.58,
+    "interpretation": "Dplus KIA wins when SUPPORT_CSD@15 is low (W=-4.5 vs L=2.5)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "Gen.G",
+    "feature": "team_max_lead",
+    "team_value": 12789.2,
+    "league_avg": 6275.9,
+    "z_score": 1.07,
+    "interpretation": "Gen.G: team_max_lead = 12789.2 (league avg 6275.9, z=+1.1)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "Gen.G",
+    "feature": "team_total_tower",
+    "team_value": 36823.5,
+    "league_avg": 24841.8,
+    "z_score": 1.04,
+    "interpretation": "Gen.G: team_total_tower = 36823.5 (league avg 24841.8, z=+1.0)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "Gen.G",
+    "feature": "TOP_gold_pct",
+    "team_value": 21.5,
+    "league_avg": 19.7,
+    "z_score": 1.04,
+    "interpretation": "Gen.G: TOP_gold_pct = 21.5 (league avg 19.7, z=+1.0)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "KT Rolster",
+    "feature": "MID_DMG%",
+    "team_value": 29.9,
+    "league_avg": 22.9,
+    "z_score": 1.52,
+    "interpretation": "KT Rolster: MID_DMG% = 29.9 (league avg 22.9, z=+1.5)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "KT Rolster",
+    "feature": "TOP_DPM",
+    "team_value": 380.3,
+    "league_avg": 695.3,
+    "z_score": -1.48,
+    "interpretation": "KT Rolster: TOP_DPM = 380.3 (league avg 695.3, z=-1.5)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "KT Rolster",
+    "feature": "team_total_dpm",
+    "team_value": 2207.2,
+    "league_avg": 2898.3,
+    "z_score": -1.18,
+    "interpretation": "KT Rolster: team_total_dpm = 2207.2 (league avg 2898.3, z=-1.2)"
+  },
+  {
+    "type": "team_deviation",
+    "team": "KT Rolster",
+    "feature": "TOP_DMG%",
+    "team_value": 16.9,
+    "league_avg": 24.1,
+    "z_score": -1.11,
+    "interpretation": "KT Rolster: TOP_DMG% = 16.9 (league avg 24.1, z=-1.1)"
+  },
+  {
+    "type": "win_condition",
+    "team": "NS RedForce",
+    "feature": "TOP_GD@15",
+    "win_avg": -451.3,
+    "loss_avg": 105.0,
+    "effect_size": -1.69,
+    "interpretation": "NS RedForce wins when TOP_GD@15 is low (W=-451.3 vs L=105.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "NS RedForce",
+    "feature": "team_max_deficit",
+    "win_avg": -1060.3,
+    "loss_avg": -9558.8,
+    "effect_size": 1.64,
+    "interpretation": "NS RedForce wins when team_max_deficit is high (W=-1060.3 vs L=-9558.8)"
+  },
+  {
+    "type": "win_condition",
+    "team": "NS RedForce",
+    "feature": "MID_KDA",
+    "win_avg": 13.2,
+    "loss_avg": 2.8,
+    "effect_size": 1.58,
+    "interpretation": "NS RedForce wins when MID_KDA is high (W=13.2 vs L=2.8)"
+  },
+  {
+    "type": "win_condition",
+    "team": "NS RedForce",
+    "feature": "team_total_deaths",
+    "win_avg": 9.7,
+    "loss_avg": 24.5,
+    "effect_size": -1.56,
+    "interpretation": "NS RedForce wins when team_total_deaths is low (W=9.7 vs L=24.5)"
+  },
+  {
+    "type": "win_condition",
+    "team": "NS RedForce",
+    "feature": "team_total_kills",
+    "win_avg": 21.0,
+    "loss_avg": 11.2,
+    "effect_size": 1.55,
+    "interpretation": "NS RedForce wins when team_total_kills is high (W=21.0 vs L=11.2)"
+  },
+  {
+    "type": "win_condition",
+    "team": "T1",
+    "feature": "ADC_CSD@15",
+    "win_avg": 5.9,
+    "loss_avg": -14.7,
+    "effect_size": 1.82,
+    "interpretation": "T1 wins when ADC_CSD@15 is high (W=5.9 vs L=-14.7)"
+  },
+  {
+    "type": "win_condition",
+    "team": "T1",
+    "feature": "team_max_deficit",
+    "win_avg": -1347.4,
+    "loss_avg": -9615.3,
+    "effect_size": 1.63,
+    "interpretation": "T1 wins when team_max_deficit is high (W=-1347.4 vs L=-9615.3)"
+  },
+  {
+    "type": "win_condition",
+    "team": "T1",
+    "feature": "JUNGLE_CSD@15",
+    "win_avg": -3.5,
+    "loss_avg": 20.0,
+    "effect_size": -1.55,
+    "interpretation": "T1 wins when JUNGLE_CSD@15 is low (W=-3.5 vs L=20.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "T1",
+    "feature": "team_total_tower",
+    "win_avg": 33910.0,
+    "loss_avg": 20334.0,
+    "effect_size": 1.52,
+    "interpretation": "T1 wins when team_total_tower is high (W=33910.0 vs L=20334.0)"
+  },
+  {
+    "type": "win_condition",
+    "team": "T1",
+    "feature": "JUNGLE_gold_pct",
+    "win_avg": 19.5,
+    "loss_avg": 21.1,
+    "effect_size": -1.51,
+    "interpretation": "T1 wins when JUNGLE_gold_pct is low (W=19.5 vs L=21.1)"
+  }
+]
