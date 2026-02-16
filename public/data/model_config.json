@@ -1,0 +1,138 @@
+{
+  "_description": "OpenTag Math Model v1 — Tunable Constants",
+  "_usage": "Adjust any value here, re-run opentag_math_model.py. No code changes needed.",
+
+  "skill_components": {
+    "laning": {
+      "GD@15": 0.35,
+      "CSD@15": 0.25,
+      "XPD@15": 0.20,
+      "LVLD@15": 0.10
+    },
+    "teamfight": {
+      "KP%": 0.30,
+      "DMG%": 0.25,
+      "DPM": 0.20,
+      "Time ccing others": 0.15,
+      "KDA": 0.10
+    },
+    "vision": {
+      "Vision Score": 0.30,
+      "VSPM": 0.25,
+      "WPM": 0.20,
+      "Wards destroyed": 0.15,
+      "Control Wards Purchased": 0.10
+    },
+    "efficiency": {
+      "dmg_per_gold": 0.35,
+      "gold_per_death": 0.25,
+      "dmg_per_death": 0.25,
+      "turret_per_gold": 0.15
+    },
+    "pressure": {
+      "Damage dealt to turrets": 0.35,
+      "GPM": 0.25,
+      "CSM": 0.20,
+      "GOLD%": 0.20
+    },
+    "survivability": {
+      "Damage self mitigated": 0.30,
+      "Total heal": 0.20,
+      "Deaths_inverse": 0.25,
+      "Time_dead_inverse": 0.25
+    }
+  },
+
+  "role_weights": {
+    "_description": "How much each role contributes to overall team strength (must sum to ~1.0)",
+    "TOP": 0.18,
+    "JUNGLE": 0.20,
+    "MID": 0.22,
+    "ADC": 0.22,
+    "SUPPORT": 0.18
+  },
+
+  "role_skill_weights": {
+    "_description": "Which skill dimensions matter most per role (each row must sum to 1.0)",
+    "TOP":     {"laning": 0.20, "teamfight": 0.25, "survivability": 0.20, "pressure": 0.15, "vision": 0.05, "versatility": 0.05, "consistency": 0.05, "efficiency": 0.05},
+    "JUNGLE":  {"pressure": 0.20, "vision": 0.20, "teamfight": 0.20, "efficiency": 0.15, "versatility": 0.10, "laning": 0.05, "consistency": 0.05, "survivability": 0.05},
+    "MID":     {"laning": 0.20, "teamfight": 0.25, "efficiency": 0.15, "versatility": 0.15, "pressure": 0.10, "vision": 0.05, "consistency": 0.05, "survivability": 0.05},
+    "ADC":     {"teamfight": 0.30, "laning": 0.20, "efficiency": 0.20, "consistency": 0.15, "pressure": 0.10, "survivability": 0.05, "vision": 0.00, "versatility": 0.00},
+    "SUPPORT": {"vision": 0.30, "teamfight": 0.25, "survivability": 0.15, "consistency": 0.10, "versatility": 0.10, "pressure": 0.05, "laning": 0.05, "efficiency": 0.00}
+  },
+
+  "team_composition": {
+    "_description": "Team synergy calculation parameters",
+    "synergy_weight": 0.3,
+    "weak_link_penalty_factor": 0.3,
+    "carry_amplification_factor": 0.2,
+    "carry_roles": ["ADC", "MID"],
+    "enabler_roles": ["SUPPORT", "JUNGLE"],
+    "frontline_roles": ["TOP", "JUNGLE", "SUPPORT"],
+    "backline_roles": ["MID", "ADC"]
+  },
+
+  "meta_profiles": {
+    "_description": "Meta-dependent skill dimension weights (each must sum to 1.0)",
+    "tank_meta":     {"laning": 0.10, "teamfight": 0.30, "vision": 0.10, "versatility": 0.05, "consistency": 0.10, "efficiency": 0.10, "pressure": 0.10, "survivability": 0.15},
+    "lane_dominant":  {"laning": 0.30, "teamfight": 0.15, "vision": 0.05, "versatility": 0.10, "consistency": 0.05, "efficiency": 0.15, "pressure": 0.15, "survivability": 0.05},
+    "scaling":        {"laning": 0.10, "teamfight": 0.25, "vision": 0.15, "versatility": 0.05, "consistency": 0.15, "efficiency": 0.10, "pressure": 0.10, "survivability": 0.10},
+    "balanced":       {"laning": 0.125, "teamfight": 0.125, "vision": 0.125, "versatility": 0.125, "consistency": 0.125, "efficiency": 0.125, "pressure": 0.125, "survivability": 0.125},
+    "early_aggro":    {"laning": 0.20, "teamfight": 0.15, "vision": 0.15, "versatility": 0.10, "consistency": 0.05, "efficiency": 0.10, "pressure": 0.20, "survivability": 0.05}
+  },
+
+  "situation_modifiers": {
+    "_description": "Situational bonuses/penalties",
+    "blue_side_advantage": 0.06,
+    "bo5_consistency_bonus": 0.05,
+    "bo1_volatility_bonus": 0.08,
+    "momentum_per_win": 0.03,
+    "max_momentum_streak": 3,
+    "fatigue_per_game_after_3": -0.02
+  },
+
+  "training": {
+    "_description": "Model training hyperparameters",
+    "learning_rate": 0.1,
+    "l2_regularization": 0.01,
+    "epochs": 500,
+    "initial_weights": {
+      "total_delta": 0.0,
+      "role_advantage_count": 0.0,
+      "synergy_delta_mean": 0.0,
+      "carry_amp_delta": 0.0,
+      "weak_link_delta": 0.0,
+      "bias": 0.0
+    }
+  },
+
+  "betting": {
+    "_description": "Kelly criterion and bet sizing parameters",
+    "kelly_fraction": 0.25,
+    "min_edge_to_bet": 0.02,
+    "confidence_sample_size_map": {
+      "1": 0.3,
+      "2": 0.4,
+      "3": 0.5,
+      "5": 0.7,
+      "10": 0.9,
+      "20": 0.95
+    },
+    "edge_thresholds": {
+      "strong_buy": 0.10,
+      "buy": 0.05,
+      "lean": 0.02,
+      "lean_fade": -0.05,
+      "fade": -0.10
+    }
+  },
+
+  "meta_detection": {
+    "_description": "Thresholds for auto-detecting which meta we're in",
+    "short_game_threshold_min": 25,
+    "long_game_threshold_min": 35,
+    "high_gd15_threshold": 500,
+    "low_kills_threshold": 20,
+    "high_kills_threshold": 30
+  }
+}
