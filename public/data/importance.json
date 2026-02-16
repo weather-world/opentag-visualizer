@@ -1,0 +1,686 @@
+{
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "delta_team_team_total_gold",
+      "correlation": 0.911363,
+      "abs_correlation": 0.911363,
+      "p_value": 1e-15,
+      "mean_when_win": 9388.0526,
+      "mean_when_loss": -12806.9333
+    },
+    {
+      "rank": 2,
+      "feature": "delta_team_team_tower_dmg",
+      "correlation": 0.858581,
+      "abs_correlation": 0.858581,
+      "p_value": 1e-15,
+      "mean_when_win": 16551.7368,
+      "mean_when_loss": -20670.8
+    },
+    {
+      "rank": 3,
+      "feature": "blue_team_tower_dmg",
+      "correlation": 0.855981,
+      "abs_correlation": 0.855981,
+      "p_value": 1e-15,
+      "mean_when_win": 32882.5789,
+      "mean_when_loss": 14804.1333
+    },
+    {
+      "rank": 4,
+      "feature": "delta_team_team_time_dead",
+      "correlation": -0.838482,
+      "abs_correlation": 0.838482,
+      "p_value": 1e-15,
+      "mean_when_win": -245.3158,
+      "mean_when_loss": 390.0667
+    },
+    {
+      "rank": 5,
+      "feature": "delta_team_team_total_dmg",
+      "correlation": 0.827936,
+      "abs_correlation": 0.827936,
+      "p_value": 1e-15,
+      "mean_when_win": 18366.7895,
+      "mean_when_loss": -22844.8
+    },
+    {
+      "rank": 6,
+      "feature": "delta_ADC_GPM_raw",
+      "correlation": 0.816771,
+      "abs_correlation": 0.816771,
+      "p_value": 1e-15,
+      "mean_when_win": 76.1579,
+      "mean_when_loss": -142.5333
+    },
+    {
+      "rank": 7,
+      "feature": "delta_JUNGLE_GPM_raw",
+      "correlation": 0.801838,
+      "abs_correlation": 0.801838,
+      "p_value": 1e-15,
+      "mean_when_win": 65.4211,
+      "mean_when_loss": -87.3333
+    },
+    {
+      "rank": 8,
+      "feature": "delta_SUPPORT_GPM_raw",
+      "correlation": 0.79952,
+      "abs_correlation": 0.79952,
+      "p_value": 1e-15,
+      "mean_when_win": 29.7368,
+      "mean_when_loss": -48.8667
+    },
+    {
+      "rank": 9,
+      "feature": "delta_MID_GPM_raw",
+      "correlation": 0.791765,
+      "abs_correlation": 0.791765,
+      "p_value": 1e-15,
+      "mean_when_win": 57.6842,
+      "mean_when_loss": -81.6
+    },
+    {
+      "rank": 10,
+      "feature": "red_team_tower_dmg",
+      "correlation": -0.768623,
+      "abs_correlation": 0.768623,
+      "p_value": 1e-15,
+      "mean_when_win": 16330.8421,
+      "mean_when_loss": 35474.9333
+    },
+    {
+      "rank": 11,
+      "feature": "delta_team_team_kda",
+      "correlation": 0.756209,
+      "abs_correlation": 0.756209,
+      "p_value": 1e-15,
+      "mean_when_win": 6.524,
+      "mean_when_loss": -10.2922
+    },
+    {
+      "rank": 12,
+      "feature": "delta_ADC_DPM_raw",
+      "correlation": 0.753845,
+      "abs_correlation": 0.753845,
+      "p_value": 1e-15,
+      "mean_when_win": 196.2105,
+      "mean_when_loss": -294.6667
+    },
+    {
+      "rank": 13,
+      "feature": "delta_TOP_GPM_raw",
+      "correlation": 0.745484,
+      "abs_correlation": 0.745484,
+      "p_value": 1e-15,
+      "mean_when_win": 75.3158,
+      "mean_when_loss": -53.1333
+    },
+    {
+      "rank": 14,
+      "feature": "delta_SUPPORT_KDA_raw",
+      "correlation": 0.742005,
+      "abs_correlation": 0.742005,
+      "p_value": 1e-15,
+      "mean_when_win": 8.4,
+      "mean_when_loss": -12.08
+    },
+    {
+      "rank": 15,
+      "feature": "delta_MID_KDA_raw",
+      "correlation": 0.716729,
+      "abs_correlation": 0.716729,
+      "p_value": 6.117655715343062e-09,
+      "mean_when_win": 11.9947,
+      "mean_when_loss": -10.3333
+    },
+    {
+      "rank": 16,
+      "feature": "delta_team_team_dmg_taken",
+      "correlation": -0.71663,
+      "abs_correlation": 0.71663,
+      "p_value": 6.178091371822347e-09,
+      "mean_when_win": -11624.4211,
+      "mean_when_loss": 11737.9333
+    },
+    {
+      "rank": 17,
+      "feature": "delta_JUNGLE_KDA_raw",
+      "correlation": 0.71257,
+      "abs_correlation": 0.71257,
+      "p_value": 9.203863227114084e-09,
+      "mean_when_win": 7.6421,
+      "mean_when_loss": -10.7733
+    },
+    {
+      "rank": 18,
+      "feature": "red_team_kda",
+      "correlation": -0.681642,
+      "abs_correlation": 0.681642,
+      "p_value": 1.367329813817264e-07,
+      "mean_when_win": 1.8897,
+      "mean_when_loss": 11.6922
+    },
+    {
+      "rank": 19,
+      "feature": "red_team_time_dead",
+      "correlation": 0.667028,
+      "abs_correlation": 0.667028,
+      "p_value": 4.099862067619142e-07,
+      "mean_when_win": 664.6842,
+      "mean_when_loss": 307.0
+    },
+    {
+      "rank": 20,
+      "feature": "blue_team_kda",
+      "correlation": 0.660172,
+      "abs_correlation": 0.660172,
+      "p_value": 6.639002527730753e-07,
+      "mean_when_win": 8.4137,
+      "mean_when_loss": 1.4
+    },
+    {
+      "rank": 21,
+      "feature": "delta_ADC_KDA_raw",
+      "correlation": 0.659593,
+      "abs_correlation": 0.659593,
+      "p_value": 6.908277263573126e-07,
+      "mean_when_win": 6.6474,
+      "mean_when_loss": -13.8067
+    },
+    {
+      "rank": 22,
+      "feature": "delta_TOP_KDA_raw",
+      "correlation": 0.655606,
+      "abs_correlation": 0.655606,
+      "p_value": 9.052715208568429e-07,
+      "mean_when_win": 7.5474,
+      "mean_when_loss": -10.4333
+    },
+    {
+      "rank": 23,
+      "feature": "delta_team_team_heal",
+      "correlation": 0.651138,
+      "abs_correlation": 0.651138,
+      "p_value": 1.2164292089167361e-06,
+      "mean_when_win": 9478.9474,
+      "mean_when_loss": -12792.7333
+    },
+    {
+      "rank": 24,
+      "feature": "blue_team_total_gold",
+      "correlation": 0.612389,
+      "abs_correlation": 0.612389,
+      "p_value": 1.1770574845249016e-05,
+      "mean_when_win": 71156.6842,
+      "mean_when_loss": 56796.2667
+    },
+    {
+      "rank": 25,
+      "feature": "delta_team_team_vision_score",
+      "correlation": 0.610305,
+      "abs_correlation": 0.610305,
+      "p_value": 1.3124988003099247e-05,
+      "mean_when_win": 21.4737,
+      "mean_when_loss": -34.9333
+    },
+    {
+      "rank": 26,
+      "feature": "delta_team_team_wards_destroyed",
+      "correlation": 0.593171,
+      "abs_correlation": 0.593171,
+      "p_value": 3.075974927879699e-05,
+      "mean_when_win": 4.9474,
+      "mean_when_loss": -11.0667
+    },
+    {
+      "rank": 27,
+      "feature": "blue_team_time_dead",
+      "correlation": -0.571378,
+      "abs_correlation": 0.571378,
+      "p_value": 8.205786376080937e-05,
+      "mean_when_win": 419.3684,
+      "mean_when_loss": 697.0667
+    },
+    {
+      "rank": 28,
+      "feature": "delta_JUNGLE_DPM_raw",
+      "correlation": 0.554437,
+      "abs_correlation": 0.554437,
+      "p_value": 0.00016418185562527832,
+      "mean_when_win": 92.9474,
+      "mean_when_loss": -166.4667
+    },
+    {
+      "rank": 29,
+      "feature": "delta_team_gold_pct_end",
+      "correlation": 0.534824,
+      "abs_correlation": 0.534824,
+      "p_value": 0.00034296434630598505,
+      "mean_when_win": 5.5474,
+      "mean_when_loss": -7.04
+    },
+    {
+      "rank": 30,
+      "feature": "blue_gold_pct_end",
+      "correlation": 0.534824,
+      "abs_correlation": 0.534824,
+      "p_value": 0.00034296434630598505,
+      "mean_when_win": 52.7737,
+      "mean_when_loss": 46.48
+    },
+    {
+      "rank": 31,
+      "feature": "red_gold_pct_end",
+      "correlation": -0.534824,
+      "abs_correlation": 0.534824,
+      "p_value": 0.00034296434630598505,
+      "mean_when_win": 47.2263,
+      "mean_when_loss": 53.52
+    },
+    {
+      "rank": 32,
+      "feature": "delta_ADC_Vision Score_raw",
+      "correlation": 0.502901,
+      "abs_correlation": 0.502901,
+      "p_value": 0.0009972823886521542,
+      "mean_when_win": 3.5263,
+      "mean_when_loss": -8.2667
+    },
+    {
+      "rank": 33,
+      "feature": "delta_SUPPORT_CSD15",
+      "correlation": -0.495557,
+      "abs_correlation": 0.495557,
+      "p_value": 0.0012490564500751145,
+      "mean_when_win": -8.3158,
+      "mean_when_loss": 4.4
+    },
+    {
+      "rank": 34,
+      "feature": "delta_MID_Vision Score_raw",
+      "correlation": 0.479238,
+      "abs_correlation": 0.479238,
+      "p_value": 0.0020098890974020733,
+      "mean_when_win": 1.2632,
+      "mean_when_loss": -14.3333
+    },
+    {
+      "rank": 35,
+      "feature": "delta_SUPPORT_DPM_raw",
+      "correlation": 0.467893,
+      "abs_correlation": 0.467893,
+      "p_value": 0.002745922922201105,
+      "mean_when_win": 41.0,
+      "mean_when_loss": -92.6
+    },
+    {
+      "rank": 36,
+      "feature": "delta_team_team_magic_pct",
+      "correlation": -0.459431,
+      "abs_correlation": 0.459431,
+      "p_value": 0.0034334135274389777,
+      "mean_when_win": -0.0664,
+      "mean_when_loss": 0.0462
+    },
+    {
+      "rank": 37,
+      "feature": "delta_MID_DPM_raw",
+      "correlation": 0.455848,
+      "abs_correlation": 0.455848,
+      "p_value": 0.0037653305080602717,
+      "mean_when_win": 116.5263,
+      "mean_when_loss": -104.4667
+    },
+    {
+      "rank": 38,
+      "feature": "delta_ADC_GD15",
+      "correlation": 0.455164,
+      "abs_correlation": 0.455164,
+      "p_value": 0.003831710642456354,
+      "mean_when_win": 285.3684,
+      "mean_when_loss": -1670.0
+    },
+    {
+      "rank": 39,
+      "feature": "blue_team_total_dmg",
+      "correlation": 0.435808,
+      "abs_correlation": 0.435808,
+      "p_value": 0.0061607440395961,
+      "mean_when_win": 105702.8421,
+      "mean_when_loss": 82282.3333
+    },
+    {
+      "rank": 40,
+      "feature": "red_team_heal",
+      "correlation": -0.423752,
+      "abs_correlation": 0.423752,
+      "p_value": 0.00813413829079157,
+      "mean_when_win": 36824.3684,
+      "mean_when_loss": 48632.1333
+    },
+    {
+      "rank": 41,
+      "feature": "blue_team_wards_destroyed",
+      "correlation": 0.38557,
+      "abs_correlation": 0.38557,
+      "p_value": 0.01808384549805475,
+      "mean_when_win": 58.0,
+      "mean_when_loss": 45.2667
+    },
+    {
+      "rank": 42,
+      "feature": "delta_team_team_dmg_per_gold",
+      "correlation": 0.384632,
+      "abs_correlation": 0.384632,
+      "p_value": 0.018416208264993683,
+      "mean_when_win": 0.0712,
+      "mean_when_loss": -0.0797
+    },
+    {
+      "rank": 43,
+      "feature": "delta_ADC_CSD15",
+      "correlation": 0.37912,
+      "abs_correlation": 0.37912,
+      "p_value": 0.020468488292243237,
+      "mean_when_win": 0.0,
+      "mean_when_loss": -22.2667
+    },
+    {
+      "rank": 44,
+      "feature": "red_team_magic_pct",
+      "correlation": 0.370656,
+      "abs_correlation": 0.370656,
+      "p_value": 0.02397347642925296,
+      "mean_when_win": 0.5047,
+      "mean_when_loss": 0.4369
+    },
+    {
+      "rank": 45,
+      "feature": "delta_team_team_phys_pct",
+      "correlation": 0.356555,
+      "abs_correlation": 0.356555,
+      "p_value": 0.030859644467097214,
+      "mean_when_win": 0.0566,
+      "mean_when_loss": -0.0358
+    },
+    {
+      "rank": 46,
+      "feature": "blue_lane_pressure",
+      "correlation": 0.342877,
+      "abs_correlation": 0.342877,
+      "p_value": 0.03894471633621688,
+      "mean_when_win": 611.8947,
+      "mean_when_loss": -1195.7333
+    },
+    {
+      "rank": 47,
+      "feature": "delta_team_lane_pressure",
+      "correlation": 0.342877,
+      "abs_correlation": 0.342877,
+      "p_value": 0.03894471633621688,
+      "mean_when_win": 1223.7895,
+      "mean_when_loss": -2391.4667
+    },
+    {
+      "rank": 48,
+      "feature": "red_lane_pressure",
+      "correlation": -0.342877,
+      "abs_correlation": 0.342877,
+      "p_value": 0.03894471633621688,
+      "mean_when_win": -611.8947,
+      "mean_when_loss": 1195.7333
+    },
+    {
+      "rank": 49,
+      "feature": "red_team_total_dmg",
+      "correlation": -0.337855,
+      "abs_correlation": 0.337855,
+      "p_value": 0.042295809817138874,
+      "mean_when_win": 87336.0526,
+      "mean_when_loss": 105127.1333
+    },
+    {
+      "rank": 50,
+      "feature": "red_team_total_gold",
+      "correlation": -0.33363,
+      "abs_correlation": 0.33363,
+      "p_value": 0.045284496972085586,
+      "mean_when_win": 61768.6316,
+      "mean_when_loss": 69603.2
+    }
+  ],
+  "role_importance": {
+    "ADC": {
+      "avg_correlation": 0.4363,
+      "max_correlation": 0.8168,
+      "num_features": 10,
+      "top_feature": "delta_ADC_GPM_raw"
+    },
+    "SUPPORT": {
+      "avg_correlation": 0.3744,
+      "max_correlation": 0.7995,
+      "num_features": 10,
+      "top_feature": "delta_SUPPORT_GPM_raw"
+    },
+    "MID": {
+      "avg_correlation": 0.3499,
+      "max_correlation": 0.7918,
+      "num_features": 10,
+      "top_feature": "delta_MID_GPM_raw"
+    },
+    "JUNGLE": {
+      "avg_correlation": 0.3215,
+      "max_correlation": 0.8018,
+      "num_features": 10,
+      "top_feature": "delta_JUNGLE_GPM_raw"
+    },
+    "TOP": {
+      "avg_correlation": 0.2614,
+      "max_correlation": 0.7455,
+      "num_features": 10,
+      "top_feature": "delta_TOP_GPM_raw"
+    }
+  },
+  "role_ranking": [
+    "ADC",
+    "SUPPORT",
+    "MID",
+    "JUNGLE",
+    "TOP"
+  ],
+  "optimal_profile": {
+    "team_profile": {
+      "gold_hhi": {
+        "winning_team_avg": 0.2095,
+        "losing_team_avg": 0.2093,
+        "difference": 0.0002
+      },
+      "dmg_hhi": {
+        "winning_team_avg": 0.233,
+        "losing_team_avg": 0.2379,
+        "difference": -0.0049
+      },
+      "team_kda": {
+        "winning_team_avg": 9.8601,
+        "losing_team_avg": 6.5461,
+        "difference": 3.314
+      },
+      "team_dmg_per_gold": {
+        "winning_team_avg": 1.4868,
+        "losing_team_avg": 1.4624,
+        "difference": 0.0244
+      },
+      "team_phys_pct": {
+        "winning_team_avg": 0.5146,
+        "losing_team_avg": 0.4953,
+        "difference": 0.0192
+      },
+      "team_magic_pct": {
+        "winning_team_avg": 0.4377,
+        "losing_team_avg": 0.4599,
+        "difference": -0.0223
+      },
+      "lane_pressure": {
+        "winning_team_avg": 869.4706,
+        "losing_team_avg": 0.0,
+        "difference": 869.4706
+      },
+      "team_vision_score": {
+        "winning_team_avg": 346.0,
+        "losing_team_avg": 321.2,
+        "difference": 24.8
+      },
+      "team_cc_time": {
+        "winning_team_avg": 124.4706,
+        "losing_team_avg": 130.9333,
+        "difference": -6.4627
+      }
+    },
+    "role_profiles": {
+      "TOP": {
+        "KDA_raw": 10.4118,
+        "DPM_raw": 751.3529,
+        "GPM_raw": 423.5882,
+        "GD15": 156.6176,
+        "CSD15": 1.2353,
+        "damage_per_gold": 1.7622,
+        "vision_per_minute": 1.4661
+      },
+      "JUNGLE": {
+        "KDA_raw": 10.4706,
+        "DPM_raw": 516.6471,
+        "GPM_raw": 428.8824,
+        "GD15": 14.5,
+        "CSD15": -1.6176,
+        "damage_per_gold": 1.1974,
+        "vision_per_minute": 1.9702
+      },
+      "MID": {
+        "KDA_raw": 13.5235,
+        "DPM_raw": 715.5,
+        "GPM_raw": 459.3235,
+        "GD15": 174.4118,
+        "CSD15": 1.0294,
+        "damage_per_gold": 1.5557,
+        "vision_per_minute": 1.5877
+      },
+      "ADC": {
+        "KDA_raw": 12.7647,
+        "DPM_raw": 948.5,
+        "GPM_raw": 567.4118,
+        "GD15": 448.1176,
+        "CSD15": 4.9118,
+        "damage_per_gold": 1.6688,
+        "vision_per_minute": 1.3633
+      },
+      "SUPPORT": {
+        "KDA_raw": 12.1941,
+        "DPM_raw": 292.3235,
+        "GPM_raw": 288.4706,
+        "GD15": 75.8235,
+        "CSD15": -3.2941,
+        "damage_per_gold": 1.0156,
+        "vision_per_minute": 4.1384
+      }
+    }
+  },
+  "upset_analysis": {
+    "num_upsets": 9,
+    "num_normal": 25,
+    "upset_rate": 0.2647,
+    "indicators": [
+      {
+        "feature": "red_team_time_dead",
+        "upset_mean": 671.4444,
+        "normal_mean": 447.64,
+        "effect_size": 0.8281
+      },
+      {
+        "feature": "blue_team_time_dead",
+        "upset_mean": 668.7778,
+        "normal_mean": 496.2,
+        "effect_size": 0.7045
+      },
+      {
+        "feature": "blue_team_total_dmg",
+        "upset_mean": 109086.7778,
+        "normal_mean": 90432.32,
+        "effect_size": 0.6887
+      },
+      {
+        "feature": "blue_team_total_gold",
+        "upset_mean": 70694.5556,
+        "normal_mean": 62706.8,
+        "effect_size": 0.6759
+      },
+      {
+        "feature": "red_team_total_dmg",
+        "upset_mean": 106697.3333,
+        "normal_mean": 91040.64,
+        "effect_size": 0.5899
+      },
+      {
+        "feature": "delta_SUPPORT_CSD15",
+        "upset_mean": -8.2222,
+        "normal_mean": -0.72,
+        "effect_size": -0.5801
+      },
+      {
+        "feature": "red_team_total_gold",
+        "upset_mean": 69880.1111,
+        "normal_mean": 63549.24,
+        "effect_size": 0.5349
+      },
+      {
+        "feature": "red_team_kda",
+        "upset_mean": 3.6753,
+        "normal_mean": 7.1284,
+        "effect_size": -0.4764
+      },
+      {
+        "feature": "delta_MID_Vision Score_raw",
+        "upset_mean": -0.2222,
+        "normal_mean": -7.56,
+        "effect_size": 0.4474
+      },
+      {
+        "feature": "blue_team_kda",
+        "upset_mean": 3.5683,
+        "normal_mean": 5.9498,
+        "effect_size": -0.4448
+      },
+      {
+        "feature": "delta_SUPPORT_GPM_raw",
+        "upset_mean": 8.8889,
+        "normal_mean": -9.92,
+        "effect_size": 0.3796
+      },
+      {
+        "feature": "red_team_heal",
+        "upset_mean": 45751.7778,
+        "normal_mean": 40695.16,
+        "effect_size": 0.3601
+      },
+      {
+        "feature": "blue_team_tower_dmg",
+        "upset_mean": 27453.6667,
+        "normal_mean": 23989.92,
+        "effect_size": 0.3254
+      },
+      {
+        "feature": "blue_team_wards_destroyed",
+        "upset_mean": 56.0,
+        "normal_mean": 51.08,
+        "effect_size": 0.2956
+      },
+      {
+        "feature": "red_team_tower_dmg",
+        "upset_mean": 27387.2222,
+        "normal_mean": 23837.0,
+        "effect_size": 0.2828
+      }
+    ]
+  }
+}

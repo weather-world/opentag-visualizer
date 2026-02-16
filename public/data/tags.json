@@ -638,6 +638,78 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374236"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=43%, magic=52%)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "heal pct=76% in TOP (avg=10019.4, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=85% in TOP (avg=18.6, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.571,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.714,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Raptor": [
@@ -1297,6 +1369,114 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374242"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 79.3,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 79.3% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=25% in JUNGLE (avg=18.6, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "csm pct=24% in JUNGLE (avg=6.2, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top10pct",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "cc_time pct=91% in JUNGLE (avg=57.9, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 0.857,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Vicla": [
@@ -1920,6 +2100,105 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374245"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 91.6,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 91.6% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "dpm pct=82% in MID (avg=804.6, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 81.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=82% in MID (avg=7.2, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.286,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 2/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {1: 4, 2: 3} (n=7)",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.429,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.429,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.857,
+      "confidence": 0.75,
+      "evidence": "6 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Diable": [
@@ -2606,6 +2885,105 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374250"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 76.7,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 76.7% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=75% in ADC (avg=23096.4, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=75% in ADC (avg=16106.4, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=82% in ADC (avg=17.1, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.429,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.714,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Kellin": [
@@ -3247,6 +3625,114 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374255"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 83.4,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 83.4% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "csm pct=22% in SUPPORT (avg=0.9, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=25% in SUPPORT (avg=7349.9, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:w_max",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "maxes W first in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 4, 1: 2, 3: 1} (n=7)",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 0.857,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_summon_aery",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "uses summon_aery in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.571,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Doran": [
@@ -3888,6 +4374,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374260"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 77.6,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 77.6% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=81% in TOP (avg=11906.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.167,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_grasp_of_the_undying",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "uses grasp_of_the_undying in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:resolve_primary",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "uses resolve primary in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Oner": [
@@ -4556,6 +5123,78 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374264"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 87.8,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 87.8% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "kp pct=18% in JUNGLE (avg=60.4, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top10pct",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "cc_time pct=91% in JUNGLE (avg=44.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "5 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Faker": [
@@ -5188,6 +5827,141 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374271"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 96.8,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 96.8% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "vision pct=81% in MID (avg=62.7, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "vspm pct=84% in MID (avg=1.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "kp pct=24% in MID (avg=54.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=76% in MID (avg=10679.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_top10pct",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "wards_destroyed pct=91% in MID (avg=13.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "5 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:w_max",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "maxes W first in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 3, 1: 3} (n=6)",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_phase_rush",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses phase_rush in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Peyz": [
@@ -5820,6 +6594,87 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372466"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 81.9,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 81.9% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.167,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_press_the_attack",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses press_the_attack in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Keria": [
@@ -6434,6 +7289,123 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374275"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 80.4,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 80.4% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:xpd15_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "xpd15 pct=76% in SUPPORT (avg=349.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {1: 3, 2: 2, 3: 1} (n=6)",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_glacial_augment",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses glacial_augment in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_summon_aery",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses summon_aery in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:inspiration_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses inspiration primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Siwoo": [
@@ -7156,6 +8128,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374287"
+    },
+    {
+      "tag": "rank:csd15_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "csd15 pct=79% in TOP (avg=11.9, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.25,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.125,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "8 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.75,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/8",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_grasp_of_the_undying",
+      "value": 0.75,
+      "confidence": 0.8,
+      "evidence": "uses grasp_of_the_undying in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:resolve_primary",
+      "value": 0.75,
+      "confidence": 0.8,
+      "evidence": "uses resolve primary in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.375,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Lucid": [
@@ -7644,6 +8697,33 @@
       "sample_size": 8,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371787"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 91.2% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csd15_top25pct",
+      "value": 78.7,
+      "confidence": 0.8,
+      "evidence": "csd15 pct=79% in JUNGLE (avg=15.0, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "same core build in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:ShowMaker": [
@@ -8177,6 +9257,33 @@
       "sample_size": 8,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371804"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 94.7,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 94.7% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=76% in MID (avg=22.5, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "same core build in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Smash": [
@@ -8854,6 +9961,69 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374295"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 80.3,
+      "confidence": 0.8,
+      "evidence": "kda pct=80% in ADC (avg=9.1, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "8 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/8",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Career": [
@@ -9549,6 +10719,105 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374308"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 82.5,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 82.5% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 78.8,
+      "confidence": 0.8,
+      "evidence": "kda pct=79% in SUPPORT (avg=9.6, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=75% in SUPPORT (avg=1264.8, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.25,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.375,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 3/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "8 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {3: 3, 1: 4, 2: 1} (n=8)",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_summon_aery",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses summon_aery in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.75,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.625,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Kiin": [
@@ -10109,6 +11378,87 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372105"
+    },
+    {
+      "tag": "rank:gd15_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "gd15 pct=81% in TOP (avg=425.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "dpm pct=82% in TOP (avg=881.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_top10pct",
+      "value": 94.1,
+      "confidence": 0.85,
+      "evidence": "gpm pct=94% in TOP (avg=468.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 88.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=89% in TOP (avg=7.1, n=4)",
+      "sample_size": 4,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "kp pct=87% in TOP (avg=71.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 88.2,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=88% in TOP (avg=21.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=76% in TOP (avg=10401.7, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=78% in TOP (avg=17.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Canyon": [
@@ -10651,6 +12001,69 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372125"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 87.6,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 87.6% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "dpm pct=76% in JUNGLE (avg=537.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "csm pct=75% in JUNGLE (avg=7.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=82% in JUNGLE (avg=3660.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "heal pct=82% in JUNGLE (avg=20972.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "kda pct=75% in JUNGLE (avg=6.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Chovy": [
@@ -11175,6 +12588,78 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372144"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "vision pct=76% in MID (avg=57.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "kp pct=18% in MID (avg=53.7, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=81% in MID (avg=11474.7, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=78% in MID (avg=23184.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=84% in MID (avg=20334.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 89.7,
+      "confidence": 0.8,
+      "evidence": "heal pct=90% in MID (avg=7697.7, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "wards_destroyed pct=84% in MID (avg=12.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Ruler": [
@@ -11888,6 +13373,123 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374316"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 75.2,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 75.2% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 78.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=79% in ADC (avg=8.1, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "vspm pct=75% in ADC (avg=1.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=76% in ADC (avg=13.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "wards_destroyed pct=79% in ADC (avg=13.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_arcane_comet",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses arcane_comet in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Duro": [
@@ -12448,6 +14050,78 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372180"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 76.3,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 76.3% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csd15_bottom25pct",
+      "value": 10.3,
+      "confidence": 0.8,
+      "evidence": "csd15 pct=10% in SUPPORT (avg=-6.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "gpm pct=75% in SUPPORT (avg=289.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 84.8,
+      "confidence": 0.8,
+      "evidence": "kda pct=85% in SUPPORT (avg=15.0, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "csm pct=22% in SUPPORT (avg=0.9, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=81% in SUPPORT (avg=1433.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "heal pct=82% in SUPPORT (avg=10888.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Rich": [
@@ -13188,6 +14862,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374324"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=50%, magic=47%)",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_bottom25pct",
+      "value": 19.1,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=19% in TOP (avg=25215.4, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 3/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "9 unique builds in 9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/9 games",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 3, 1: 6} (n=9)",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 9/9",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.444,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 4/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.556,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Willer": [
@@ -13865,6 +15620,114 @@
       "sample_size": 6,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374328"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 85.0,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 85.0% (n=9)",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 79.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=80% in JUNGLE (avg=7.0, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "vision pct=24% in JUNGLE (avg=51.4, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "heal pct=82% in JUNGLE (avg=21121.9, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "wards_destroyed pct=24% in JUNGLE (avg=8.2, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.444,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 4/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.778,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:w_max",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "maxes W first in 6/9 games",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 6, 1: 3} (n=9)",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 9/9",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.889,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 8/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 9/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Ucal": [
@@ -14587,6 +16450,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374340"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 95.2,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 95.2% (n=9)",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 80.0,
+      "confidence": 0.8,
+      "evidence": "kda pct=80% in MID (avg=6.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.556,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 5/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "9 unique builds in 9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.889,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 8/9 games",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 9/9",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_phase_rush",
+      "value": 0.889,
+      "confidence": 0.8,
+      "evidence": "uses phase_rush in 8/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.889,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 8/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.444,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Jiwoo": [
@@ -15102,6 +17046,69 @@
       "sample_size": 9,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372060"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=59%, magic=36%)",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "vision pct=18% in ADC (avg=31.0, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_bottom25pct",
+      "value": 20.6,
+      "confidence": 0.8,
+      "evidence": "vspm pct=21% in ADC (avg=1.0, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "csm pct=25% in ADC (avg=9.4, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_bottom25pct",
+      "value": 8.8,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=9% in ADC (avg=10.7, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_bottom10pct",
+      "value": 8.8,
+      "confidence": 0.85,
+      "evidence": "wards_placed pct=9% in ADC (avg=10.7, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.889,
+      "confidence": 0.8,
+      "evidence": "same core build in 9/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Andil": [
@@ -15887,6 +17894,105 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374351"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 75.5,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 75.5% (n=9)",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=81% in SUPPORT (avg=46.2, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_bottom25pct",
+      "value": 14.7,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=15% in SUPPORT (avg=48.8, n=9)",
+      "sample_size": 9,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.556,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 5/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.111,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "9 unique builds in 9 games",
+      "sample_size": 9,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 0.889,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/9",
+      "sample_size": 9,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_unsealed_spellbook",
+      "value": 0.556,
+      "confidence": 0.8,
+      "evidence": "uses unsealed_spellbook in 5/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:inspiration_primary",
+      "value": 0.556,
+      "confidence": 0.8,
+      "evidence": "uses inspiration primary in 5/9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.556,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 9 games",
+      "sample_size": 9,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:DuDu": [
@@ -16456,6 +18562,69 @@
       "sample_size": 8,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371561"
+    },
+    {
+      "tag": "dmg:true_damage_threat",
+      "value": 11.2,
+      "confidence": 0.8,
+      "evidence": "avg true% = 11.2% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=41%, magic=48%)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=82% in TOP (avg=29.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=87% in TOP (avg=21.3, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "csm pct=79% in TOP (avg=9.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 88.2,
+      "confidence": 0.8,
+      "evidence": "heal pct=88% in TOP (avg=16169.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "same core build in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Pyosik": [
@@ -17196,6 +19365,96 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374360"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 81.2,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 81.2% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "dpm pct=18% in JUNGLE (avg=319.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=25% in JUNGLE (avg=12.3, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.125,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 7/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/8",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 7/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.875,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 7/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.375,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Clozer": [
@@ -17855,6 +20114,105 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374365"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 91.0,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 91.0% (n=8)",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "vspm pct=22% in MID (avg=1.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=25% in MID (avg=4339.9, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.25,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.25,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "8 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.75,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/8",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_phase_rush",
+      "value": 0.625,
+      "confidence": 0.8,
+      "evidence": "uses phase_rush in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.625,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:deokdam": [
@@ -18523,6 +20881,96 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374373"
+    },
+    {
+      "tag": "rank:gd15_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gd15 pct=25% in ADC (avg=-495.0, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=76% in ADC (avg=23586.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=76% in ADC (avg=16596.2, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "heal pct=78% in ADC (avg=8527.0, n=8)",
+      "sample_size": 8,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "8 unique builds in 8 games",
+      "sample_size": 8,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 8/8",
+      "sample_size": 8,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.625,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.375,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 3/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Peter": [
@@ -19137,6 +21585,123 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374377"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 76.3,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 76.3% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "dpm pct=25% in SUPPORT (avg=197.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=78% in SUPPORT (avg=72.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 2, 1: 3, 3: 1} (n=6)",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 0.833,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 5/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_unsealed_spellbook",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses unsealed_spellbook in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:inspiration_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses inspiration primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.833,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:kingen": [
@@ -19859,6 +22424,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374382"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 70.8,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 70.8% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csd15_bottom25pct",
+      "value": 21.3,
+      "confidence": 0.8,
+      "evidence": "csd15 pct=21% in TOP (avg=-11.0, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_grasp_of_the_undying",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "uses grasp_of_the_undying in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:resolve_primary",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "uses resolve primary in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Sponge": [
@@ -20590,6 +23236,69 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374391"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Scout": [
@@ -21159,6 +23868,51 @@
       "sample_size": 7,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372238"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 95.5,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 95.5% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 81.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=82% in MID (avg=7.2, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "kp pct=75% in MID (avg=77.5, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=81% in MID (avg=32.3, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.857,
+      "confidence": 0.8,
+      "evidence": "same core build in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Taeyoon": [
@@ -21827,6 +24581,105 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374396"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 71.5,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 71.5% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "vspm pct=75% in ADC (avg=1.5, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=22% in ADC (avg=24.2, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=82% in ADC (avg=17.1, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.571,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "7 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 7/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.429,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Lehends": [
@@ -22468,6 +25321,114 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374399"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 85.3,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 85.3% (n=7)",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 16.2,
+      "confidence": 0.8,
+      "evidence": "kp pct=16% in SUPPORT (avg=64.5, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_top25pct",
+      "value": 89.0,
+      "confidence": 0.8,
+      "evidence": "csm pct=89% in SUPPORT (avg=1.3, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=87% in SUPPORT (avg=49.6, n=7)",
+      "sample_size": 7,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.286,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.143,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "5 unique builds in 7 games",
+      "sample_size": 7,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.714,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 0.857,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/7",
+      "sample_size": 7,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_arcane_comet",
+      "value": 0.429,
+      "confidence": 0.8,
+      "evidence": "uses arcane_comet in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.571,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.714,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 7 games",
+      "sample_size": 7,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:PerfecT": [
@@ -23109,6 +26070,159 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374406"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 87.1,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 87.1% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gd15_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "gd15 pct=22% in TOP (avg=-311.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 11.8,
+      "confidence": 0.8,
+      "evidence": "dpm pct=12% in TOP (avg=380.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 21.3,
+      "confidence": 0.8,
+      "evidence": "gpm pct=21% in TOP (avg=344.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_bottom25pct",
+      "value": 21.0,
+      "confidence": 0.8,
+      "evidence": "kda pct=21% in TOP (avg=0.9, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 20.6,
+      "confidence": 0.8,
+      "evidence": "kp pct=21% in TOP (avg=40.9, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_bottom25pct",
+      "value": 14.7,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=15% in TOP (avg=16.9, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=81% in TOP (avg=60039.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_grasp_of_the_undying",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses grasp_of_the_undying in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:resolve_primary",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses resolve primary in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Cuzz": [
@@ -23606,6 +26720,60 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371691"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 82.2,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 82.2% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 11.8,
+      "confidence": 0.8,
+      "evidence": "dpm pct=12% in JUNGLE (avg=307.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "vision pct=79% in JUNGLE (avg=76.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "kp pct=76% in JUNGLE (avg=85.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=81% in JUNGLE (avg=14.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Bdd": [
@@ -24292,6 +27460,168 @@
       "sample_size": 4,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374420"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 95.1,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 95.1% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 7.4,
+      "confidence": 0.8,
+      "evidence": "gpm pct=7% in MID (avg=362.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom10pct",
+      "value": 7.4,
+      "confidence": 0.85,
+      "evidence": "gpm pct=7% in MID (avg=362.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_bottom25pct",
+      "value": 23.3,
+      "confidence": 0.8,
+      "evidence": "kda pct=23% in MID (avg=1.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_top25pct",
+      "value": 89.7,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=90% in MID (avg=29.9, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_bottom25pct",
+      "value": 20.6,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=21% in MID (avg=20.1, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_bottom25pct",
+      "value": 24.3,
+      "confidence": 0.8,
+      "evidence": "heal pct=24% in MID (avg=1626.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=87% in MID (avg=37.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "5 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 2, 1: 4} (n=6)",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_lethal_tempo",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses lethal_tempo in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_phase_rush",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses phase_rush in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "4 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Aiming": [
@@ -24852,6 +28182,42 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371735"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 70.0,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 70.0% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "kp pct=75% in ADC (avg=79.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=79% in ADC (avg=27.4, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Ghost": [
@@ -25322,6 +28688,159 @@
       "sample_size": 3,
       "source": "v3_dmg_comp",
       "timestamp": "2026-02-16T15:50:29.368831"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 90.2,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 90.2% (n=3)",
+      "sample_size": 3,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:xpd15_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "xpd15 pct=76% in SUPPORT (avg=334.0, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "dpm pct=24% in SUPPORT (avg=186.3, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gpm pct=25% in SUPPORT (avg=242.0, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=79% in SUPPORT (avg=1303.7, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 88.2,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=88% in SUPPORT (avg=24786.7, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "heal pct=85% in SUPPORT (avg=12192.7, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.333,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 1/3 games",
+      "sample_size": 3,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "3 unique builds in 3 games",
+      "sample_size": 3,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 2/3 games",
+      "sample_size": 3,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {2: 1, 1: 2} (n=3)",
+      "sample_size": 3,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 3/3",
+      "sample_size": 3,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_summon_aery",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses summon_aery in 1/3 games",
+      "sample_size": 3,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_unsealed_spellbook",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses unsealed_spellbook in 2/3 games",
+      "sample_size": 3,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 0.333,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 1/3 games",
+      "sample_size": 3,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:inspiration_primary",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses inspiration primary in 2/3 games",
+      "sample_size": 3,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 3 games",
+      "sample_size": 3,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Casting": [
@@ -26008,6 +29527,87 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374424"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=50%, magic=43%)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=87% in TOP (avg=19.0, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.833,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:GIDEON": [
@@ -26685,6 +30285,78 @@
       "sample_size": 3,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374428"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 84.6,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 84.6% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "dmg:true_damage_threat",
+      "value": 11.4,
+      "confidence": 0.8,
+      "evidence": "avg true% = 11.4% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top10pct",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "cc_time pct=91% in JUNGLE (avg=48.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "5 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_conqueror",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses conqueror in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:precision_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses precision primary in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Roamer": [
@@ -27407,6 +31079,114 @@
       "sample_size": 2,
       "source": "v3_skill",
       "timestamp": "2026-02-16T15:50:29.374440"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 94.8,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 94.8% (n=6)",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gd15_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gd15 pct=25% in MID (avg=-464.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "dpm pct=22% in MID (avg=522.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gpm pct=25% in MID (avg=388.5, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_bottom25pct",
+      "value": 16.2,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=16% in MID (avg=3117.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_phase_rush",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses phase_rush in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:sorcery_primary",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "uses sorcery primary in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "3 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Teddy": [
@@ -27931,6 +31711,24 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371936"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "gpm pct=18% in ADC (avg=446.2, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.833,
+      "confidence": 0.8,
+      "evidence": "same core build in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Namgung": [
@@ -28518,6 +32316,114 @@
       "sample_size": 6,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.371963"
+    },
+    {
+      "tag": "rank:dmg_share_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=76% in SUPPORT (avg=10.3, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=85% in SUPPORT (avg=22326.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 76.5,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=76% in SUPPORT (avg=21629.8, n=6)",
+      "sample_size": 6,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:early_spike",
+      "value": 0.667,
+      "confidence": 0.75,
+      "evidence": "first completed item < 10min in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:slow_scaling",
+      "value": 0.167,
+      "confidence": 0.75,
+      "evidence": "first completed item > 15min in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:adaptive_builder",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "6 unique builds in 6 games",
+      "sample_size": 6,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 0.667,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:adaptive",
+      "value": true,
+      "confidence": 0.75,
+      "evidence": "varies skill max: {1: 4, 2: 2} (n=6)",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:standard",
+      "value": 1.0,
+      "confidence": 0.75,
+      "evidence": "follows standard skill order 6/6",
+      "sample_size": 6,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:keystone_unsealed_spellbook",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses unsealed_spellbook in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:inspiration_primary",
+      "value": 0.5,
+      "confidence": 0.8,
+      "evidence": "uses inspiration primary in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rune:flex_runes",
+      "value": 0.833,
+      "confidence": 0.75,
+      "evidence": "5 unique rune setups in 6 games",
+      "sample_size": 6,
+      "source": "v4_rune",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Zeus": [
@@ -29015,6 +32921,51 @@
       "sample_size": 5,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372510"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=54%, magic=43%)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_top25pct",
+      "value": 77.4,
+      "confidence": 0.8,
+      "evidence": "kda pct=77% in TOP (avg=5.3, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_bottom25pct",
+      "value": 17.6,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=18% in TOP (avg=18.1, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 20.6,
+      "confidence": 0.8,
+      "evidence": "csm pct=21% in TOP (avg=8.1, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=85% in TOP (avg=68289.8, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Kanavi": [
@@ -29557,6 +33508,96 @@
       "sample_size": 5,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372530"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 87.9,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 87.9% (n=5)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "dpm pct=85% in JUNGLE (avg=629.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "vision pct=82% in JUNGLE (avg=77.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=82% in JUNGLE (avg=20.9, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=75% in JUNGLE (avg=20.5, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=84% in JUNGLE (avg=4176.8, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_taken_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "dmg_taken pct=84% in JUNGLE (avg=42515.4, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 85.3,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=85% in JUNGLE (avg=45115.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 88.2,
+      "confidence": 0.8,
+      "evidence": "heal pct=88% in JUNGLE (avg=23721.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "wards_destroyed pct=75% in JUNGLE (avg=18.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Zeka": [
@@ -30000,6 +34041,69 @@
       "sample_size": 5,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372553"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 95.9,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 95.9% (n=5)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "vision pct=81% in MID (avg=62.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "vspm pct=78% in MID (avg=1.8, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_bottom25pct",
+      "value": 22.1,
+      "confidence": 0.8,
+      "evidence": "csm pct=22% in MID (avg=9.1, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=78% in MID (avg=10902.0, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top10pct",
+      "value": 91.2,
+      "confidence": 0.85,
+      "evidence": "wards_placed pct=91% in MID (avg=22.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "build:one_build",
+      "value": 0.8,
+      "confidence": 0.8,
+      "evidence": "same core build in 5/5 games",
+      "sample_size": 5,
+      "source": "v4_build",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Gumayusi": [
@@ -30461,6 +34565,42 @@
       "sample_size": 5,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372573"
+    },
+    {
+      "tag": "dmg:physical_carry",
+      "value": 81.1,
+      "confidence": 0.85,
+      "evidence": "avg phys% = 81.1% (n=5)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "vision pct=78% in ADC (avg=50.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=87% in ADC (avg=20.8, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 88.2,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=88% in ADC (avg=18.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Delight": [
@@ -30976,6 +35116,141 @@
       "sample_size": 5,
       "source": "v3_form",
       "timestamp": "2026-02-16T15:50:29.372591"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 72.6,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 72.6% (n=5)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "dmg:true_damage_threat",
+      "value": 11.5,
+      "confidence": 0.8,
+      "evidence": "avg true% = 11.5% (n=5)",
+      "sample_size": 5,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csd15_top25pct",
+      "value": 86.8,
+      "confidence": 0.8,
+      "evidence": "csd15 pct=87% in SUPPORT (avg=6.0, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 19.1,
+      "confidence": 0.8,
+      "evidence": "dpm pct=19% in SUPPORT (avg=171.8, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_top25pct",
+      "value": 81.6,
+      "confidence": 0.8,
+      "evidence": "vision pct=82% in SUPPORT (avg=165.0, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "vspm pct=81% in SUPPORT (avg=4.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_bottom25pct",
+      "value": 10.3,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=10% in SUPPORT (avg=5.6, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gold_share_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "gold_share pct=82% in SUPPORT (avg=14.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:csm_top25pct",
+      "value": 89.0,
+      "confidence": 0.8,
+      "evidence": "csm pct=89% in SUPPORT (avg=1.3, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:tower_dmg_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "tower_dmg pct=81% in SUPPORT (avg=1447.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 77.9,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=78% in SUPPORT (avg=22494.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:heal_top25pct",
+      "value": 82.4,
+      "confidence": 0.8,
+      "evidence": "heal pct=82% in SUPPORT (avg=10643.4, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_top25pct",
+      "value": 80.9,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=81% in SUPPORT (avg=76.4, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_destroyed_top25pct",
+      "value": 79.4,
+      "confidence": 0.8,
+      "evidence": "wards_destroyed pct=79% in SUPPORT (avg=20.2, n=5)",
+      "sample_size": 5,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "skill:q_max",
+      "value": 1.0,
+      "confidence": 0.8,
+      "evidence": "maxes Q first in 1/1 games",
+      "sample_size": 1,
+      "source": "v4_skill",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Pollu": [
@@ -31401,6 +35676,60 @@
       "sample_size": 3,
       "source": "v3_dmg_comp",
       "timestamp": "2026-02-16T15:50:29.369191"
+    },
+    {
+      "tag": "dmg:magic_carry",
+      "value": 83.3,
+      "confidence": 0.85,
+      "evidence": "avg magic% = 83.3% (n=3)",
+      "sample_size": 3,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:xpd15_bottom25pct",
+      "value": 23.5,
+      "confidence": 0.8,
+      "evidence": "xpd15 pct=24% in SUPPORT (avg=-382.7, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_bottom25pct",
+      "value": 11.8,
+      "confidence": 0.8,
+      "evidence": "dpm pct=12% in SUPPORT (avg=141.3, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gpm_bottom25pct",
+      "value": 25.0,
+      "confidence": 0.8,
+      "evidence": "gpm pct=25% in SUPPORT (avg=245.0, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_bottom25pct",
+      "value": 19.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=20% in SUPPORT (avg=1.0, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_mitigated_top25pct",
+      "value": 83.8,
+      "confidence": 0.8,
+      "evidence": "dmg_mitigated pct=84% in SUPPORT (avg=24168.7, n=3)",
+      "sample_size": 3,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "player:Life": [
@@ -31781,6 +36110,105 @@
       "sample_size": 2,
       "source": "v3_dmg_comp",
       "timestamp": "2026-02-16T15:50:29.369215"
+    },
+    {
+      "tag": "dmg:balanced",
+      "value": true,
+      "confidence": 0.8,
+      "evidence": "no single type > 60% (phys=52%, magic=45%)",
+      "sample_size": 2,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:gd15_bottom25pct",
+      "value": 20.6,
+      "confidence": 0.8,
+      "evidence": "gd15 pct=21% in SUPPORT (avg=-315.0, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dpm_top25pct",
+      "value": 75.0,
+      "confidence": 0.8,
+      "evidence": "dpm pct=75% in SUPPORT (avg=319.0, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kda_bottom25pct",
+      "value": 19.7,
+      "confidence": 0.8,
+      "evidence": "kda pct=20% in SUPPORT (avg=1.2, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vision_bottom25pct",
+      "value": 11.8,
+      "confidence": 0.8,
+      "evidence": "vision pct=12% in SUPPORT (avg=97.5, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:vspm_bottom25pct",
+      "value": 16.2,
+      "confidence": 0.8,
+      "evidence": "vspm pct=16% in SUPPORT (avg=3.4, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:kp_bottom25pct",
+      "value": 13.2,
+      "confidence": 0.8,
+      "evidence": "kp pct=13% in SUPPORT (avg=59.7, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:dmg_share_top25pct",
+      "value": 89.7,
+      "confidence": 0.8,
+      "evidence": "dmg_share pct=90% in SUPPORT (avg=13.4, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_bottom25pct",
+      "value": 2.9,
+      "confidence": 0.8,
+      "evidence": "cc_time pct=3% in SUPPORT (avg=16.5, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:cc_time_bottom10pct",
+      "value": 2.9,
+      "confidence": 0.85,
+      "evidence": "cc_time pct=3% in SUPPORT (avg=16.5, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "rank:wards_placed_bottom25pct",
+      "value": 10.3,
+      "confidence": 0.8,
+      "evidence": "wards_placed pct=10% in SUPPORT (avg=45.5, n=2)",
+      "sample_size": 2,
+      "source": "v4_rank",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:BNK FearX": [
@@ -32155,6 +36583,123 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752487"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.571,
+      "confidence": 0.7857,
+      "evidence": "gold lead grows after 20min in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "game goes 30+ minutes in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.143,
+      "confidence": 0.5714,
+      "evidence": "early lead maintained to win in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.429,
+      "confidence": 0.7143,
+      "evidence": "won from 1000+ deficit in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.143,
+      "confidence": 0.5714,
+      "evidence": "lost with 2000+ lead in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:stable",
+      "value": 0.143,
+      "confidence": 0.5714,
+      "evidence": "gold diff std < 1000 in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.286,
+      "confidence": 0.6429,
+      "evidence": "gold diff std > 3000 in 2/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.857,
+      "confidence": 0.9286,
+      "evidence": "lead changed sign 3+ times in 6/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.571,
+      "confidence": 0.7857,
+      "evidence": "gold slope increases over game in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.429,
+      "confidence": 0.7143,
+      "evidence": "gold slope decreases over game in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.571,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.714,
+      "confidence": 0.8429,
+      "evidence": "plays teamfight comp in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:T1": [
@@ -32538,6 +37083,123 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752521"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.545,
+      "confidence": 0.7727,
+      "evidence": "gold lead grows after 20min in 6/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "game goes 30+ minutes in 11/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.364,
+      "confidence": 0.6818,
+      "evidence": "early lead maintained to win in 4/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.273,
+      "confidence": 0.6364,
+      "evidence": "won from 1000+ deficit in 3/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.091,
+      "confidence": 0.5455,
+      "evidence": "lost with 2000+ lead in 1/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.455,
+      "confidence": 0.7273,
+      "evidence": "gold diff std > 3000 in 5/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.455,
+      "confidence": 0.7273,
+      "evidence": "lead changed sign 3+ times in 5/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.455,
+      "confidence": 0.7273,
+      "evidence": "gold slope increases over game in 5/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.545,
+      "confidence": 0.7727,
+      "evidence": "gold slope decreases over game in 6/11 games",
+      "sample_size": 11,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.6,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 6/10 games",
+      "sample_size": 10,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.818,
+      "confidence": 0.8636,
+      "evidence": "plays teamfight comp in 9/11 games",
+      "sample_size": 11,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:poke",
+      "value": 0.364,
+      "confidence": 0.7727,
+      "evidence": "plays poke comp in 4/11 games",
+      "sample_size": 11,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 11/11 games",
+      "sample_size": 11,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:Dplus KIA": [
@@ -32894,6 +37556,123 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752503"
+    },
+    {
+      "tag": "phase:early_dominant",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "avg gold lead min 0-10 > 500 in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:mid_spike",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "largest gold swing in 10-20min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "gold lead grows after 20min in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.75,
+      "confidence": 0.875,
+      "evidence": "game goes 30+ minutes in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "early lead maintained to win in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "won from 1000+ deficit in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.875,
+      "confidence": 0.9375,
+      "evidence": "gold diff std > 3000 in 7/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.375,
+      "confidence": 0.6875,
+      "evidence": "lead changed sign 3+ times in 3/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "gold slope increases over game in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "gold slope decreases over game in 4/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.625,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.625,
+      "confidence": 0.825,
+      "evidence": "plays teamfight comp in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:Gen.G": [
@@ -33232,6 +38011,114 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752506"
+    },
+    {
+      "tag": "phase:early_dominant",
+      "value": 0.167,
+      "confidence": 0.5833,
+      "evidence": "avg gold lead min 0-10 > 500 in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "gold lead grows after 20min in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "game goes 30+ minutes in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.333,
+      "confidence": 0.6667,
+      "evidence": "early lead maintained to win in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "won from 1000+ deficit in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:stable",
+      "value": 0.167,
+      "confidence": 0.5833,
+      "evidence": "gold diff std < 1000 in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "gold diff std > 3000 in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "lead changed sign 3+ times in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "gold slope increases over game in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 1.0,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "plays teamfight comp in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:DRX": [
@@ -33633,6 +38520,132 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752498"
+    },
+    {
+      "tag": "phase:early_dominant",
+      "value": 0.111,
+      "confidence": 0.5556,
+      "evidence": "avg gold lead min 0-10 > 500 in 1/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:mid_spike",
+      "value": 0.222,
+      "confidence": 0.6111,
+      "evidence": "largest gold swing in 10-20min in 2/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "gold lead grows after 20min in 6/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "game goes 30+ minutes in 6/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.444,
+      "confidence": 0.7222,
+      "evidence": "early lead maintained to win in 4/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.222,
+      "confidence": 0.6111,
+      "evidence": "won from 1000+ deficit in 2/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "gold diff std > 3000 in 6/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.333,
+      "confidence": 0.6667,
+      "evidence": "lead changed sign 3+ times in 3/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.778,
+      "confidence": 0.8889,
+      "evidence": "gold slope increases over game in 7/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.222,
+      "confidence": 0.6111,
+      "evidence": "gold slope decreases over game in 2/9 games",
+      "sample_size": 9,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.778,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 7/9 games",
+      "sample_size": 9,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays teamfight comp in 9/9 games",
+      "sample_size": 9,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:splitpush",
+      "value": 0.222,
+      "confidence": 0.7444,
+      "evidence": "plays splitpush comp in 2/9 games",
+      "sample_size": 9,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 9/9 games",
+      "sample_size": 9,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:DN SOOPers": [
@@ -34052,6 +39065,150 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752492"
+    },
+    {
+      "tag": "phase:early_dominant",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "avg gold lead min 0-10 > 500 in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:mid_spike",
+      "value": 0.125,
+      "confidence": 0.5625,
+      "evidence": "largest gold swing in 10-20min in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "gold lead grows after 20min in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.875,
+      "confidence": 0.9375,
+      "evidence": "game goes 30+ minutes in 7/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "early lead maintained to win in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.125,
+      "confidence": 0.5625,
+      "evidence": "won from 1000+ deficit in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.25,
+      "confidence": 0.625,
+      "evidence": "lost with 2000+ lead in 2/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.625,
+      "confidence": 0.8125,
+      "evidence": "gold diff std > 3000 in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.375,
+      "confidence": 0.6875,
+      "evidence": "lead changed sign 3+ times in 3/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.375,
+      "confidence": 0.6875,
+      "evidence": "gold slope increases over game in 3/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.625,
+      "confidence": 0.8125,
+      "evidence": "gold slope decreases over game in 5/8 games",
+      "sample_size": 8,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:all_ap_risk",
+      "value": 0.125,
+      "confidence": 0.8,
+      "evidence": "team magic% > 70% in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.75,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.75,
+      "confidence": 0.85,
+      "evidence": "plays teamfight comp in 6/8 games",
+      "sample_size": 8,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:poke",
+      "value": 0.125,
+      "confidence": 0.725,
+      "evidence": "plays poke comp in 1/8 games",
+      "sample_size": 8,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 8/8 games",
+      "sample_size": 8,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:NS RedForce": [
@@ -34462,6 +39619,132 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752516"
+    },
+    {
+      "tag": "phase:mid_spike",
+      "value": 0.143,
+      "confidence": 0.5714,
+      "evidence": "largest gold swing in 10-20min in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "phase:late_scaling",
+      "value": 0.429,
+      "confidence": 0.7143,
+      "evidence": "gold lead grows after 20min in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.714,
+      "confidence": 0.8571,
+      "evidence": "game goes 30+ minutes in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:snowball",
+      "value": 0.286,
+      "confidence": 0.6429,
+      "evidence": "early lead maintained to win in 2/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.143,
+      "confidence": 0.5714,
+      "evidence": "won from 1000+ deficit in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.286,
+      "confidence": 0.6429,
+      "evidence": "lost with 2000+ lead in 2/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.571,
+      "confidence": 0.7857,
+      "evidence": "gold diff std > 3000 in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.714,
+      "confidence": 0.8571,
+      "evidence": "lead changed sign 3+ times in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.429,
+      "confidence": 0.7143,
+      "evidence": "gold slope increases over game in 3/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.571,
+      "confidence": 0.7857,
+      "evidence": "gold slope decreases over game in 4/7 games",
+      "sample_size": 7,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.714,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.714,
+      "confidence": 0.8429,
+      "evidence": "plays teamfight comp in 5/7 games",
+      "sample_size": 7,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:splitpush",
+      "value": 0.143,
+      "confidence": 0.7286,
+      "evidence": "plays splitpush comp in 1/7 games",
+      "sample_size": 7,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 7/7 games",
+      "sample_size": 7,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:KT Rolster": [
@@ -34809,6 +40092,87 @@
       "sample_size": 0,
       "source": "auto_discovery_v1",
       "timestamp": "2026-02-16T16:21:36.752510"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.833,
+      "confidence": 0.9167,
+      "evidence": "game goes 30+ minutes in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.167,
+      "confidence": 0.5833,
+      "evidence": "lost with 2000+ lead in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "gold diff std > 3000 in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "lead changed sign 3+ times in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 1.0,
+      "confidence": 0.95,
+      "evidence": "gold slope decreases over game in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 1.0,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "plays teamfight comp in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:splitpush",
+      "value": 0.167,
+      "confidence": 0.7333,
+      "evidence": "plays splitpush comp in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "team:BRO": [
@@ -35165,6 +40529,96 @@
       "sample_size": 6,
       "source": "v3_comp",
       "timestamp": "2026-02-16T15:50:29.371205"
+    },
+    {
+      "tag": "tempo:slow_grinder",
+      "value": 0.833,
+      "confidence": 0.9167,
+      "evidence": "game goes 30+ minutes in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:comeback_capable",
+      "value": 0.167,
+      "confidence": 0.5833,
+      "evidence": "won from 1000+ deficit in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "momentum:throw_risk",
+      "value": 0.167,
+      "confidence": 0.5833,
+      "evidence": "lost with 2000+ lead in 1/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "volatility:chaotic",
+      "value": 0.333,
+      "confidence": 0.6667,
+      "evidence": "gold diff std > 3000 in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "crossover:frequent",
+      "value": 0.5,
+      "confidence": 0.75,
+      "evidence": "lead changed sign 3+ times in 3/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:accelerating",
+      "value": 0.333,
+      "confidence": 0.6667,
+      "evidence": "gold slope increases over game in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "trend:decelerating",
+      "value": 0.667,
+      "confidence": 0.8333,
+      "evidence": "gold slope decreases over game in 4/6 games",
+      "sample_size": 6,
+      "source": "v4_gold_timeline",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:mixed_damage",
+      "value": 0.833,
+      "confidence": 0.85,
+      "evidence": "balanced team damage in 5/6 games",
+      "sample_size": 6,
+      "source": "v4_dmg_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:teamfight",
+      "value": 0.333,
+      "confidence": 0.7667,
+      "evidence": "plays teamfight comp in 2/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
+    },
+    {
+      "tag": "comp:protect_carry",
+      "value": 1.0,
+      "confidence": 0.9,
+      "evidence": "plays protect_carry comp in 6/6 games",
+      "sample_size": 6,
+      "source": "v4_comp",
+      "timestamp": "2026-02-16T16:56:05.494327"
     }
   ],
   "champion:Rumble": [

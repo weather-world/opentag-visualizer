@@ -1,0 +1,3054 @@
+[
+  {
+    "signal_id": "SIG_001",
+    "name": "corr_team_total_tower",
+    "type": "correlation",
+    "conditions": [
+      "objective:tower_low"
+    ],
+    "expected_wr": 0.751,
+    "sample_size": 68,
+    "confidence": 0.834,
+    "edge_vs_50": 0.251,
+    "applicable_to": "team with positive team_total_tower",
+    "kelly_fraction": 0.1883
+  },
+  {
+    "signal_id": "SIG_002",
+    "name": "corr_team_max_deficit",
+    "type": "correlation",
+    "conditions": [
+      "momentum:deficit"
+    ],
+    "expected_wr": 0.747,
+    "sample_size": 68,
+    "confidence": 0.829,
+    "edge_vs_50": 0.247,
+    "applicable_to": "team with positive team_max_deficit",
+    "kelly_fraction": 0.1839
+  },
+  {
+    "signal_id": "SIG_003",
+    "name": "corr_team_max_lead",
+    "type": "correlation",
+    "conditions": [
+      "momentum:deficit"
+    ],
+    "expected_wr": 0.739,
+    "sample_size": 68,
+    "confidence": 0.819,
+    "edge_vs_50": 0.239,
+    "applicable_to": "team with positive team_max_lead",
+    "kelly_fraction": 0.1765
+  },
+  {
+    "signal_id": "SIG_004",
+    "name": "corr_team_total_deaths",
+    "type": "correlation",
+    "conditions": [
+      "stat:team_total_deaths_negative"
+    ],
+    "expected_wr": 0.725,
+    "sample_size": 68,
+    "confidence": 0.8,
+    "edge_vs_50": 0.225,
+    "applicable_to": "team with negative team_total_deaths",
+    "kelly_fraction": 0.1623
+  },
+  {
+    "signal_id": "SIG_005",
+    "name": "corr_team_total_kills",
+    "type": "correlation",
+    "conditions": [
+      "stat:team_total_kills_positive"
+    ],
+    "expected_wr": 0.722,
+    "sample_size": 68,
+    "confidence": 0.796,
+    "edge_vs_50": 0.222,
+    "applicable_to": "team with positive team_total_kills",
+    "kelly_fraction": 0.159
+  },
+  {
+    "signal_id": "SIG_006",
+    "name": "corr_SUPPORT_KDA",
+    "type": "correlation",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "expected_wr": 0.682,
+    "sample_size": 68,
+    "confidence": 0.743,
+    "edge_vs_50": 0.182,
+    "applicable_to": "team with positive SUPPORT_KDA",
+    "kelly_fraction": 0.1217
+  },
+  {
+    "signal_id": "SIG_007",
+    "name": "corr_JUNGLE_KDA",
+    "type": "correlation",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "expected_wr": 0.67,
+    "sample_size": 68,
+    "confidence": 0.727,
+    "edge_vs_50": 0.17,
+    "applicable_to": "team with positive JUNGLE_KDA",
+    "kelly_fraction": 0.1113
+  },
+  {
+    "signal_id": "SIG_008",
+    "name": "corr_team_gd20",
+    "type": "correlation",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "expected_wr": 0.665,
+    "sample_size": 68,
+    "confidence": 0.72,
+    "edge_vs_50": 0.165,
+    "applicable_to": "team with positive team_gd20",
+    "kelly_fraction": 0.1067
+  },
+  {
+    "signal_id": "SIG_009",
+    "name": "corr_team_total_dpm",
+    "type": "correlation",
+    "conditions": [
+      "combat:dpm_low"
+    ],
+    "expected_wr": 0.657,
+    "sample_size": 68,
+    "confidence": 0.709,
+    "edge_vs_50": 0.157,
+    "applicable_to": "team with positive team_total_dpm",
+    "kelly_fraction": 0.0999
+  },
+  {
+    "signal_id": "SIG_010",
+    "name": "corr_SUPPORT_CSD@15",
+    "type": "correlation",
+    "conditions": [
+      "rank:csd15_bottom25pct"
+    ],
+    "expected_wr": 0.645,
+    "sample_size": 68,
+    "confidence": 0.693,
+    "edge_vs_50": 0.145,
+    "applicable_to": "team with negative SUPPORT_CSD@15",
+    "kelly_fraction": 0.0904
+  },
+  {
+    "signal_id": "SIG_011",
+    "name": "corr_ADC_DPM",
+    "type": "correlation",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "expected_wr": 0.642,
+    "sample_size": 68,
+    "confidence": 0.69,
+    "edge_vs_50": 0.142,
+    "applicable_to": "team with positive ADC_DPM",
+    "kelly_fraction": 0.0885
+  },
+  {
+    "signal_id": "SIG_012",
+    "name": "corr_ADC_KDA",
+    "type": "correlation",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "expected_wr": 0.642,
+    "sample_size": 68,
+    "confidence": 0.689,
+    "edge_vs_50": 0.142,
+    "applicable_to": "team with positive ADC_KDA",
+    "kelly_fraction": 0.0878
+  },
+  {
+    "signal_id": "SIG_013",
+    "name": "corr_TOP_KDA",
+    "type": "correlation",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "expected_wr": 0.639,
+    "sample_size": 68,
+    "confidence": 0.686,
+    "edge_vs_50": 0.139,
+    "applicable_to": "team with positive TOP_KDA",
+    "kelly_fraction": 0.0861
+  },
+  {
+    "signal_id": "SIG_014",
+    "name": "corr_MID_KDA",
+    "type": "correlation",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "expected_wr": 0.63,
+    "sample_size": 68,
+    "confidence": 0.673,
+    "edge_vs_50": 0.13,
+    "applicable_to": "team with positive MID_KDA",
+    "kelly_fraction": 0.0785
+  },
+  {
+    "signal_id": "SIG_015",
+    "name": "corr_ADC_GD@15",
+    "type": "correlation",
+    "conditions": [
+      "rank:gd15_bottom25pct",
+      "early:gd15_negative"
+    ],
+    "expected_wr": 0.622,
+    "sample_size": 68,
+    "confidence": 0.663,
+    "edge_vs_50": 0.122,
+    "applicable_to": "team with positive ADC_GD@15",
+    "kelly_fraction": 0.0731
+  },
+  {
+    "signal_id": "SIG_016",
+    "name": "corr_JUNGLE_DPM",
+    "type": "correlation",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "expected_wr": 0.61,
+    "sample_size": 68,
+    "confidence": 0.646,
+    "edge_vs_50": 0.11,
+    "applicable_to": "team with positive JUNGLE_DPM",
+    "kelly_fraction": 0.0639
+  },
+  {
+    "signal_id": "SIG_017",
+    "name": "corr_ADC_CSD@15",
+    "type": "correlation",
+    "conditions": [
+      "rank:csd15_bottom25pct"
+    ],
+    "expected_wr": 0.601,
+    "sample_size": 68,
+    "confidence": 0.634,
+    "edge_vs_50": 0.101,
+    "applicable_to": "team with positive ADC_CSD@15",
+    "kelly_fraction": 0.0573
+  },
+  {
+    "signal_id": "SIG_018",
+    "name": "corr_team_magic_pct",
+    "type": "correlation",
+    "conditions": [
+      "stat:team_magic_pct_negative"
+    ],
+    "expected_wr": 0.596,
+    "sample_size": 68,
+    "confidence": 0.628,
+    "edge_vs_50": 0.096,
+    "applicable_to": "team with negative team_magic_pct",
+    "kelly_fraction": 0.0541
+  },
+  {
+    "signal_id": "SIG_019",
+    "name": "corr_team_gd15",
+    "type": "correlation",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "expected_wr": 0.595,
+    "sample_size": 68,
+    "confidence": 0.627,
+    "edge_vs_50": 0.095,
+    "applicable_to": "team with positive team_gd15",
+    "kelly_fraction": 0.0536
+  },
+  {
+    "signal_id": "SIG_020",
+    "name": "corr_team_avg_gd15",
+    "type": "correlation",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "expected_wr": 0.595,
+    "sample_size": 68,
+    "confidence": 0.627,
+    "edge_vs_50": 0.095,
+    "applicable_to": "team with positive team_avg_gd15",
+    "kelly_fraction": 0.0536
+  },
+  {
+    "signal_id": "SIG_021",
+    "name": "cond_ADC_CSD@15_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:csd15_top25pct"
+    ],
+    "threshold": 13.0,
+    "expected_wr": 0.722,
+    "sample_size": 18,
+    "confidence": 0.722,
+    "edge_vs_50": 0.222,
+    "applicable_to": "team with ADC_CSD@15 >= 13.0",
+    "kelly_fraction": 0.1443
+  },
+  {
+    "signal_id": "SIG_022",
+    "name": "cond_ADC_CSD@15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:csd15_bottom25pct"
+    ],
+    "threshold": -13.0,
+    "expected_wr": 0.722,
+    "sample_size": 18,
+    "confidence": 0.678,
+    "edge_vs_50": 0.222,
+    "applicable_to": "bet AGAINST team with ADC_CSD@15 <= -13.0",
+    "kelly_fraction": 0.1354
+  },
+  {
+    "signal_id": "SIG_023",
+    "name": "cond_ADC_DMG%_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dmgpct_top25pct"
+    ],
+    "threshold": 31.8,
+    "expected_wr": 0.611,
+    "sample_size": 18,
+    "confidence": 0.647,
+    "edge_vs_50": 0.111,
+    "applicable_to": "team with ADC_DMG% >= 31.8",
+    "kelly_fraction": 0.0647
+  },
+  {
+    "signal_id": "SIG_024",
+    "name": "cond_ADC_DMG%_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dmgpct_bottom25pct"
+    ],
+    "threshold": 24.9,
+    "expected_wr": 0.684,
+    "sample_size": 19,
+    "confidence": 0.618,
+    "edge_vs_50": 0.184,
+    "applicable_to": "bet AGAINST team with ADC_DMG% <= 24.9",
+    "kelly_fraction": 0.1023
+  },
+  {
+    "signal_id": "SIG_025",
+    "name": "cond_ADC_DPM_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dpm_top25pct",
+      "combat:dpm_high"
+    ],
+    "threshold": 971.0,
+    "expected_wr": 0.765,
+    "sample_size": 17,
+    "confidence": 0.855,
+    "edge_vs_50": 0.265,
+    "applicable_to": "team with ADC_DPM >= 971.0",
+    "kelly_fraction": 0.2038
+  },
+  {
+    "signal_id": "SIG_026",
+    "name": "cond_ADC_DPM_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "threshold": 642.0,
+    "expected_wr": 0.944,
+    "sample_size": 18,
+    "confidence": 0.784,
+    "edge_vs_50": 0.444,
+    "applicable_to": "bet AGAINST team with ADC_DPM <= 642.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_027",
+    "name": "cond_ADC_GD@15_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:gd15_top25pct",
+      "early:gd15_positive"
+    ],
+    "threshold": 498.0,
+    "expected_wr": 0.824,
+    "sample_size": 17,
+    "confidence": 0.8,
+    "edge_vs_50": 0.324,
+    "applicable_to": "team with ADC_GD@15 >= 498.0",
+    "kelly_fraction": 0.2334
+  },
+  {
+    "signal_id": "SIG_028",
+    "name": "cond_ADC_GD@15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:gd15_bottom25pct",
+      "early:gd15_negative"
+    ],
+    "threshold": -479.0,
+    "expected_wr": 0.778,
+    "sample_size": 18,
+    "confidence": 0.74,
+    "edge_vs_50": 0.278,
+    "applicable_to": "bet AGAINST team with ADC_GD@15 <= -479.0",
+    "kelly_fraction": 0.1852
+  },
+  {
+    "signal_id": "SIG_029",
+    "name": "cond_ADC_KDA_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "threshold": 7.5,
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.776,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with ADC_KDA >= 7.5",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_030",
+    "name": "cond_ADC_KDA_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "threshold": 1.0,
+    "expected_wr": 0.611,
+    "sample_size": 18,
+    "confidence": 0.721,
+    "edge_vs_50": 0.111,
+    "applicable_to": "bet AGAINST team with ADC_KDA <= 1.0",
+    "kelly_fraction": 0.072
+  },
+  {
+    "signal_id": "SIG_031",
+    "name": "cond_ADC_gold_pct_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:gold_pct_top25pct",
+      "early:gd15_positive"
+    ],
+    "threshold": 27.2,
+    "expected_wr": 0.647,
+    "sample_size": 17,
+    "confidence": 0.684,
+    "edge_vs_50": 0.147,
+    "applicable_to": "team with ADC_gold_pct >= 27.2",
+    "kelly_fraction": 0.0906
+  },
+  {
+    "signal_id": "SIG_032",
+    "name": "cond_ADC_gold_pct_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:gold_pct_bottom25pct",
+      "early:gd15_negative"
+    ],
+    "threshold": 24.3,
+    "expected_wr": 0.722,
+    "sample_size": 18,
+    "confidence": 0.648,
+    "edge_vs_50": 0.222,
+    "applicable_to": "bet AGAINST team with ADC_gold_pct <= 24.3",
+    "kelly_fraction": 0.1294
+  },
+  {
+    "signal_id": "SIG_033",
+    "name": "cond_JUNGLE_DPM_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dpm_top25pct",
+      "combat:dpm_high"
+    ],
+    "threshold": 535.0,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.742,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with JUNGLE_DPM >= 535.0",
+    "kelly_fraction": 0.1376
+  },
+  {
+    "signal_id": "SIG_034",
+    "name": "cond_JUNGLE_DPM_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "threshold": 346.0,
+    "expected_wr": 0.778,
+    "sample_size": 18,
+    "confidence": 0.694,
+    "edge_vs_50": 0.278,
+    "applicable_to": "bet AGAINST team with JUNGLE_DPM <= 346.0",
+    "kelly_fraction": 0.1735
+  },
+  {
+    "signal_id": "SIG_035",
+    "name": "cond_JUNGLE_KDA_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "threshold": 5.7,
+    "expected_wr": 1.0,
+    "sample_size": 17,
+    "confidence": 0.895,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with JUNGLE_KDA >= 5.7",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_036",
+    "name": "cond_JUNGLE_KDA_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "threshold": 1.0,
+    "expected_wr": 0.789,
+    "sample_size": 19,
+    "confidence": 0.816,
+    "edge_vs_50": 0.289,
+    "applicable_to": "bet AGAINST team with JUNGLE_KDA <= 1.0",
+    "kelly_fraction": 0.2121
+  },
+  {
+    "signal_id": "SIG_037",
+    "name": "cond_MID_DPM_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dpm_top25pct",
+      "combat:dpm_high"
+    ],
+    "threshold": 764.0,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.714,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with MID_DPM >= 764.0",
+    "kelly_fraction": 0.1324
+  },
+  {
+    "signal_id": "SIG_038",
+    "name": "cond_MID_DPM_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "threshold": 534.0,
+    "expected_wr": 0.722,
+    "sample_size": 18,
+    "confidence": 0.671,
+    "edge_vs_50": 0.222,
+    "applicable_to": "bet AGAINST team with MID_DPM <= 534.0",
+    "kelly_fraction": 0.1341
+  },
+  {
+    "signal_id": "SIG_039",
+    "name": "cond_MID_GD@15_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:gd15_top25pct",
+      "early:gd15_positive"
+    ],
+    "threshold": 507.0,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.686,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with MID_GD@15 >= 507.0",
+    "kelly_fraction": 0.1273
+  },
+  {
+    "signal_id": "SIG_040",
+    "name": "cond_MID_GD@15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:gd15_bottom25pct",
+      "early:gd15_negative"
+    ],
+    "threshold": -453.0,
+    "expected_wr": 0.667,
+    "sample_size": 18,
+    "confidence": 0.649,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST team with MID_GD@15 <= -453.0",
+    "kelly_fraction": 0.0976
+  },
+  {
+    "signal_id": "SIG_041",
+    "name": "cond_MID_KDA_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "threshold": 5.5,
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.76,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with MID_KDA >= 5.5",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_042",
+    "name": "cond_MID_KDA_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "threshold": 1.0,
+    "expected_wr": 0.579,
+    "sample_size": 19,
+    "confidence": 0.708,
+    "edge_vs_50": 0.079,
+    "applicable_to": "bet AGAINST team with MID_KDA <= 1.0",
+    "kelly_fraction": 0.0503
+  },
+  {
+    "signal_id": "SIG_043",
+    "name": "cond_SUPPORT_DPM_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dpm_top25pct",
+      "combat:dpm_high"
+    ],
+    "threshold": 322.0,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.714,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with SUPPORT_DPM >= 322.0",
+    "kelly_fraction": 0.1324
+  },
+  {
+    "signal_id": "SIG_044",
+    "name": "cond_SUPPORT_DPM_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "threshold": 206.0,
+    "expected_wr": 0.722,
+    "sample_size": 18,
+    "confidence": 0.671,
+    "edge_vs_50": 0.222,
+    "applicable_to": "bet AGAINST team with SUPPORT_DPM <= 206.0",
+    "kelly_fraction": 0.1341
+  },
+  {
+    "signal_id": "SIG_045",
+    "name": "cond_SUPPORT_GD@15_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:gd15_top25pct",
+      "early:gd15_positive"
+    ],
+    "threshold": 275.0,
+    "expected_wr": 0.647,
+    "sample_size": 17,
+    "confidence": 0.657,
+    "edge_vs_50": 0.147,
+    "applicable_to": "team with SUPPORT_GD@15 >= 275.0",
+    "kelly_fraction": 0.0869
+  },
+  {
+    "signal_id": "SIG_046",
+    "name": "cond_SUPPORT_GD@15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:gd15_bottom25pct",
+      "early:gd15_negative"
+    ],
+    "threshold": -259.0,
+    "expected_wr": 0.667,
+    "sample_size": 18,
+    "confidence": 0.626,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST team with SUPPORT_GD@15 <= -259.0",
+    "kelly_fraction": 0.094
+  },
+  {
+    "signal_id": "SIG_047",
+    "name": "cond_SUPPORT_KDA_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "threshold": 9.0,
+    "expected_wr": 0.944,
+    "sample_size": 18,
+    "confidence": 0.9,
+    "edge_vs_50": 0.444,
+    "applicable_to": "team with SUPPORT_KDA >= 9.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_048",
+    "name": "cond_SUPPORT_KDA_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "threshold": 1.3,
+    "expected_wr": 0.889,
+    "sample_size": 18,
+    "confidence": 0.833,
+    "edge_vs_50": 0.389,
+    "applicable_to": "bet AGAINST team with SUPPORT_KDA <= 1.3",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_049",
+    "name": "cond_TOP_DPM_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:dpm_top25pct",
+      "combat:dpm_high"
+    ],
+    "threshold": 849.0,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.642,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with TOP_DPM >= 849.0",
+    "kelly_fraction": 0.1191
+  },
+  {
+    "signal_id": "SIG_050",
+    "name": "cond_TOP_DPM_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:dpm_bottom25pct",
+      "combat:dpm_low"
+    ],
+    "threshold": 549.0,
+    "expected_wr": 0.579,
+    "sample_size": 19,
+    "confidence": 0.614,
+    "edge_vs_50": 0.079,
+    "applicable_to": "bet AGAINST team with TOP_DPM <= 549.0",
+    "kelly_fraction": 0.0437
+  },
+  {
+    "signal_id": "SIG_051",
+    "name": "cond_TOP_KDA_high",
+    "type": "conditional",
+    "conditions": [
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "threshold": 4.7,
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.812,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with TOP_KDA >= 4.7",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_052",
+    "name": "cond_TOP_KDA_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "rank:kda_bottom25pct",
+      "combat:kda_low"
+    ],
+    "threshold": 0.8,
+    "expected_wr": 0.684,
+    "sample_size": 19,
+    "confidence": 0.75,
+    "edge_vs_50": 0.184,
+    "applicable_to": "bet AGAINST team with TOP_KDA <= 0.8",
+    "kelly_fraction": 0.1242
+  },
+  {
+    "signal_id": "SIG_053",
+    "name": "cond_team_avg_gd15_high",
+    "type": "conditional",
+    "conditions": [
+      "early:gd15_positive"
+    ],
+    "threshold": 388.4,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.686,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with team_avg_gd15 >= 388.4",
+    "kelly_fraction": 0.1273
+  },
+  {
+    "signal_id": "SIG_054",
+    "name": "cond_team_avg_gd15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "threshold": -345.6,
+    "expected_wr": 0.667,
+    "sample_size": 18,
+    "confidence": 0.649,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST team with team_avg_gd15 <= -345.6",
+    "kelly_fraction": 0.0976
+  },
+  {
+    "signal_id": "SIG_055",
+    "name": "cond_team_gd15_high",
+    "type": "conditional",
+    "conditions": [
+      "early:gd15_positive"
+    ],
+    "threshold": 1942,
+    "expected_wr": 0.706,
+    "sample_size": 17,
+    "confidence": 0.686,
+    "edge_vs_50": 0.206,
+    "applicable_to": "team with team_gd15 >= 1942",
+    "kelly_fraction": 0.1273
+  },
+  {
+    "signal_id": "SIG_056",
+    "name": "cond_team_gd15_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "threshold": -1728,
+    "expected_wr": 0.667,
+    "sample_size": 18,
+    "confidence": 0.649,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST team with team_gd15 <= -1728",
+    "kelly_fraction": 0.0976
+  },
+  {
+    "signal_id": "SIG_057",
+    "name": "cond_team_gd20_high",
+    "type": "conditional",
+    "conditions": [
+      "early:gd15_positive"
+    ],
+    "threshold": 3039,
+    "expected_wr": 0.882,
+    "sample_size": 17,
+    "confidence": 0.885,
+    "edge_vs_50": 0.382,
+    "applicable_to": "team with team_gd20 >= 3039",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_058",
+    "name": "cond_team_gd20_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "early:gd15_negative"
+    ],
+    "threshold": -2814,
+    "expected_wr": 0.889,
+    "sample_size": 18,
+    "confidence": 0.808,
+    "edge_vs_50": 0.389,
+    "applicable_to": "bet AGAINST team with team_gd20 <= -2814",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_059",
+    "name": "cond_team_max_deficit_high",
+    "type": "conditional",
+    "conditions": [
+      "momentum:comeback_capable"
+    ],
+    "threshold": -306,
+    "expected_wr": 1.0,
+    "sample_size": 17,
+    "confidence": 0.9,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with team_max_deficit >= -306",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_060",
+    "name": "cond_team_max_deficit_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "momentum:deficit"
+    ],
+    "threshold": -10928,
+    "expected_wr": 1.0,
+    "sample_size": 18,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "bet AGAINST team with team_max_deficit <= -10928",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_061",
+    "name": "cond_team_max_lead_high",
+    "type": "conditional",
+    "conditions": [
+      "momentum:snowball"
+    ],
+    "threshold": 11262,
+    "expected_wr": 1.0,
+    "sample_size": 17,
+    "confidence": 0.9,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with team_max_lead >= 11262",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_062",
+    "name": "cond_team_max_lead_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "momentum:deficit"
+    ],
+    "threshold": 494,
+    "expected_wr": 1.0,
+    "sample_size": 18,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "bet AGAINST team with team_max_lead <= 494",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_063",
+    "name": "cond_team_phys_pct_high",
+    "type": "conditional",
+    "conditions": [
+      "stat:team_phys_pct_high"
+    ],
+    "threshold": 56.5,
+    "expected_wr": 0.647,
+    "sample_size": 17,
+    "confidence": 0.629,
+    "edge_vs_50": 0.147,
+    "applicable_to": "team with team_phys_pct >= 56.5",
+    "kelly_fraction": 0.0832
+  },
+  {
+    "signal_id": "SIG_064",
+    "name": "cond_team_phys_pct_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "stat:team_phys_pct_low"
+    ],
+    "threshold": 42.5,
+    "expected_wr": 0.611,
+    "sample_size": 18,
+    "confidence": 0.603,
+    "edge_vs_50": 0.111,
+    "applicable_to": "bet AGAINST team with team_phys_pct <= 42.5",
+    "kelly_fraction": 0.0603
+  },
+  {
+    "signal_id": "SIG_065",
+    "name": "cond_team_total_dpm_high",
+    "type": "conditional",
+    "conditions": [
+      "combat:dpm_high"
+    ],
+    "threshold": 3328.0,
+    "expected_wr": 0.882,
+    "sample_size": 17,
+    "confidence": 0.885,
+    "edge_vs_50": 0.382,
+    "applicable_to": "team with team_total_dpm >= 3328.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_066",
+    "name": "cond_team_total_dpm_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "combat:dpm_low"
+    ],
+    "threshold": 2451.0,
+    "expected_wr": 0.889,
+    "sample_size": 18,
+    "confidence": 0.808,
+    "edge_vs_50": 0.389,
+    "applicable_to": "bet AGAINST team with team_total_dpm <= 2451.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_067",
+    "name": "cond_team_total_kills_high",
+    "type": "conditional",
+    "conditions": [
+      "stat:team_total_kills_high"
+    ],
+    "threshold": 22.0,
+    "expected_wr": 0.95,
+    "sample_size": 20,
+    "confidence": 0.9,
+    "edge_vs_50": 0.45,
+    "applicable_to": "team with team_total_kills >= 22.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_068",
+    "name": "cond_team_total_kills_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "stat:team_total_kills_low"
+    ],
+    "threshold": 8.0,
+    "expected_wr": 1.0,
+    "sample_size": 18,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "bet AGAINST team with team_total_kills <= 8.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_069",
+    "name": "cond_team_total_tower_high",
+    "type": "conditional",
+    "conditions": [
+      "objective:tower_high"
+    ],
+    "threshold": 35475.0,
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.9,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with team_total_tower >= 35475.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_070",
+    "name": "cond_team_total_tower_low_fade",
+    "type": "conditional_fade",
+    "conditions": [
+      "objective:tower_low"
+    ],
+    "threshold": 13664.0,
+    "expected_wr": 1.0,
+    "sample_size": 18,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "bet AGAINST team with team_total_tower <= 13664.0",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_071",
+    "name": "champ_weak_Ornn_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ornn_top",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 3,
+    "confidence": 0.762,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST Ornn TOP (underperforms by -18.1%)",
+    "kelly_fraction": 0.0636
+  },
+  {
+    "signal_id": "SIG_072",
+    "name": "champ_strong_Ambessa_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ambessa_top",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 9,
+    "confidence": 0.704,
+    "edge_vs_50": 0.167,
+    "applicable_to": "Ambessa TOP outperforms avg by +15.2%",
+    "kelly_fraction": 0.0941
+  },
+  {
+    "signal_id": "SIG_073",
+    "name": "champ_strong_Gwen_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Gwen_top",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 4,
+    "confidence": 0.8,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Gwen TOP outperforms avg by +48.5%",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_074",
+    "name": "champ_weak_Rek_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Rek_top",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.8,
+    "edge_vs_50": 0.3,
+    "applicable_to": "bet AGAINST Rek TOP (underperforms by -31.5%)",
+    "kelly_fraction": 0.168
+  },
+  {
+    "signal_id": "SIG_075",
+    "name": "champ_weak_K_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:K_top",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.714,
+    "sample_size": 7,
+    "confidence": 0.8,
+    "edge_vs_50": 0.214,
+    "applicable_to": "bet AGAINST K TOP (underperforms by -22.9%)",
+    "kelly_fraction": 0.137
+  },
+  {
+    "signal_id": "SIG_076",
+    "name": "champ_weak_Sion_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Sion_top",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 4,
+    "confidence": 0.8,
+    "edge_vs_50": 0.25,
+    "applicable_to": "bet AGAINST Sion TOP (underperforms by -26.5%)",
+    "kelly_fraction": 0.14
+  },
+  {
+    "signal_id": "SIG_077",
+    "name": "champ_strong_Gnar_TOP",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Gnar_top",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.8,
+    "edge_vs_50": 0.3,
+    "applicable_to": "Gnar TOP outperforms avg by +28.5%",
+    "kelly_fraction": 0.168
+  },
+  {
+    "signal_id": "SIG_078",
+    "name": "champ_strong_Pantheon_JUNGLE",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Pantheon_jungle",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 12,
+    "confidence": 0.704,
+    "edge_vs_50": 0.167,
+    "applicable_to": "Pantheon JUNGLE outperforms avg by +15.2%",
+    "kelly_fraction": 0.1058
+  },
+  {
+    "signal_id": "SIG_079",
+    "name": "champ_strong_Ambessa_JUNGLE",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ambessa_jungle",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 3,
+    "confidence": 0.704,
+    "edge_vs_50": 0.167,
+    "applicable_to": "Ambessa JUNGLE outperforms avg by +15.2%",
+    "kelly_fraction": 0.0588
+  },
+  {
+    "signal_id": "SIG_080",
+    "name": "champ_weak_Malphite_JUNGLE",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Malphite_jungle",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 3,
+    "confidence": 0.8,
+    "edge_vs_50": 0.5,
+    "applicable_to": "bet AGAINST Malphite JUNGLE (underperforms by -51.5%)",
+    "kelly_fraction": 0.2
+  },
+  {
+    "signal_id": "SIG_081",
+    "name": "champ_weak_Wukong_JUNGLE",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Wukong_jungle",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 3,
+    "confidence": 0.762,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST Wukong JUNGLE (underperforms by -18.1%)",
+    "kelly_fraction": 0.0636
+  },
+  {
+    "signal_id": "SIG_082",
+    "name": "champ_weak_Taliyah_MID",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Taliyah_mid",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 15,
+    "confidence": 0.8,
+    "edge_vs_50": 0.3,
+    "applicable_to": "bet AGAINST Taliyah MID (underperforms by -31.5%)",
+    "kelly_fraction": 0.216
+  },
+  {
+    "signal_id": "SIG_083",
+    "name": "champ_strong_Ryze_MID",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ryze_mid",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 12,
+    "confidence": 0.8,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Ryze MID outperforms avg by +23.5%",
+    "kelly_fraction": 0.18
+  },
+  {
+    "signal_id": "SIG_084",
+    "name": "champ_strong_Ahri_MID",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ahri_mid",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 3,
+    "confidence": 0.8,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Ahri MID outperforms avg by +48.5%",
+    "kelly_fraction": 0.2
+  },
+  {
+    "signal_id": "SIG_085",
+    "name": "champ_weak_Ezreal_ADC",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Ezreal_adc",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.7,
+    "sample_size": 10,
+    "confidence": 0.8,
+    "edge_vs_50": 0.2,
+    "applicable_to": "bet AGAINST Ezreal ADC (underperforms by -21.5%)",
+    "kelly_fraction": 0.144
+  },
+  {
+    "signal_id": "SIG_086",
+    "name": "champ_strong_Varus_ADC",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Varus_adc",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 6,
+    "confidence": 0.704,
+    "edge_vs_50": 0.167,
+    "applicable_to": "Varus ADC outperforms avg by +15.2%",
+    "kelly_fraction": 0.0941
+  },
+  {
+    "signal_id": "SIG_087",
+    "name": "champ_strong_Rakan_SUPPORT",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Rakan_support",
+      "champ:above_avg_wr"
+    ],
+    "expected_wr": 0.778,
+    "sample_size": 9,
+    "confidence": 0.8,
+    "edge_vs_50": 0.278,
+    "applicable_to": "Rakan SUPPORT outperforms avg by +26.3%",
+    "kelly_fraction": 0.1779
+  },
+  {
+    "signal_id": "SIG_088",
+    "name": "champ_weak_Braum_SUPPORT",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Braum_support",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 4,
+    "confidence": 0.8,
+    "edge_vs_50": 0.25,
+    "applicable_to": "bet AGAINST Braum SUPPORT (underperforms by -26.5%)",
+    "kelly_fraction": 0.14
+  },
+  {
+    "signal_id": "SIG_089",
+    "name": "champ_weak_Alistar_SUPPORT",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Alistar_support",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.875,
+    "sample_size": 8,
+    "confidence": 0.8,
+    "edge_vs_50": 0.375,
+    "applicable_to": "bet AGAINST Alistar SUPPORT (underperforms by -39.0%)",
+    "kelly_fraction": 0.24
+  },
+  {
+    "signal_id": "SIG_090",
+    "name": "champ_weak_Karma_SUPPORT",
+    "type": "champion_deviation",
+    "conditions": [
+      "champion:Karma_support",
+      "champ:below_avg_wr"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 3,
+    "confidence": 0.762,
+    "edge_vs_50": 0.167,
+    "applicable_to": "bet AGAINST Karma SUPPORT (underperforms by -18.1%)",
+    "kelly_fraction": 0.0636
+  },
+  {
+    "signal_id": "SIG_091",
+    "name": "combo_TOP_KDA_AND_team_total_tower",
+    "type": "combination",
+    "conditions": [
+      "rank:kda_high_top25pct",
+      "combat:kda_high",
+      "objective:tower_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 24,
+    "confidence": 0.9,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['TOP_KDA_high', 'team_total_tower_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_092",
+    "name": "combo_team_total_tower_AND_team_total_deaths",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "stat:team_total_deaths_low_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 25,
+    "confidence": 0.9,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'team_total_deaths_low']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_093",
+    "name": "combo_JUNGLE_KDA_AND_team_total_tower",
+    "type": "combination",
+    "conditions": [
+      "rank:kda_high_top25pct",
+      "combat:kda_high",
+      "objective:tower_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 27,
+    "confidence": 0.885,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['JUNGLE_KDA_high', 'team_total_tower_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_094",
+    "name": "combo_team_total_deaths_AND_team_total_kills",
+    "type": "combination",
+    "conditions": [
+      "stat:team_total_deaths_low_high",
+      "stat:team_total_kills_high_high"
+    ],
+    "expected_wr": 0.958,
+    "sample_size": 24,
+    "confidence": 0.883,
+    "edge_vs_50": 0.458,
+    "applicable_to": "team with ALL of ['team_total_deaths_low', 'team_total_kills_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_095",
+    "name": "combo_TOP_gold_pct_AND_team_total_tower",
+    "type": "combination",
+    "conditions": [
+      "rank:gold_pct_low_top25pct",
+      "early:gd15_positive",
+      "objective:tower_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 15,
+    "confidence": 0.876,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['TOP_gold_pct_low', 'team_total_tower_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_096",
+    "name": "combo_team_total_dpm_AND_team_total_deaths",
+    "type": "combination",
+    "conditions": [
+      "combat:dpm_high",
+      "stat:team_total_deaths_low_high"
+    ],
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.876,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with ALL of ['team_total_dpm_high', 'team_total_deaths_low']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_097",
+    "name": "combo_team_total_tower_AND_team_total_tank",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "stat:team_total_tank_low_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 17,
+    "confidence": 0.876,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'team_total_tank_low']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_098",
+    "name": "combo_team_total_tower_AND_is_blue",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "stat:is_blue_high_high"
+    ],
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.876,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'is_blue_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_099",
+    "name": "combo_team_total_tower_AND_blue_side",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "stat:blue_side_high"
+    ],
+    "expected_wr": 0.941,
+    "sample_size": 17,
+    "confidence": 0.876,
+    "edge_vs_50": 0.441,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'blue_side']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_100",
+    "name": "combo_team_total_cc_AND_team_total_tower",
+    "type": "combination",
+    "conditions": [
+      "stat:team_total_cc_low_high",
+      "objective:tower_high"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 15,
+    "confidence": 0.875,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['team_total_cc_low', 'team_total_tower_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_101",
+    "name": "combo_team_total_tower_AND_team_total_kills",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "stat:team_total_kills_high_high"
+    ],
+    "expected_wr": 0.966,
+    "sample_size": 29,
+    "confidence": 0.871,
+    "edge_vs_50": 0.466,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'team_total_kills_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_102",
+    "name": "combo_team_total_tower_AND_SUPPORT_KDA",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "rank:kda_high_top25pct",
+      "combat:kda_high"
+    ],
+    "expected_wr": 0.963,
+    "sample_size": 27,
+    "confidence": 0.87,
+    "edge_vs_50": 0.463,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'SUPPORT_KDA_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_103",
+    "name": "combo_MID_KDA_AND_team_total_tower",
+    "type": "combination",
+    "conditions": [
+      "rank:kda_high_top25pct",
+      "combat:kda_high",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.958,
+    "sample_size": 24,
+    "confidence": 0.867,
+    "edge_vs_50": 0.458,
+    "applicable_to": "team with ALL of ['MID_KDA_high', 'team_total_tower_high']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_104",
+    "name": "combo_team_total_tower_AND_team_avg_gd15",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "early:gd15_positive"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 12,
+    "confidence": 0.867,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'team_avg_gd15_low']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_105",
+    "name": "combo_team_total_tower_AND_team_gd15",
+    "type": "combination",
+    "conditions": [
+      "objective:tower_high",
+      "early:gd15_positive"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 12,
+    "confidence": 0.867,
+    "edge_vs_50": 0.5,
+    "applicable_to": "team with ALL of ['team_total_tower_high', 'team_gd15_low']",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_106",
+    "name": "wincond_BNK FearX_team_max_lead",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:BNK FearX",
+      "momentum:snowball"
+    ],
+    "expected_wr": 0.653,
+    "sample_size": 19,
+    "confidence": 0.768,
+    "edge_vs_50": 0.153,
+    "applicable_to": "BNK FearX wins when team_max_lead is high (W avg=8391 vs L avg=873)",
+    "kelly_fraction": 0.1056
+  },
+  {
+    "signal_id": "SIG_107",
+    "name": "wincond_BNK FearX_team_total_tower",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:BNK FearX",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.628,
+    "sample_size": 19,
+    "confidence": 0.731,
+    "edge_vs_50": 0.128,
+    "applicable_to": "BNK FearX wins when team_total_tower is high (W avg=31863 vs L avg=18430)",
+    "kelly_fraction": 0.084
+  },
+  {
+    "signal_id": "SIG_108",
+    "name": "wincond_BNK FearX_TOP_CSD@15",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:BNK FearX",
+      "rank:csd15_top25pct"
+    ],
+    "expected_wr": 0.622,
+    "sample_size": 19,
+    "confidence": 0.722,
+    "edge_vs_50": 0.122,
+    "applicable_to": "BNK FearX wins when TOP_CSD@15 is high (W avg=6 vs L avg=-7)",
+    "kelly_fraction": 0.0791
+  },
+  {
+    "signal_id": "SIG_109",
+    "name": "wincond_BNK FearX_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:BNK FearX",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.62,
+    "sample_size": 19,
+    "confidence": 0.719,
+    "edge_vs_50": 0.12,
+    "applicable_to": "BNK FearX wins when team_max_deficit is high (W avg=-1921 vs L avg=-11933)",
+    "kelly_fraction": 0.0774
+  },
+  {
+    "signal_id": "SIG_110",
+    "name": "wincond_BNK FearX_JUNGLE_KDA",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:BNK FearX",
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "expected_wr": 0.618,
+    "sample_size": 19,
+    "confidence": 0.716,
+    "edge_vs_50": 0.118,
+    "applicable_to": "BNK FearX wins when JUNGLE_KDA is high (W avg=6 vs L avg=2)",
+    "kelly_fraction": 0.0758
+  },
+  {
+    "signal_id": "SIG_111",
+    "name": "wincond_DN SOOPers_team_total_tower",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DN SOOPers",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.551,
+    "sample_size": 16,
+    "confidence": 0.764,
+    "edge_vs_50": 0.051,
+    "applicable_to": "DN SOOPers wins when team_total_tower is high (W avg=31778 vs L avg=12884)",
+    "kelly_fraction": 0.0351
+  },
+  {
+    "signal_id": "SIG_112",
+    "name": "wincond_DN SOOPers_JUNGLE_KDA",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DN SOOPers",
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "expected_wr": 0.542,
+    "sample_size": 16,
+    "confidence": 0.75,
+    "edge_vs_50": 0.042,
+    "applicable_to": "DN SOOPers wins when JUNGLE_KDA is high (W avg=13 vs L avg=1)",
+    "kelly_fraction": 0.0284
+  },
+  {
+    "signal_id": "SIG_113",
+    "name": "wincond_DN SOOPers_team_total_kills",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DN SOOPers",
+      "stat:team_total_kills_high"
+    ],
+    "expected_wr": 0.536,
+    "sample_size": 16,
+    "confidence": 0.742,
+    "edge_vs_50": 0.036,
+    "applicable_to": "DN SOOPers wins when team_total_kills is high (W avg=23 vs L avg=7)",
+    "kelly_fraction": 0.024
+  },
+  {
+    "signal_id": "SIG_114",
+    "name": "wincond_DN SOOPers_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DN SOOPers",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.528,
+    "sample_size": 16,
+    "confidence": 0.73,
+    "edge_vs_50": 0.028,
+    "applicable_to": "DN SOOPers wins when team_max_deficit is high (W avg=-3222 vs L avg=-12337)",
+    "kelly_fraction": 0.0184
+  },
+  {
+    "signal_id": "SIG_115",
+    "name": "wincond_DN SOOPers_ADC_KDA",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DN SOOPers",
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "expected_wr": 0.524,
+    "sample_size": 16,
+    "confidence": 0.724,
+    "edge_vs_50": 0.024,
+    "applicable_to": "DN SOOPers wins when ADC_KDA is high (W avg=11 vs L avg=1)",
+    "kelly_fraction": 0.0156
+  },
+  {
+    "signal_id": "SIG_116",
+    "name": "dev_DRX_team_total_ctrl",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:DRX",
+      "deviation:team_total_ctrl_below_avg"
+    ],
+    "expected_wr": 0.284,
+    "sample_size": 174,
+    "confidence": 0.6,
+    "edge_vs_50": 0.216,
+    "applicable_to": "DRX has below_avg team_total_ctrl (z=-1.3)",
+    "kelly_fraction": 0.1165
+  },
+  {
+    "signal_id": "SIG_117",
+    "name": "wincond_DRX_team_max_lead",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DRX",
+      "momentum:snowball"
+    ],
+    "expected_wr": 0.534,
+    "sample_size": 174,
+    "confidence": 0.774,
+    "edge_vs_50": 0.034,
+    "applicable_to": "DRX wins when team_max_lead is high (W avg=12847 vs L avg=428)",
+    "kelly_fraction": 0.0234
+  },
+  {
+    "signal_id": "SIG_118",
+    "name": "wincond_DRX_team_total_tower",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DRX",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.531,
+    "sample_size": 174,
+    "confidence": 0.77,
+    "edge_vs_50": 0.031,
+    "applicable_to": "DRX wins when team_total_tower is high (W avg=34723 vs L avg=12264)",
+    "kelly_fraction": 0.0212
+  },
+  {
+    "signal_id": "SIG_119",
+    "name": "wincond_DRX_team_total_kills",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DRX",
+      "stat:team_total_kills_high"
+    ],
+    "expected_wr": 0.524,
+    "sample_size": 174,
+    "confidence": 0.76,
+    "edge_vs_50": 0.024,
+    "applicable_to": "DRX wins when team_total_kills is high (W avg=24 vs L avg=10)",
+    "kelly_fraction": 0.0161
+  },
+  {
+    "signal_id": "SIG_120",
+    "name": "wincond_DRX_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DRX",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.516,
+    "sample_size": 174,
+    "confidence": 0.747,
+    "edge_vs_50": 0.016,
+    "applicable_to": "DRX wins when team_max_deficit is high (W avg=-1167 vs L avg=-11898)",
+    "kelly_fraction": 0.0105
+  },
+  {
+    "signal_id": "SIG_121",
+    "name": "wincond_DRX_team_total_deaths",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:DRX",
+      "stat:team_total_deaths_high"
+    ],
+    "expected_wr": 0.191,
+    "sample_size": 174,
+    "confidence": 0.74,
+    "edge_vs_50": -0.309,
+    "applicable_to": "DRX wins when team_total_deaths is high (W avg=8 vs L avg=26)",
+    "kelly_fraction": 0.0
+  },
+  {
+    "signal_id": "SIG_122",
+    "name": "wincond_Dplus KIA_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:Dplus KIA",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.774,
+    "sample_size": 104,
+    "confidence": 0.767,
+    "edge_vs_50": 0.274,
+    "applicable_to": "Dplus KIA wins when team_max_deficit is high (W avg=-1262 vs L avg=-13662)",
+    "kelly_fraction": 0.1892
+  },
+  {
+    "signal_id": "SIG_123",
+    "name": "wincond_Dplus KIA_team_total_deaths",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:Dplus KIA",
+      "stat:team_total_deaths_high"
+    ],
+    "expected_wr": 0.418,
+    "sample_size": 104,
+    "confidence": 0.767,
+    "edge_vs_50": -0.082,
+    "applicable_to": "Dplus KIA wins when team_total_deaths is high (W avg=6 vs L avg=23)",
+    "kelly_fraction": 0.0
+  },
+  {
+    "signal_id": "SIG_124",
+    "name": "wincond_Dplus KIA_team_total_tower",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:Dplus KIA",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.767,
+    "sample_size": 104,
+    "confidence": 0.756,
+    "edge_vs_50": 0.267,
+    "applicable_to": "Dplus KIA wins when team_total_tower is high (W avg=33798 vs L avg=12210)",
+    "kelly_fraction": 0.1819
+  },
+  {
+    "signal_id": "SIG_125",
+    "name": "wincond_Dplus KIA_team_max_lead",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:Dplus KIA",
+      "momentum:snowball"
+    ],
+    "expected_wr": 0.764,
+    "sample_size": 104,
+    "confidence": 0.752,
+    "edge_vs_50": 0.264,
+    "applicable_to": "Dplus KIA wins when team_max_lead is high (W avg=13469 vs L avg=597)",
+    "kelly_fraction": 0.1788
+  },
+  {
+    "signal_id": "SIG_126",
+    "name": "wincond_Dplus KIA_SUPPORT_CSD@15",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:Dplus KIA",
+      "rank:csd15_top25pct"
+    ],
+    "expected_wr": 0.438,
+    "sample_size": 104,
+    "confidence": 0.737,
+    "edge_vs_50": -0.062,
+    "applicable_to": "Dplus KIA wins when SUPPORT_CSD@15 is high (W avg=-4 vs L avg=2)",
+    "kelly_fraction": 0.0
+  },
+  {
+    "signal_id": "SIG_127",
+    "name": "dev_Gen.G_team_max_lead",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:Gen.G",
+      "deviation:team_max_lead_above_avg"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 12,
+    "confidence": 0.56,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Gen.G has above_avg team_max_lead (z=1.1)",
+    "kelly_fraction": 0.1261
+  },
+  {
+    "signal_id": "SIG_128",
+    "name": "dev_Gen.G_team_total_tower",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:Gen.G",
+      "deviation:team_total_tower_above_avg"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 12,
+    "confidence": 0.556,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Gen.G has above_avg team_total_tower (z=1.0)",
+    "kelly_fraction": 0.1251
+  },
+  {
+    "signal_id": "SIG_129",
+    "name": "dev_Gen.G_TOP_gold_pct",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:Gen.G",
+      "deviation:TOP_gold_pct_above_avg"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 12,
+    "confidence": 0.556,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Gen.G has above_avg TOP_gold_pct (z=1.0)",
+    "kelly_fraction": 0.1251
+  },
+  {
+    "signal_id": "SIG_130",
+    "name": "dev_KT Rolster_MID_DMG%",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:KT Rolster",
+      "deviation:MID_DMG%_above_avg"
+    ],
+    "expected_wr": 0.588,
+    "sample_size": 172,
+    "confidence": 0.628,
+    "edge_vs_50": 0.088,
+    "applicable_to": "KT Rolster has above_avg MID_DMG% (z=1.5)",
+    "kelly_fraction": 0.0495
+  },
+  {
+    "signal_id": "SIG_131",
+    "name": "dev_KT Rolster_TOP_DPM",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:KT Rolster",
+      "deviation:TOP_DPM_below_avg"
+    ],
+    "expected_wr": 0.438,
+    "sample_size": 172,
+    "confidence": 0.622,
+    "edge_vs_50": 0.062,
+    "applicable_to": "KT Rolster has below_avg TOP_DPM (z=-1.5)",
+    "kelly_fraction": 0.0349
+  },
+  {
+    "signal_id": "SIG_132",
+    "name": "dev_KT Rolster_team_total_dpm",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:KT Rolster",
+      "deviation:team_total_dpm_below_avg"
+    ],
+    "expected_wr": 0.453,
+    "sample_size": 172,
+    "confidence": 0.577,
+    "edge_vs_50": 0.047,
+    "applicable_to": "KT Rolster has below_avg team_total_dpm (z=-1.2)",
+    "kelly_fraction": 0.0246
+  },
+  {
+    "signal_id": "SIG_133",
+    "name": "dev_KT Rolster_TOP_DMG%",
+    "type": "team_deviation",
+    "conditions": [
+      "team_specific:KT Rolster",
+      "deviation:TOP_DMG%_below_avg"
+    ],
+    "expected_wr": 0.456,
+    "sample_size": 172,
+    "confidence": 0.567,
+    "edge_vs_50": 0.044,
+    "applicable_to": "KT Rolster has below_avg TOP_DMG% (z=-1.1)",
+    "kelly_fraction": 0.0224
+  },
+  {
+    "signal_id": "SIG_134",
+    "name": "wincond_NS RedForce_TOP_GD@15",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:NS RedForce",
+      "rank:gd15_top25pct",
+      "early:gd15_positive"
+    ],
+    "expected_wr": 0.26,
+    "sample_size": 7,
+    "confidence": 0.754,
+    "edge_vs_50": -0.24,
+    "applicable_to": "NS RedForce wins when TOP_GD@15 is high (W avg=-451 vs L avg=105)",
+    "kelly_fraction": 0.0
+  },
+  {
+    "signal_id": "SIG_135",
+    "name": "wincond_NS RedForce_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:NS RedForce",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.593,
+    "sample_size": 7,
+    "confidence": 0.746,
+    "edge_vs_50": 0.093,
+    "applicable_to": "NS RedForce wins when team_max_deficit is high (W avg=-1060 vs L avg=-9559)",
+    "kelly_fraction": 0.0552
+  },
+  {
+    "signal_id": "SIG_136",
+    "name": "wincond_NS RedForce_MID_KDA",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:NS RedForce",
+      "rank:kda_top25pct",
+      "combat:kda_high"
+    ],
+    "expected_wr": 0.587,
+    "sample_size": 7,
+    "confidence": 0.737,
+    "edge_vs_50": 0.087,
+    "applicable_to": "NS RedForce wins when MID_KDA is high (W avg=13 vs L avg=3)",
+    "kelly_fraction": 0.051
+  },
+  {
+    "signal_id": "SIG_137",
+    "name": "wincond_NS RedForce_team_total_deaths",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:NS RedForce",
+      "stat:team_total_deaths_high"
+    ],
+    "expected_wr": 0.273,
+    "sample_size": 7,
+    "confidence": 0.734,
+    "edge_vs_50": -0.227,
+    "applicable_to": "NS RedForce wins when team_total_deaths is high (W avg=10 vs L avg=24)",
+    "kelly_fraction": 0.0
+  },
+  {
+    "signal_id": "SIG_138",
+    "name": "wincond_NS RedForce_team_total_kills",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:NS RedForce",
+      "stat:team_total_kills_high"
+    ],
+    "expected_wr": 0.584,
+    "sample_size": 7,
+    "confidence": 0.732,
+    "edge_vs_50": 0.084,
+    "applicable_to": "NS RedForce wins when team_total_kills is high (W avg=21 vs L avg=11)",
+    "kelly_fraction": 0.049
+  },
+  {
+    "signal_id": "SIG_139",
+    "name": "wincond_T1_ADC_CSD@15",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:T1",
+      "rank:csd15_top25pct"
+    ],
+    "expected_wr": 0.85,
+    "sample_size": 193,
+    "confidence": 0.773,
+    "edge_vs_50": 0.35,
+    "applicable_to": "T1 wins when ADC_CSD@15 is high (W avg=6 vs L avg=-15)",
+    "kelly_fraction": 0.2435
+  },
+  {
+    "signal_id": "SIG_140",
+    "name": "wincond_T1_team_max_deficit",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:T1",
+      "momentum:comeback_capable"
+    ],
+    "expected_wr": 0.85,
+    "sample_size": 193,
+    "confidence": 0.744,
+    "edge_vs_50": 0.35,
+    "applicable_to": "T1 wins when team_max_deficit is high (W avg=-1347 vs L avg=-9615)",
+    "kelly_fraction": 0.2345
+  },
+  {
+    "signal_id": "SIG_141",
+    "name": "wincond_T1_JUNGLE_CSD@15",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:T1",
+      "rank:csd15_top25pct"
+    ],
+    "expected_wr": 0.565,
+    "sample_size": 193,
+    "confidence": 0.732,
+    "edge_vs_50": 0.065,
+    "applicable_to": "T1 wins when JUNGLE_CSD@15 is high (W avg=-4 vs L avg=20)",
+    "kelly_fraction": 0.043
+  },
+  {
+    "signal_id": "SIG_142",
+    "name": "wincond_T1_team_total_tower",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:T1",
+      "objective:tower_high"
+    ],
+    "expected_wr": 0.85,
+    "sample_size": 193,
+    "confidence": 0.728,
+    "edge_vs_50": 0.35,
+    "applicable_to": "T1 wins when team_total_tower is high (W avg=33910 vs L avg=20334)",
+    "kelly_fraction": 0.2293
+  },
+  {
+    "signal_id": "SIG_143",
+    "name": "wincond_T1_JUNGLE_gold_pct",
+    "type": "win_condition",
+    "conditions": [
+      "team_specific:T1",
+      "rank:gold_pct_top25pct",
+      "early:gd15_positive"
+    ],
+    "expected_wr": 0.569,
+    "sample_size": 193,
+    "confidence": 0.726,
+    "edge_vs_50": 0.069,
+    "applicable_to": "T1 wins when JUNGLE_gold_pct is high (W avg=20 vs L avg=21)",
+    "kelly_fraction": 0.0453
+  },
+  {
+    "signal_id": "SIG_144",
+    "name": "underdog_value",
+    "type": "composite",
+    "conditions": [
+      "rank:gd15_bottom25pct",
+      "momentum:comeback_capable",
+      "phase:late_scaling"
+    ],
+    "expected_wr": 0.42,
+    "sample_size": 10,
+    "confidence": 0.65,
+    "edge_vs_50": 0.08,
+    "applicable_to": "underdog team with comeback ability + late scaling",
+    "kelly_fraction": 0.04,
+    "reasoning": [
+      "Market overvalues early game dominance",
+      "Late scaling + comeback history suggests underpriced",
+      "Best when market price < 0.35"
+    ]
+  },
+  {
+    "signal_id": "SIG_145",
+    "name": "trap_favorite",
+    "type": "composite",
+    "conditions": [
+      "record:winrate_high",
+      "volatility:chaotic",
+      "momentum:throw_risk"
+    ],
+    "expected_wr": 0.55,
+    "sample_size": 12,
+    "confidence": 0.7,
+    "edge_vs_50": -0.1,
+    "applicable_to": "FADE favorite with high volatility + throw risk",
+    "kelly_fraction": 0.05,
+    "reasoning": [
+      "High WR teams with throw risk are overpriced by market",
+      "Volatility means unreliable despite record",
+      "Bet opponent when fav priced > 0.65"
+    ]
+  },
+  {
+    "signal_id": "SIG_146",
+    "name": "draft_edge_mixed_vs_ad",
+    "type": "composite",
+    "conditions": [
+      "comp:mixed_damage",
+      "opponent:comp:all_ad_risk"
+    ],
+    "expected_wr": 0.62,
+    "sample_size": 8,
+    "confidence": 0.7,
+    "edge_vs_50": 0.12,
+    "applicable_to": "team with mixed damage vs all-AD opponent",
+    "kelly_fraction": 0.06,
+    "reasoning": [
+      "All-AD comps can be countered by armor stacking",
+      "Mixed damage is harder to itemize against",
+      "Draft advantage compounds over game length"
+    ]
+  },
+  {
+    "signal_id": "SIG_147",
+    "name": "early_snowball_closer",
+    "type": "composite",
+    "conditions": [
+      "phase:early_dominant",
+      "momentum:snowball",
+      "tempo:fast_closer"
+    ],
+    "expected_wr": 0.74,
+    "sample_size": 15,
+    "confidence": 0.8,
+    "edge_vs_50": 0.24,
+    "applicable_to": "team that dominates early and closes fast",
+    "kelly_fraction": 0.12,
+    "reasoning": [
+      "Consistent early game + fast closing = reliable wins",
+      "Strong against teams without comeback ability",
+      "Best signal for live betting when team gets early lead"
+    ]
+  },
+  {
+    "signal_id": "SIG_148",
+    "name": "vision_control_edge",
+    "type": "composite",
+    "conditions": [
+      "rank:vision_top10pct",
+      "rank:vspm_top25pct",
+      "rank:wards_placed_top25pct"
+    ],
+    "expected_wr": 0.63,
+    "sample_size": 14,
+    "confidence": 0.72,
+    "edge_vs_50": 0.13,
+    "applicable_to": "support/team with elite vision control",
+    "kelly_fraction": 0.06,
+    "reasoning": [
+      "Vision control enables picks and objective control",
+      "Often undervalued by public betting markets",
+      "Compounds with pick comp archetype"
+    ]
+  },
+  {
+    "signal_id": "SIG_149",
+    "name": "adc_lane_kingdom",
+    "type": "composite",
+    "conditions": [
+      "rank:csd15_top10pct",
+      "rank:gd15_top10pct",
+      "rank:dpm_top25pct"
+    ],
+    "expected_wr": 0.72,
+    "sample_size": 18,
+    "confidence": 0.78,
+    "edge_vs_50": 0.22,
+    "applicable_to": "team with ADC that dominates lane + deals high damage",
+    "kelly_fraction": 0.11,
+    "reasoning": [
+      "ADC lane dominance translates to dragon control",
+      "High DPM means the lead converts to team damage",
+      "Strongest in ADC-centric metas"
+    ]
+  },
+  {
+    "signal_id": "SIG_150",
+    "name": "stable_grinder",
+    "type": "composite",
+    "conditions": [
+      "volatility:stable",
+      "tempo:slow_grinder",
+      "comp:teamfight"
+    ],
+    "expected_wr": 0.58,
+    "sample_size": 10,
+    "confidence": 0.68,
+    "edge_vs_50": 0.08,
+    "applicable_to": "team that plays stable, slow games with teamfight comps",
+    "kelly_fraction": 0.04,
+    "reasoning": [
+      "Low variance = more predictable outcomes",
+      "Teamfight comps scale well into late game",
+      "Good for series bets (BO3/BO5) due to consistency"
+    ]
+  },
+  {
+    "signal_id": "SIG_151",
+    "name": "flex_draft_advantage",
+    "type": "composite",
+    "conditions": [
+      "rune:flex_runes",
+      "build:adaptive_builder",
+      "skill:adaptive"
+    ],
+    "expected_wr": 0.59,
+    "sample_size": 8,
+    "confidence": 0.65,
+    "edge_vs_50": 0.09,
+    "applicable_to": "players who adapt builds/runes/skills across games",
+    "kelly_fraction": 0.04,
+    "reasoning": [
+      "Adaptability suggests better game understanding",
+      "Can adjust to opponent's draft/playstyle",
+      "Harder to prepare against in BO series"
+    ]
+  },
+  {
+    "signal_id": "SIG_152",
+    "name": "crossover_chaos_underdog",
+    "type": "composite",
+    "conditions": [
+      "crossover:frequent",
+      "volatility:chaotic"
+    ],
+    "expected_wr": 0.5,
+    "sample_size": 6,
+    "confidence": 0.55,
+    "edge_vs_50": 0.0,
+    "applicable_to": "FADE when either team has chaotic crossover patterns (implies 50/50)",
+    "kelly_fraction": 0.0,
+    "reasoning": [
+      "Frequent lead changes = coin flip games",
+      "Back the underdog when game is chaotic",
+      "Market overprices favorites in volatile matchups"
+    ]
+  },
+  {
+    "signal_id": "SIG_153",
+    "name": "first_strike_tempo",
+    "type": "composite",
+    "conditions": [
+      "rune:keystone_first_strike",
+      "build:early_spike",
+      "phase:early_dominant"
+    ],
+    "expected_wr": 0.66,
+    "sample_size": 7,
+    "confidence": 0.68,
+    "edge_vs_50": 0.16,
+    "applicable_to": "player using First Strike with early item powerspike",
+    "kelly_fraction": 0.07,
+    "reasoning": [
+      "First Strike + early spike = gold acceleration",
+      "Tempo advantage compounds with team's early game",
+      "Strong when matched against scaling opponents"
+    ]
+  },
+  {
+    "signal_id": "SIG_154",
+    "name": "h2h_Gen.G eSports_vs_KT Rolster",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_KT Rolster"
+    ],
+    "expected_wr": 0.647,
+    "sample_size": 17,
+    "confidence": 0.618,
+    "edge_vs_50": 0.147,
+    "applicable_to": "Gen.G eSports dominates H2H vs KT Rolster (11/17)",
+    "kelly_fraction": 0.0817
+  },
+  {
+    "signal_id": "SIG_155",
+    "name": "h2h_DWG KIA_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_T1"
+    ],
+    "expected_wr": 0.6,
+    "sample_size": 10,
+    "confidence": 0.58,
+    "edge_vs_50": 0.1,
+    "applicable_to": "T1 dominates H2H vs DWG KIA (6/10)",
+    "kelly_fraction": 0.0522
+  },
+  {
+    "signal_id": "SIG_156",
+    "name": "h2h_Fredit BRION_vs_Gen.G eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_Gen.G eSports"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 7,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Gen.G eSports dominates H2H vs Fredit BRION (7/7)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_157",
+    "name": "h2h_DRX_vs_Hanwha Life eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Hanwha Life eSports"
+    ],
+    "expected_wr": 0.895,
+    "sample_size": 19,
+    "confidence": 0.816,
+    "edge_vs_50": 0.395,
+    "applicable_to": "Hanwha Life eSports dominates H2H vs DRX (17/19)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_158",
+    "name": "h2h_DWG KIA_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 9,
+    "confidence": 0.633,
+    "edge_vs_50": 0.167,
+    "applicable_to": "DWG KIA dominates H2H vs Nongshim RedForce (6/9)",
+    "kelly_fraction": 0.0844
+  },
+  {
+    "signal_id": "SIG_159",
+    "name": "h2h_DWG KIA_vs_Fredit BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_Fredit BRION"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 9,
+    "confidence": 0.633,
+    "edge_vs_50": 0.167,
+    "applicable_to": "DWG KIA dominates H2H vs Fredit BRION (6/9)",
+    "kelly_fraction": 0.0844
+  },
+  {
+    "signal_id": "SIG_160",
+    "name": "h2h_DRX_vs_Liiv SANDBOX",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Liiv SANDBOX"
+    ],
+    "expected_wr": 0.769,
+    "sample_size": 13,
+    "confidence": 0.715,
+    "edge_vs_50": 0.269,
+    "applicable_to": "Liiv SANDBOX dominates H2H vs DRX (10/13)",
+    "kelly_fraction": 0.1733
+  },
+  {
+    "signal_id": "SIG_161",
+    "name": "h2h_Hanwha Life eSports_vs_KT Rolster",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Hanwha Life eSports_vs_KT Rolster"
+    ],
+    "expected_wr": 0.632,
+    "sample_size": 19,
+    "confidence": 0.605,
+    "edge_vs_50": 0.132,
+    "applicable_to": "KT Rolster dominates H2H vs Hanwha Life eSports (12/19)",
+    "kelly_fraction": 0.0717
+  },
+  {
+    "signal_id": "SIG_162",
+    "name": "h2h_Fredit BRION_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.625,
+    "sample_size": 8,
+    "confidence": 0.6,
+    "edge_vs_50": 0.125,
+    "applicable_to": "Fredit BRION dominates H2H vs Nongshim RedForce (5/8)",
+    "kelly_fraction": 0.06
+  },
+  {
+    "signal_id": "SIG_163",
+    "name": "h2h_Gen.G eSports_vs_Hanwha Life eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_Hanwha Life eSports"
+    ],
+    "expected_wr": 0.833,
+    "sample_size": 24,
+    "confidence": 0.767,
+    "edge_vs_50": 0.333,
+    "applicable_to": "Gen.G eSports dominates H2H vs Hanwha Life eSports (20/24)",
+    "kelly_fraction": 0.23
+  },
+  {
+    "signal_id": "SIG_164",
+    "name": "h2h_KT Rolster_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:KT Rolster_vs_T1"
+    ],
+    "expected_wr": 0.818,
+    "sample_size": 22,
+    "confidence": 0.755,
+    "edge_vs_50": 0.318,
+    "applicable_to": "T1 dominates H2H vs KT Rolster (18/22)",
+    "kelly_fraction": 0.2161
+  },
+  {
+    "signal_id": "SIG_165",
+    "name": "h2h_DWG KIA_vs_Gen.G eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_Gen.G eSports"
+    ],
+    "expected_wr": 0.6,
+    "sample_size": 10,
+    "confidence": 0.58,
+    "edge_vs_50": 0.1,
+    "applicable_to": "Gen.G eSports dominates H2H vs DWG KIA (6/10)",
+    "kelly_fraction": 0.0522
+  },
+  {
+    "signal_id": "SIG_166",
+    "name": "h2h_Fredit BRION_vs_Hanwha Life eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_Hanwha Life eSports"
+    ],
+    "expected_wr": 0.625,
+    "sample_size": 8,
+    "confidence": 0.6,
+    "edge_vs_50": 0.125,
+    "applicable_to": "Hanwha Life eSports dominates H2H vs Fredit BRION (5/8)",
+    "kelly_fraction": 0.06
+  },
+  {
+    "signal_id": "SIG_167",
+    "name": "h2h_Liiv SANDBOX_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Liiv SANDBOX_vs_T1"
+    ],
+    "expected_wr": 0.769,
+    "sample_size": 13,
+    "confidence": 0.715,
+    "edge_vs_50": 0.269,
+    "applicable_to": "T1 dominates H2H vs Liiv SANDBOX (10/13)",
+    "kelly_fraction": 0.1733
+  },
+  {
+    "signal_id": "SIG_168",
+    "name": "h2h_DRX_vs_KT Rolster",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_KT Rolster"
+    ],
+    "expected_wr": 0.812,
+    "sample_size": 16,
+    "confidence": 0.75,
+    "edge_vs_50": 0.312,
+    "applicable_to": "KT Rolster dominates H2H vs DRX (13/16)",
+    "kelly_fraction": 0.2109
+  },
+  {
+    "signal_id": "SIG_169",
+    "name": "h2h_DWG KIA_vs_Hanwha Life eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_Hanwha Life eSports"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 9,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "DWG KIA dominates H2H vs Hanwha Life eSports (9/9)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_170",
+    "name": "h2h_Afreeca Freecs_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Afreeca Freecs_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.6,
+    "sample_size": 5,
+    "confidence": 0.58,
+    "edge_vs_50": 0.1,
+    "applicable_to": "Nongshim RedForce dominates H2H vs Afreeca Freecs (3/5)",
+    "kelly_fraction": 0.0406
+  },
+  {
+    "signal_id": "SIG_171",
+    "name": "h2h_Gen.G eSports_vs_Liiv SANDBOX",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_Liiv SANDBOX"
+    ],
+    "expected_wr": 0.846,
+    "sample_size": 13,
+    "confidence": 0.777,
+    "edge_vs_50": 0.346,
+    "applicable_to": "Gen.G eSports dominates H2H vs Liiv SANDBOX (11/13)",
+    "kelly_fraction": 0.242
+  },
+  {
+    "signal_id": "SIG_172",
+    "name": "h2h_DRX_vs_Fredit BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Fredit BRION"
+    ],
+    "expected_wr": 0.875,
+    "sample_size": 8,
+    "confidence": 0.8,
+    "edge_vs_50": 0.375,
+    "applicable_to": "DRX dominates H2H vs Fredit BRION (7/8)",
+    "kelly_fraction": 0.24
+  },
+  {
+    "signal_id": "SIG_173",
+    "name": "h2h_KT Rolster_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:KT Rolster_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.667,
+    "sample_size": 18,
+    "confidence": 0.633,
+    "edge_vs_50": 0.167,
+    "applicable_to": "KT Rolster dominates H2H vs Nongshim RedForce (12/18)",
+    "kelly_fraction": 0.095
+  },
+  {
+    "signal_id": "SIG_174",
+    "name": "h2h_DRX_vs_Gen.G eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Gen.G eSports"
+    ],
+    "expected_wr": 0.938,
+    "sample_size": 16,
+    "confidence": 0.85,
+    "edge_vs_50": 0.438,
+    "applicable_to": "Gen.G eSports dominates H2H vs DRX (15/16)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_175",
+    "name": "h2h_Nongshim RedForce_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Nongshim RedForce_vs_T1"
+    ],
+    "expected_wr": 0.833,
+    "sample_size": 18,
+    "confidence": 0.767,
+    "edge_vs_50": 0.333,
+    "applicable_to": "T1 dominates H2H vs Nongshim RedForce (15/18)",
+    "kelly_fraction": 0.23
+  },
+  {
+    "signal_id": "SIG_176",
+    "name": "h2h_Fredit BRION_vs_KT Rolster",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_KT Rolster"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 8,
+    "confidence": 0.7,
+    "edge_vs_50": 0.25,
+    "applicable_to": "KT Rolster dominates H2H vs Fredit BRION (6/8)",
+    "kelly_fraction": 0.14
+  },
+  {
+    "signal_id": "SIG_177",
+    "name": "h2h_Gen.G eSports_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 17,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Gen.G eSports dominates H2H vs Nongshim RedForce (17/17)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_178",
+    "name": "h2h_DWG KIA_vs_Liiv SANDBOX",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_Liiv SANDBOX"
+    ],
+    "expected_wr": 0.875,
+    "sample_size": 8,
+    "confidence": 0.8,
+    "edge_vs_50": 0.375,
+    "applicable_to": "DWG KIA dominates H2H vs Liiv SANDBOX (7/8)",
+    "kelly_fraction": 0.24
+  },
+  {
+    "signal_id": "SIG_179",
+    "name": "h2h_Fredit BRION_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_T1"
+    ],
+    "expected_wr": 0.875,
+    "sample_size": 8,
+    "confidence": 0.8,
+    "edge_vs_50": 0.375,
+    "applicable_to": "T1 dominates H2H vs Fredit BRION (7/8)",
+    "kelly_fraction": 0.24
+  },
+  {
+    "signal_id": "SIG_180",
+    "name": "h2h_DRX_vs_DWG KIA",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_DWG KIA"
+    ],
+    "expected_wr": 0.625,
+    "sample_size": 8,
+    "confidence": 0.6,
+    "edge_vs_50": 0.125,
+    "applicable_to": "DWG KIA dominates H2H vs DRX (5/8)",
+    "kelly_fraction": 0.06
+  },
+  {
+    "signal_id": "SIG_181",
+    "name": "h2h_Fredit BRION_vs_Liiv SANDBOX",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_Liiv SANDBOX"
+    ],
+    "expected_wr": 0.625,
+    "sample_size": 8,
+    "confidence": 0.6,
+    "edge_vs_50": 0.125,
+    "applicable_to": "Liiv SANDBOX dominates H2H vs Fredit BRION (5/8)",
+    "kelly_fraction": 0.06
+  },
+  {
+    "signal_id": "SIG_182",
+    "name": "h2h_DWG KIA_vs_KT Rolster",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DWG KIA_vs_KT Rolster"
+    ],
+    "expected_wr": 0.778,
+    "sample_size": 9,
+    "confidence": 0.722,
+    "edge_vs_50": 0.278,
+    "applicable_to": "DWG KIA dominates H2H vs KT Rolster (7/9)",
+    "kelly_fraction": 0.1605
+  },
+  {
+    "signal_id": "SIG_183",
+    "name": "h2h_Hanwha Life eSports_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Hanwha Life eSports_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.778,
+    "sample_size": 18,
+    "confidence": 0.722,
+    "edge_vs_50": 0.278,
+    "applicable_to": "Hanwha Life eSports dominates H2H vs Nongshim RedForce (14/18)",
+    "kelly_fraction": 0.1806
+  },
+  {
+    "signal_id": "SIG_184",
+    "name": "h2h_DRX_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_T1"
+    ],
+    "expected_wr": 0.842,
+    "sample_size": 19,
+    "confidence": 0.774,
+    "edge_vs_50": 0.342,
+    "applicable_to": "T1 dominates H2H vs DRX (16/19)",
+    "kelly_fraction": 0.2382
+  },
+  {
+    "signal_id": "SIG_185",
+    "name": "h2h_Kwangdong Freecs_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Kwangdong Freecs_vs_T1"
+    ],
+    "expected_wr": 0.923,
+    "sample_size": 13,
+    "confidence": 0.838,
+    "edge_vs_50": 0.423,
+    "applicable_to": "T1 dominates H2H vs Kwangdong Freecs (12/13)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_186",
+    "name": "h2h_DRX_vs_Kwangdong Freecs",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Kwangdong Freecs"
+    ],
+    "expected_wr": 0.615,
+    "sample_size": 13,
+    "confidence": 0.592,
+    "edge_vs_50": 0.115,
+    "applicable_to": "DRX dominates H2H vs Kwangdong Freecs (8/13)",
+    "kelly_fraction": 0.0615
+  },
+  {
+    "signal_id": "SIG_187",
+    "name": "h2h_Gen.G eSports_vs_Kwangdong Freecs",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_Kwangdong Freecs"
+    ],
+    "expected_wr": 0.917,
+    "sample_size": 12,
+    "confidence": 0.833,
+    "edge_vs_50": 0.417,
+    "applicable_to": "Gen.G eSports dominates H2H vs Kwangdong Freecs (11/12)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_188",
+    "name": "h2h_Fredit BRION_vs_Kwangdong Freecs",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Fredit BRION_vs_Kwangdong Freecs"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.74,
+    "edge_vs_50": 0.3,
+    "applicable_to": "Kwangdong Freecs dominates H2H vs Fredit BRION (4/5)",
+    "kelly_fraction": 0.1554
+  },
+  {
+    "signal_id": "SIG_189",
+    "name": "h2h_Kwangdong Freecs_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Kwangdong Freecs_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 12,
+    "confidence": 0.7,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Kwangdong Freecs dominates H2H vs Nongshim RedForce (9/12)",
+    "kelly_fraction": 0.1575
+  },
+  {
+    "signal_id": "SIG_190",
+    "name": "h2h_Hanwha Life eSports_vs_Kwangdong Freecs",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Hanwha Life eSports_vs_Kwangdong Freecs"
+    ],
+    "expected_wr": 0.692,
+    "sample_size": 13,
+    "confidence": 0.654,
+    "edge_vs_50": 0.192,
+    "applicable_to": "Hanwha Life eSports dominates H2H vs Kwangdong Freecs (9/13)",
+    "kelly_fraction": 0.1132
+  },
+  {
+    "signal_id": "SIG_191",
+    "name": "h2h_DRX_vs_Dplus KIA",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_Dplus KIA"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 10,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Dplus KIA dominates H2H vs DRX (10/10)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_192",
+    "name": "h2h_Dplus KIA_vs_Nongshim RedForce",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_Nongshim RedForce"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 10,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Dplus KIA dominates H2H vs Nongshim RedForce (10/10)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_193",
+    "name": "h2h_Dplus KIA_vs_T1",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_T1"
+    ],
+    "expected_wr": 0.846,
+    "sample_size": 13,
+    "confidence": 0.777,
+    "edge_vs_50": 0.346,
+    "applicable_to": "T1 dominates H2H vs Dplus KIA (11/13)",
+    "kelly_fraction": 0.242
+  },
+  {
+    "signal_id": "SIG_194",
+    "name": "h2h_Dplus KIA_vs_Gen.G eSports",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_Gen.G eSports"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 11,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Gen.G eSports dominates H2H vs Dplus KIA (11/11)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_195",
+    "name": "h2h_Dplus KIA_vs_Kwangdong Freecs",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_Kwangdong Freecs"
+    ],
+    "expected_wr": 0.75,
+    "sample_size": 8,
+    "confidence": 0.7,
+    "edge_vs_50": 0.25,
+    "applicable_to": "Dplus KIA dominates H2H vs Kwangdong Freecs (6/8)",
+    "kelly_fraction": 0.14
+  },
+  {
+    "signal_id": "SIG_196",
+    "name": "h2h_Dplus KIA_vs_OK BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_OK BRION"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 5,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Dplus KIA dominates H2H vs OK BRION (5/5)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_197",
+    "name": "h2h_Gen.G eSports_vs_OK BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Gen.G eSports_vs_OK BRION"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.74,
+    "edge_vs_50": 0.3,
+    "applicable_to": "Gen.G eSports dominates H2H vs OK BRION (4/5)",
+    "kelly_fraction": 0.1554
+  },
+  {
+    "signal_id": "SIG_198",
+    "name": "h2h_DRX_vs_OK BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:DRX_vs_OK BRION"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.74,
+    "edge_vs_50": 0.3,
+    "applicable_to": "DRX dominates H2H vs OK BRION (4/5)",
+    "kelly_fraction": 0.1554
+  },
+  {
+    "signal_id": "SIG_199",
+    "name": "h2h_KT Rolster_vs_OK BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:KT Rolster_vs_OK BRION"
+    ],
+    "expected_wr": 0.8,
+    "sample_size": 5,
+    "confidence": 0.74,
+    "edge_vs_50": 0.3,
+    "applicable_to": "KT Rolster dominates H2H vs OK BRION (4/5)",
+    "kelly_fraction": 0.1554
+  },
+  {
+    "signal_id": "SIG_200",
+    "name": "h2h_Nongshim RedForce_vs_OK BRION",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Nongshim RedForce_vs_OK BRION"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 6,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Nongshim RedForce dominates H2H vs OK BRION (6/6)",
+    "kelly_fraction": 0.25
+  },
+  {
+    "signal_id": "SIG_201",
+    "name": "h2h_Dplus KIA_vs_FearX",
+    "type": "head_to_head",
+    "conditions": [
+      "matchup:Dplus KIA_vs_FearX"
+    ],
+    "expected_wr": 1.0,
+    "sample_size": 5,
+    "confidence": 0.85,
+    "edge_vs_50": 0.5,
+    "applicable_to": "Dplus KIA dominates H2H vs FearX (5/5)",
+    "kelly_fraction": 0.25
+  }
+]
